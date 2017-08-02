@@ -1,0 +1,162 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	
+	<title>Church Life Tools</title>
+	
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.22/css/uikit.min.css" />
+	<link rel="stylesheet" href="style.css" />
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.22/js/uikit.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.22/js/uikit-icons.min.js"></script>
+	
+	<!--[if lt IE 9]>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
+	<![endif]-->
+</head>
+
+<body class="uk-grid-collapse" uk-grid>
+<div class="uk-width-auto uk-text-center uk-flex uk-flex-column uk-flex-between">
+	<div>
+		<div class="uk-padding-small">
+			<img src="https://placeholdit.imgix.net/~text?txtsize=30&txt=LOGO&w=100&h=100" />
+		</div>
+		
+		<ul class="main-nav uk-list uk-list-large uk-panel">
+			<li><a href="#" class="uk-flex uk-flex-column uk-padding-small"><i uk-icon="icon: thumbnails; ratio: 2"></i>Dashboard</a>
+			</li>
+			<li><a href="#" class="uk-flex uk-flex-column uk-padding-small"><i uk-icon="icon: user; ratio: 2"></i>People</a>
+			</li>
+			<li><a href="#" class="uk-flex uk-flex-column uk-padding-small"><i uk-icon="icon: users; ratio: 2"></i>Groups</a>
+			</li>
+			<li><a href="#" class="uk-flex uk-flex-column uk-padding-small uk-background-primary uk-light"><i uk-icon="icon: calendar; ratio: 2"></i>Events</a>
+			</li>
+			<li><a href="#" class="uk-flex uk-flex-column uk-padding-small"><i uk-icon="icon: heart; ratio: 2"></i>Giving</a>
+			</li>
+			<li><a href="#" class="uk-flex uk-flex-column uk-padding-small"><i uk-icon="icon: world; ratio: 2"></i>Conference</a>
+			</li>
+			<li><a href="#" class="uk-flex uk-flex-column uk-padding-small"><i uk-icon="icon: file-edit; ratio: 2"></i>Reports</a>
+			</li>
+		</ul>
+	</div>
+	
+	<div class="uk-text-small uk-padding-small">Version 0.4.18</div>
+</div>
+
+<nav class="account-controls uk-navbar-container uk-padding-small uk-navbar-transparent" uk-navbar>
+	<div class="uk-navbar-right">
+		<div class="uk-inline">
+			<a type="button" uk-icon="icon: bell"></a>
+			<div uk-dropdown="mode: click">
+				<ul class="uk-list uk-list-divider uk-margin-remove-bottom">
+					<li><a href="#">Notification 1</a></li>
+					<li><a href="#">Notification 2</a></li>
+					<li><a href="#">Notification 3</a></li>
+				</ul>
+			</div>
+		</div>
+		
+		<div class="uk-inline uk-margin-small-left">
+			<a type="button" uk-icon="icon: happy"></a>
+			<div uk-dropdown="mode: click">
+				<select class="uk-select uk-form-small uk-form-width-medium">
+					<option>Fairplain SDA</option>
+					<option>Coloma SDA</option>
+				</select>
+				<ul class="uk-list uk-list-divider uk-margin-remove-bottom">
+					<li><a href="#">Account</a></li>
+					<li><a href="#">Settings</a></li>
+					<li><a href="#">Log Out</a></li>
+				</ul>
+			</div>
+		</div>
+	
+	
+	</div>
+</nav>
+
+<div class="page-body uk-flex uk-background-muted uk-flex-stretch uk-width-expand">
+	<div class="detail-view uk-width-expand uk-card uk-card-default uk-padding-small">
+		<div class="uk-padding-small">
+			<h2 class="uk-margin-small-bottom">My Event</h2>
+			<div>Veggies es bonus vobis, proinde vos postulo essum magis kohlrabi welsh onion daikon amaranth
+				tatsoi tomatillo melon azuki bean garlic.</div>
+		</div>
+		
+		<div class="uk-grid-collapse" uk-grid>
+			<div class="uk-width-2-3 uk-padding-small">
+				<div class="uk-margin uk-margin-small-left uk-margin-small-right">
+					<label for="checkin" class="uk-form-label">Check in</label>
+					<input id="checkin" class="uk-input" type="text" placeholder="Check in">
+				</div>
+				
+				<div class="uk-background-muted uk-margin-small-left uk-margin-small-right">
+					<a href="#" class=" person uk-flex uk-flex-middle uk-padding-small">
+						<div class="people-image"><img src="https://randomuser.me/api/portraits/med/men/42.jpg" class="uk-margin-right"></div>
+						<span>Rasmus Anttila</span>
+					</a><a href="#" class=" person uk-flex uk-flex-middle uk-padding-small">
+						<div class="people-image"><img src="https://randomuser.me/api/portraits/med/men/78.jpg" class="uk-margin-right"></div>
+						<span>Thibault Aubert</span>
+					</a><a href="#" class=" person uk-flex uk-flex-middle uk-padding-small">
+						<div class="people-image"><img src="https://randomuser.me/api/portraits/med/women/49.jpg" class="uk-margin-right"></div>
+						<span>Olivia Brar</span>
+					</a><a href="#" class=" person uk-flex uk-flex-middle uk-padding-small">
+						<div class="people-image"><img src="https://randomuser.me/api/portraits/med/women/20.jpg" class="uk-margin-right"></div>
+						<span>Latife Denkel</span>
+					</a><a href="#" class="person uk-flex uk-flex-middle uk-padding-small">
+						<div class="people-image"><img src="https://randomuser.me/api/portraits/med/men/1.jpg" class="uk-margin-right"></div>
+						<span>Tom Laurent</span>
+					</a><a href="#" class=" person uk-flex uk-flex-middle uk-padding-small">
+						<div class="people-image"><img src="https://randomuser.me/api/portraits/med/men/5.jpg" class="uk-margin-right"></div>
+						<span>Henry Moore</span>
+					</a><a href="#" class=" person uk-flex uk-flex-middle uk-padding-small">
+						<div class="people-image"><img src="https://randomuser.me/api/portraits/med/men/15.jpg" class="uk-margin-right"></div>
+						<span>Loïc Moulin</span>
+					</a><a href="#" class=" person uk-flex uk-flex-middle uk-padding-small">
+						<div class="people-image"><img src="https://randomuser.me/api/portraits/med/men/58.jpg" class="uk-margin-right"></div>
+						<span>Eren Poçan</span>
+					</a><a href="#" class=" person uk-flex uk-flex-middle uk-padding-small">
+						<div class="people-image"><img src="https://randomuser.me/api/portraits/med/men/75.jpg" class="uk-margin-right"></div>
+						<span>Ryan Ross</span>
+					</a><a href="#" class=" person uk-flex uk-flex-middle uk-padding-small">
+						<div class="people-image"><img src="https://randomuser.me/api/portraits/med/men/76.jpg" class="uk-margin-right"></div>
+						<span>حسین جعفری</span>
+					</a></div>
+			</div>
+			
+			<div class="uk-width-1-3 uk-padding-small">
+				<div class="uk-overflow-auto">
+					<table class="profile-info uk-table uk-table-small">
+						<tbody>
+						<tr>
+							<td>Location</td>
+							<td>Church Gym <span class="uk-text-muted" uk-icon="icon: pencil; ratio: .9"></span></td>
+						</tr>
+						<tr>
+							<td>Start Date</td>
+							<td>June 7 <span class="uk-text-muted" uk-icon="icon: pencil; ratio: .9"></span></td>
+						</tr>
+						<tr>
+							<td>End Date</td>
+							<td>June 27 <span class="uk-text-muted" uk-icon="icon: pencil; ratio: .9"></span></td>
+						</tr>
+						<tr>
+							<td>Attendees Start Workflow</td>
+							<td>Workflow 3 <span class="uk-text-muted" uk-icon="icon: pencil; ratio: .9"></span></td>
+						</tr>
+						</tbody>
+					</table>
+				</div>
+				<br />
+				<img src="http://staticmapmaker.com/img/google.png" alt="">
+			</div>
+		</div>
+	</div>
+</div>
+
+</body>
+</html>

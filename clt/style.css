@@ -56,6 +56,18 @@ html, body {
 	color: white;
 }
 
+.add-new {
+	display: block;
+}
+
+#chart_div {
+	width: 100%;
+}
+
+.check-in {
+	max-width: 800px;
+}
+
 @font-face {
 	font-family: 'nowayregular';
 	src: url('font/noway-regular-webfont.eot');
@@ -66,5 +78,4 @@ html, body {
 	url('font/noway-regular-webfont.svg#nowayregular') format('svg');
 	font-weight: normal;
 	font-style: normal;
-
 }

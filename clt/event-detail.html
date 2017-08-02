@@ -17,6 +17,48 @@
 	<!--[if lt IE 9]>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
 	<![endif]-->
+	
+	<!--Load the AJAX API-->
+	<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+	<script type="text/javascript">
+
+		// Load the Visualization API and the corechart package.
+		google.charts.load('current', {'packages':['corechart']});
+
+		// Set a callback to run when the Google Visualization API is loaded.
+		google.charts.setOnLoadCallback(drawChart);
+
+		// Callback that creates and populates a data table,
+		// instantiates the pie chart, passes in the data and
+		// draws it.
+		function drawChart() {
+
+			// Create the data table.
+			var data = new google.visualization.DataTable();
+			data.addColumn('string', 'Topping');
+			data.addColumn('number', 'Visitors');
+			data.addColumn('number', 'Members');
+			data.addRows([
+				['8/3', 14, 25],
+				['8/4', 23, 11],
+				['8/5', 25, 12],
+				['8/6', 14, 20],
+				['8/7', 23, 24]
+			]);
+
+			// Set chart options
+			var options = {
+				title: 'Attendance',
+				isStacked: true,
+				legend: { position: 'none' }
+			};
+
+			// Instantiate and draw our chart, passing in some options.
+			var chart = new google.visualization.ColumnChart(document.getElementById('chart_div'));
+			chart.draw(data, options);
+			$(window).resize(function(){ chart.draw(data, options); });
+		}
+	</script>
 </head>
 
 <body class="uk-grid-collapse" uk-grid>
@@ -29,8 +71,8 @@
 		<ul class="main-nav uk-list uk-list-large uk-panel">
 			<li><a href="#" class="uk-flex uk-flex-column uk-padding-small"><i uk-icon="icon: thumbnails; ratio: 2"></i>Dashboard</a>
 			</li>
-			<li><a href="#" class="uk-flex uk-flex-column uk-padding-small"><i uk-icon="icon: user; ratio: 2"></i>People</a>
-			</li>
+			<li><a href="#" class="uk-flex uk-flex-column uk-padding-small"><i
+							uk-icon="icon: user; ratio: 2"></i>People</a></li>
 			<li><a href="#" class="uk-flex uk-flex-column uk-padding-small"><i uk-icon="icon: users; ratio: 2"></i>Groups</a>
 			</li>
 			<li><a href="#" class="uk-flex uk-flex-column uk-padding-small uk-background-primary uk-light"><i uk-icon="icon: calendar; ratio: 2"></i>Events</a>
@@ -80,74 +122,186 @@
 </nav>
 
 <div class="page-body uk-flex uk-background-muted uk-flex-stretch uk-width-expand">
-	<div class="detail-view uk-width-expand uk-card uk-card-default uk-padding-small">
+	<div class="people-list uk-width-medium">
+		<h2 class="uk-padding-small uk-margin-remove-bottom uk-margin-remove-top">Events</h2>
 		<div class="uk-padding-small">
-			<h2 class="uk-margin-small-bottom">My Event</h2>
-			<div>Veggies es bonus vobis, proinde vos postulo essum magis kohlrabi welsh onion daikon amaranth
-				tatsoi tomatillo melon azuki bean garlic.</div>
+			<input id="people-filter" class="uk-input" type="text" onkeyup="filterPeople()" placeholder="Filter">
 		</div>
+		<div id="people">
+			<a href="#" class=" person uk-flex uk-flex-middle uk-padding-small">
+				<span>Event 1</span>
+			</a>
+			<a href="#" class=" person uk-flex uk-flex-middle uk-padding-small uk-background-primary uk-light">
+				<span>Event 2</span>
+			</a>
+			<a href="#" class=" person uk-flex uk-flex-middle uk-padding-small">
+				<span>Event 3</span>
+			</a>
+			<a href="#" class=" person uk-flex uk-flex-middle uk-padding-small">
+				<span>Event 4</span>
+			</a>
+		</div>
+		
+		<a href="#" class="add-new uk-padding-small uk-text-muted uk-placeholder uk-text-center uk-margin-left uk-margin-right" uk-toggle="target: #modal-example">Add New</a>
+		
+		<!-- This is the modal -->
+		<div id="modal-example" uk-modal>
+			<div class="uk-modal-dialog uk-modal-body">
+				<h2 class="uk-modal-title">Add an Event</h2>
+				
+				<form uk-margin>
+					<div>
+						<label for="title" class="uk-form-label">Title</label>
+						<input id="title" type="text" class="uk-input" placeholder="Title">
+					</div>
+					
+					<div>
+						<label for="description" class="uk-form-label">Description</label>
+						<textarea name="description" id="description" cols="30" rows="3" class="uk-textarea" placeholder="Description"></textarea>
+					</div>
+					
+					<div>
+						<label for="location" class="uk-form-label">Location</label>
+						<input id="location" type="text" class="uk-input" placeholder="Location">
+					</div>
+					
+					<div>
+						<label for="start-date" class="uk-form-label">Start Date</label>
+						<input id="start-date" type="text" class="uk-input" placeholder="Start Date">
+					</div>
+					
+					<div>
+						<label for="end-date" class="uk-form-label">End Date</label>
+						<input id="end-date" type="text" class="uk-input" placeholder="End Date">
+					</div>
+					
+					<div>
+						<label for="workflow" class="uk-form-label">Attendees enter workflow</label>
+						<select class="uk-select" id="workflow">
+							<option selected value>none</option>
+							<option>Workflow 1</option>
+							<option>Workflow 2</option>
+							<option>Workflow 3</option>
+						</select>
+					</div>
+					
+					<div>
+						<label class="uk-form-label">Topics</label>
+						<table class="uk-table">
+							<tbody>
+							<tr>
+								<td class="uk-padding-remove-top uk-padding-remove-bottom uk-padding-remove-left"><input type="text" class="uk-input" placeholder="Date"></td>
+								<td class="uk-padding-remove-top uk-padding-remove-bottom uk-padding-remove-left"><input type="text" class="uk-input" placeholder="Topic"></td>
+								<td class="uk-padding-remove-top uk-padding-remove-bottom uk-padding-remove-left"><a href="#"><i uk-icon="icon: trash"></i></a></td>
+							</tr>
+							</tbody>
+						</table>
+						<a href="#"><i uk-icon="icon: plus"></i></a>
+					</div>
+				</form>
+				
+				<p class="uk-text-right">
+					<button class="uk-button uk-button-default uk-modal-close" type="button">Cancel</button>
+					<button class="uk-button uk-button-primary" type="button">Save</button>
+				</p>
+			</div>
+		</div>
+	</div>
+	
+	<div class="detail-view uk-width-expand uk-card uk-card-default uk-padding-small">
+		<h2 class="uk-margin">Event 2</h2>
+		<ul uk-tab>
+			<li class="uk-active"><a href="#">This</a></li>
+			<li><a href="#">That</a></li>
+			<li><a href="#">The Other</a></li>
+		</ul>
 		
 		<div class="uk-grid-collapse" uk-grid>
 			<div class="uk-width-2-3 uk-padding-small">
+				<div id="chart_div"></div>
+				
+				
 				<div class="uk-margin uk-margin-small-left uk-margin-small-right">
-					<label for="checkin" class="uk-form-label">Check in</label>
-					<input id="checkin" class="uk-input" type="text" placeholder="Check in">
+					<textarea class="uk-textarea" placeholder="Note..."></textarea>
+					<div>
+						<button class="uk-button uk-button-primary uk-button-small uk-margin-small-top">Add Note
+						</button>
+						<span class="uk-inline uk-text-muted uk-margin-small-left" style="margin-top:5px;">
+							<span uk-icon="icon: lock; ratio: .9"></span>
+							<div class="uk-padding-small" uk-dropdown>This note will be private. Only you will be able to see it.</div>
+						</span>
+					</div>
 				</div>
 				
-				<div class="uk-background-muted uk-margin-small-left uk-margin-small-right">
-					<a href="#" class=" person uk-flex uk-flex-middle uk-padding-small">
-						<div class="people-image"><img src="https://randomuser.me/api/portraits/med/men/42.jpg" class="uk-margin-right"></div>
-						<span>Rasmus Anttila</span>
-					</a><a href="#" class=" person uk-flex uk-flex-middle uk-padding-small">
-						<div class="people-image"><img src="https://randomuser.me/api/portraits/med/men/78.jpg" class="uk-margin-right"></div>
-						<span>Thibault Aubert</span>
-					</a><a href="#" class=" person uk-flex uk-flex-middle uk-padding-small">
-						<div class="people-image"><img src="https://randomuser.me/api/portraits/med/women/49.jpg" class="uk-margin-right"></div>
-						<span>Olivia Brar</span>
-					</a><a href="#" class=" person uk-flex uk-flex-middle uk-padding-small">
-						<div class="people-image"><img src="https://randomuser.me/api/portraits/med/women/20.jpg" class="uk-margin-right"></div>
-						<span>Latife Denkel</span>
-					</a><a href="#" class="person uk-flex uk-flex-middle uk-padding-small">
-						<div class="people-image"><img src="https://randomuser.me/api/portraits/med/men/1.jpg" class="uk-margin-right"></div>
-						<span>Tom Laurent</span>
-					</a><a href="#" class=" person uk-flex uk-flex-middle uk-padding-small">
-						<div class="people-image"><img src="https://randomuser.me/api/portraits/med/men/5.jpg" class="uk-margin-right"></div>
-						<span>Henry Moore</span>
-					</a><a href="#" class=" person uk-flex uk-flex-middle uk-padding-small">
-						<div class="people-image"><img src="https://randomuser.me/api/portraits/med/men/15.jpg" class="uk-margin-right"></div>
-						<span>Loïc Moulin</span>
-					</a><a href="#" class=" person uk-flex uk-flex-middle uk-padding-small">
-						<div class="people-image"><img src="https://randomuser.me/api/portraits/med/men/58.jpg" class="uk-margin-right"></div>
-						<span>Eren Poçan</span>
-					</a><a href="#" class=" person uk-flex uk-flex-middle uk-padding-small">
-						<div class="people-image"><img src="https://randomuser.me/api/portraits/med/men/75.jpg" class="uk-margin-right"></div>
-						<span>Ryan Ross</span>
-					</a><a href="#" class=" person uk-flex uk-flex-middle uk-padding-small">
-						<div class="people-image"><img src="https://randomuser.me/api/portraits/med/men/76.jpg" class="uk-margin-right"></div>
-						<span>حسین جعفری</span>
-					</a></div>
+				<table class="uk-table uk-table-divider">
+					<tbody>
+					<tr>
+						<td>
+							<div class="uk-text-muted uk-flex uk-flex-between uk-margin-small-bottom">
+								Me&ensp;&bull;&ensp;February 13, 2017
+								<span>
+									<span uk-icon="icon: pencil; ratio: .9"></span>
+									<span uk-icon="icon: trash; ratio: .9"></span>
+									<span class="uk-inline uk-text-top">
+										<span uk-icon="icon: lock; ratio: .9"></span>
+										<div class="uk-padding-small" uk-dropdown>This note is private. Only you can see it.</div>
+									</span>
+								</span>
+							</div>
+							Veggies es bonus vobis, proinde vos postulo essum magis kohlrabi welsh onion daikon amaranth
+							tatsoi tomatillo melon azuki bean garlic.
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<div class="uk-text-muted uk-flex uk-flex-between uk-margin-small-bottom">
+								Me&ensp;&bull;&ensp;January 5, 2017
+								<span>
+									<span uk-icon="icon: pencil; ratio: .9"></span>
+									<span uk-icon="icon: trash; ratio: .9"></span>
+									<span class="uk-inline uk-text-top">
+										<span uk-icon="icon: lock; ratio: .9"></span>
+										<div class="uk-padding-small" uk-dropdown>This note is private. Only you can see it.</div>
+									</span>
+								</span>
+							</div>
+							Gumbo beet greens corn soko endive gumbo gourd. Parsley shallot courgette tatsoi pea sprouts
+							fava bean collard greens dandelion okra wakame tomato. Dandelion cucumber earthnut pea
+							peanut soko zucchini.
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<div class="uk-text-muted uk-flex uk-flex-between uk-margin-small-bottom">
+								Matt Gregory&ensp;&bull;&ensp;September 21, 2016
+								<span>
+									<span uk-icon="icon: pencil; ratio: .9"></span>
+									<span uk-icon="icon: trash; ratio: .9"></span>
+									<span class="uk-inline uk-text-top">
+										<span uk-icon="icon: users; ratio: .9"></span>
+										<div class="uk-padding-small" uk-dropdown>This note is accessible to all members who have access to the "New Member" workflow.</div>
+									</span>
+								</span>
+							</div>
+							Turnip greens yarrow ricebean rutabaga endive cauliflower sea lettuce kohlrabi amaranth
+							water spinach avocado daikon napa cabbage asparagus winter purslane kale. Celery potato
+							scallion desert raisin horseradish spinach carrot soko. Lotus root water spinach fennel
+							kombu maize bamboo shoot green bean swiss chard seakale pumpkin onion chickpea gram corn
+							pea.
+						</td>
+					</tr>
+					</tbody>
+				</table>
 			</div>
 			
 			<div class="uk-width-1-3 uk-padding-small">
 				<div class="uk-overflow-auto">
-					<table class="profile-info uk-table uk-table-small">
+					<table class="profile-info uk-table uk-table-small uk-table-divider">
 						<tbody>
-						<tr>
-							<td>Location</td>
-							<td>Church Gym <span class="uk-text-muted" uk-icon="icon: pencil; ratio: .9"></span></td>
-						</tr>
-						<tr>
-							<td>Start Date</td>
-							<td>June 7 <span class="uk-text-muted" uk-icon="icon: pencil; ratio: .9"></span></td>
-						</tr>
-						<tr>
-							<td>End Date</td>
-							<td>June 27 <span class="uk-text-muted" uk-icon="icon: pencil; ratio: .9"></span></td>
-						</tr>
-						<tr>
-							<td>Attendees Start Workflow</td>
-							<td>Workflow 3 <span class="uk-text-muted" uk-icon="icon: pencil; ratio: .9"></span></td>
-						</tr>
+						<tr><td>Location</td><td>Church Gym</td></tr>
+						<tr><td>Start Date</td><td>June 7</td></tr>
+						<tr><td>End Date</td><td>June 27</td></tr>
+						<tr><td>Attendees Start Workflow</td><td>Workflow 3</td></tr>
 						</tbody>
 					</table>
 				</div>

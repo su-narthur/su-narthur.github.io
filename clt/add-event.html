@@ -1,1 +1,126 @@
-<h1>Add Event</h1>
+<!doctype html>
+
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	
+	<title>Church Life Tools</title>
+	
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.22/css/uikit.min.css" />
+	<link rel="stylesheet" href="style.css" />
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.22/js/uikit.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.22/js/uikit-icons.min.js"></script>
+	
+	<!--[if lt IE 9]>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
+	<![endif]-->
+</head>
+
+<body class="uk-flex">
+<div class="uk-width-auto uk-text-center uk-flex uk-flex-column uk-flex-between">
+	<div>
+		<div class="uk-padding-small">
+			<img src="https://placeholdit.imgix.net/~text?txtsize=30&txt=LOGO&w=100&h=100" />
+		</div>
+		
+		<ul class="main-nav uk-list uk-list-large uk-panel">
+			<li><a href="#" class="uk-flex uk-flex-column uk-padding-small uk-background-primary uk-light"><i uk-icon="icon: thumbnails; ratio: 2"></i>Dashboard</a>
+			</li>
+			<li><a href="#" class="uk-flex uk-flex-column uk-padding-small"><i uk-icon="icon: user; ratio: 2"></i>People</a></li>
+			<li><a href="#" class="uk-flex uk-flex-column uk-padding-small"><i uk-icon="icon: users; ratio: 2"></i>Groups</a></li>
+			<li><a href="#" class="uk-flex uk-flex-column uk-padding-small"><i uk-icon="icon: calendar; ratio: 2"></i>Events</a></li>
+			<li><a href="#" class="uk-flex uk-flex-column uk-padding-small"><i uk-icon="icon: heart; ratio: 2"></i>Giving</a></li>
+			<li><a href="#" class="uk-flex uk-flex-column uk-padding-small"><i uk-icon="icon: world; ratio: 2"></i>Conference</a></li>
+			<li><a href="#" class="uk-flex uk-flex-column uk-padding-small"><i uk-icon="icon: file-edit; ratio: 2"></i>Reports</a>
+			</li>
+		</ul>
+	</div>
+	
+	<div class="uk-text-small uk-padding-small">Version 0.4.18</div>
+</div>
+<div class="page-body uk-card uk-card-default uk-width-expand uk-background-muted">
+	<nav class="uk-navbar-container uk-margin-left uk-margin-right uk-margin-top uk-padding-small" uk-navbar>
+		<h3 class="uk-navbar-left">Dashboard</h3>
+		<div class="uk-navbar-right">
+			<select class="uk-select uk-form-small uk-form-width-medium">
+				<option>Fairplain SDA</option>
+				<option>Coloma SDA</option>
+			</select>
+			
+			<div class="uk-inline uk-margin-left">
+				<a type="button" uk-icon="icon: bell"></a>
+				<div uk-dropdown="mode: click">
+					<ul class="uk-list uk-list-divider uk-margin-remove-bottom">
+						<li><a href="#">Notification 1</a></li>
+						<li><a href="#">Notification 2</a></li>
+						<li><a href="#">Notification 3</a></li>
+					</ul>
+				</div>
+			</div>
+			
+			<div class="uk-inline uk-margin-left">
+				<a type="button" uk-icon="icon: happy"></a>
+				<div uk-dropdown="mode: click">
+					<ul class="uk-list uk-list-divider uk-margin-remove-bottom">
+						<li><a href="#">Account</a></li>
+						<li><a href="#">Settings</a></li>
+						<li><a href="#">Log Out</a></li>
+					</ul>
+				</div>
+			</div>
+		
+		
+		</div>
+	</nav>
+	
+	<div class="dashboard-widgets uk-padding uk-column-1-3">
+		<div class="uk-card uk-card-default uk-card-body uk-margin">Veggies es bonus vobis, proinde vos postulo
+			essum
+			magis kohlrabi welsh onion daikon amaranth tatsoi tomatillo melon azuki bean garlic.
+		</div>
+		
+		<div class="uk-card uk-card-default uk-card-body uk-margin">Gumbo beet greens corn soko endive gumbo gourd.
+			Parsley shallot courgette tatsoi pea sprouts fava bean collard greens dandelion okra wakame tomato.
+			Dandelion cucumber earthnut pea peanut soko zucchini.
+		</div>
+		
+		<div class="uk-card uk-card-default uk-card-body uk-margin">Turnip greens yarrow ricebean rutabaga endive
+			cauliflower sea lettuce kohlrabi amaranth water spinach avocado daikon napa cabbage asparagus winter
+			purslane kale. Celery potato scallion desert raisin horseradish spinach carrot soko. Lotus root water
+			spinach fennel kombu maize bamboo shoot green bean swiss chard seakale pumpkin onion chickpea gram corn
+			pea.
+			Brussels sprout coriander water chestnut gourd swiss chard wakame kohlrabi beetroot carrot watercress.
+			Corn
+			amaranth salsify bunya nuts nori azuki bean chickweed potato bell pepper artichoke.
+		</div>
+		
+		<div class="uk-card uk-card-default uk-card-body uk-margin">Nori grape silver beet broccoli kombu beet
+			greens
+			fava bean potato quandong celery. Bunya nuts black-eyed pea prairie turnip leek lentil turnip greens
+			parsnip. Sea lettuce lettuce water chestnut eggplant winter purslane fennel azuki bean earthnut pea
+			sierra
+			leone bologi leek soko chicory celtuce parsley jÃ­cama salsify.
+		</div>
+		
+		<div class="uk-card uk-card-default uk-card-body uk-margin">Celery quandong swiss chard chicory earthnut pea
+			potato. Salsify taro catsear garlic gram celery bitterleaf wattle seed collard greens nori. Grape wattle
+			seed kombu beetroot horseradish carrot squash brussels sprout chard.
+		</div>
+		
+		<div class="uk-card uk-card-default uk-card-body uk-margin">Pea horseradish azuki bean lettuce avocado
+			asparagus
+			okra. Kohlrabi radish okra azuki bean corn fava bean mustard tigernut jÃ­cama green bean celtuce collard
+			greens avocado quandong fennel gumbo black-eyed pea. Grape silver beet watercress potato tigernut corn
+			groundnut. Chickweed okra pea winter purslane coriander yarrow sweet pepper radish garlic brussels
+			sprout
+			groundnut summer purslane earthnut pea tomato spring onion azuki bean gourd. Gumbo kakadu plum komatsuna
+			black-eyed pea green bean zucchini gourd winter purslane silver beet rock melon radish asparagus
+			spinach.
+		</div>
+	</div>
+</div>
+</body>
+</html>

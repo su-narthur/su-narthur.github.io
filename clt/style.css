@@ -1,0 +1,70 @@
+html, body {
+	min-height: 100vh;
+	font-family: nowayregular, sans-serif;
+}
+
+.main-nav .uk-background-primary {
+	color: white;
+}
+
+.dashboard-widgets .uk-card {
+	break-inside: avoid-column;
+	margin-bottom: 2rem;
+}
+
+.page-body {
+	box-shadow: 0 5px 15px rgba(0,0,0,.2);
+}
+
+.people-image {
+	position: relative;
+}
+
+.people-image img {
+	width: 60px;
+	height: 60px;
+	border-radius: 100%;
+	box-shadow: 0 5px 15px rgba(0,0,0,.2);
+}
+
+.proto {
+	display: none;
+}
+
+.account-controls {
+	position: fixed;
+	top: 0;
+	right: 0;
+	z-index: 100;
+}
+
+.profile-info .uk-icon {
+	opacity: 0;
+}
+
+.profile-info td:hover .uk-icon {
+	opacity: 1;
+}
+
+.people-list .person:hover, .main-nav a:hover {
+	text-decoration: none;
+	background-color: #1e87f0;
+	color: rgba(255,255,255,.7);
+}
+
+.main-nav a:hover {
+	color: white;
+}
+
+@font-face {
+	font-family: 'nowayregular';
+	src: url('font/noway-regular-webfont.eot');
+	src: url('font/noway-regular-webfont.eot?#iefix') format('embedded-opentype'),
+	url('font/noway-regular-webfont.woff2') format('woff2'),
+	url('font/noway-regular-webfont.woff') format('woff'),
+	url('font/noway-regular-webfont.ttf') format('truetype'),
+	url('font/noway-regular-webfont.svg#nowayregular') format('svg');
+	font-weight: normal;
+	font-style: normal;
+
+}

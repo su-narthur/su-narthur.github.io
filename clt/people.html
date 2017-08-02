@@ -1,0 +1,226 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	
+	<title>Church Life Tools</title>
+	
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.22/css/uikit.min.css" />
+	<link rel="stylesheet" href="style.css" />
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.22/js/uikit.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.22/js/uikit-icons.min.js"></script>
+	
+	<!--[if lt IE 9]>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
+	<![endif]-->
+</head>
+
+<body class="uk-grid-collapse" uk-grid>
+<div class="uk-width-auto uk-text-center uk-flex uk-flex-column uk-flex-between">
+	<div>
+		<div class="uk-padding-small">
+			<img src="https://placeholdit.imgix.net/~text?txtsize=30&txt=LOGO&w=100&h=100" />
+		</div>
+		
+		<ul class="main-nav uk-list uk-list-large uk-panel">
+			<li><a href="#" class="uk-flex uk-flex-column uk-padding-small"><i uk-icon="icon: thumbnails; ratio: 2"></i>Dashboard</a>
+			</li>
+			<li><a href="#" class="uk-flex uk-flex-column uk-padding-small uk-background-primary uk-light"><i
+							uk-icon="icon: user; ratio: 2"></i>People</a></li>
+			<li><a href="#" class="uk-flex uk-flex-column uk-padding-small"><i uk-icon="icon: users; ratio: 2"></i>Groups</a>
+			</li>
+			<li><a href="#" class="uk-flex uk-flex-column uk-padding-small"><i uk-icon="icon: calendar; ratio: 2"></i>Events</a>
+			</li>
+			<li><a href="#" class="uk-flex uk-flex-column uk-padding-small"><i uk-icon="icon: heart; ratio: 2"></i>Giving</a>
+			</li>
+			<li><a href="#" class="uk-flex uk-flex-column uk-padding-small"><i uk-icon="icon: world; ratio: 2"></i>Conference</a>
+			</li>
+			<li><a href="#" class="uk-flex uk-flex-column uk-padding-small"><i uk-icon="icon: file-edit; ratio: 2"></i>Reports</a>
+			</li>
+		</ul>
+	</div>
+	
+	<div class="uk-text-small uk-padding-small">Version 0.4.18</div>
+</div>
+
+<nav class="account-controls uk-navbar-container uk-padding-small uk-navbar-transparent" uk-navbar>
+	<div class="uk-navbar-right">
+		<div class="uk-inline">
+			<a type="button" uk-icon="icon: bell"></a>
+			<div uk-dropdown="mode: click">
+				<ul class="uk-list uk-list-divider uk-margin-remove-bottom">
+					<li><a href="#">Notification 1</a></li>
+					<li><a href="#">Notification 2</a></li>
+					<li><a href="#">Notification 3</a></li>
+				</ul>
+			</div>
+		</div>
+		
+		<div class="uk-inline uk-margin-small-left">
+			<a type="button" uk-icon="icon: happy"></a>
+			<div uk-dropdown="mode: click">
+				<select class="uk-select uk-form-small uk-form-width-medium">
+					<option>Fairplain SDA</option>
+					<option>Coloma SDA</option>
+				</select>
+				<ul class="uk-list uk-list-divider uk-margin-remove-bottom">
+					<li><a href="#">Account</a></li>
+					<li><a href="#">Settings</a></li>
+					<li><a href="#">Log Out</a></li>
+				</ul>
+			</div>
+		</div>
+	
+	
+	</div>
+</nav>
+
+<div class="page-body uk-flex uk-background-muted uk-flex-stretch uk-width-expand">
+	<div class="people-list uk-width-medium">
+		<h2 class="uk-padding-small uk-margin-remove-bottom uk-margin-remove-top">People</h2>
+		<div class="uk-padding-small">
+			<input id="people-filter" class="uk-input" type="text" onkeyup="filterPeople()" placeholder="Filter">
+		</div>
+		<div id="people">
+			<a href="#" class="proto person uk-flex uk-flex-middle uk-padding-small">
+				<div class="people-image"><img src="##image##" class="uk-margin-right"></div>
+				<span>##name##</span>
+			</a>
+		</div>
+		<a href="#" class="person uk-flex uk-flex-middle uk-padding-small">
+			<div class="people-image"><img src="https://image.freepik.com/free-icon/plus-symbol-in-a-circle_318-27808.jpg" class="uk-margin-right"></div>
+			<span>Add New</span>
+		</a>
+	</div>
+	
+	<div class="detail-view uk-width-expand uk-card uk-card-default uk-padding-small">
+		<div class="uk-flex uk-flex-middle uk-padding-small">
+			<div class="people-image"><img src="##image##" class="uk-margin-right"></div>
+			<h2 class="uk-margin">##name##</h2>
+		</div>
+		
+		<div class="uk-grid-collapse" uk-grid>
+			<div class="uk-width-2-3 uk-padding-small">
+				<ul uk-tab>
+					<li class="uk-active"><a href="#">All</a></li>
+					<li><a href="#">Personal</a></li>
+					<li><a href="#">Workflow 1</a></li>
+					<li><a href="#">Workflow 2</a></li>
+				</ul>
+				
+				
+				<div class="uk-margin uk-margin-small-left uk-margin-small-right">
+					<textarea class="uk-textarea" placeholder="Note..."></textarea>
+					<div>
+						<button class="uk-button uk-button-primary uk-button-small uk-margin-small-top">Add Note
+						</button>
+						<span class="uk-inline uk-text-muted uk-margin-small-left" style="margin-top:5px;">
+							<span uk-icon="icon: lock; ratio: .9"></span>
+							<div class="uk-padding-small" uk-dropdown>This note will be private. Only you will be able to see it.</div>
+						</span>
+					</div>
+				</div>
+				
+				<table class="uk-table uk-table-divider">
+					<tbody>
+					<tr>
+						<td>
+							<div class="uk-text-muted uk-flex uk-flex-between uk-margin-small-bottom">
+								Me&ensp;&bull;&ensp;February 13, 2017
+								<span>
+									<span uk-icon="icon: pencil; ratio: .9"></span>
+									<span uk-icon="icon: trash; ratio: .9"></span>
+									<span class="uk-inline uk-text-top">
+										<span uk-icon="icon: lock; ratio: .9"></span>
+										<div class="uk-padding-small" uk-dropdown>This note is private. Only you can see it.</div>
+									</span>
+								</span>
+							</div>
+							Veggies es bonus vobis, proinde vos postulo essum magis kohlrabi welsh onion daikon amaranth
+							tatsoi tomatillo melon azuki bean garlic.
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<div class="uk-text-muted uk-flex uk-flex-between uk-margin-small-bottom">
+								Me&ensp;&bull;&ensp;January 5, 2017
+								<span>
+									<span uk-icon="icon: pencil; ratio: .9"></span>
+									<span uk-icon="icon: trash; ratio: .9"></span>
+									<span class="uk-inline uk-text-top">
+										<span uk-icon="icon: lock; ratio: .9"></span>
+										<div class="uk-padding-small" uk-dropdown>This note is private. Only you can see it.</div>
+									</span>
+								</span>
+							</div>
+							Gumbo beet greens corn soko endive gumbo gourd. Parsley shallot courgette tatsoi pea sprouts
+							fava bean collard greens dandelion okra wakame tomato. Dandelion cucumber earthnut pea
+							peanut soko zucchini.
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<div class="uk-text-muted uk-flex uk-flex-between uk-margin-small-bottom">
+								Matt Gregory&ensp;&bull;&ensp;September 21, 2016
+								<span>
+									<span uk-icon="icon: pencil; ratio: .9"></span>
+									<span uk-icon="icon: trash; ratio: .9"></span>
+									<span class="uk-inline uk-text-top">
+										<span uk-icon="icon: users; ratio: .9"></span>
+										<div class="uk-padding-small" uk-dropdown>This note is accessible to all members who have access to the "New Member" workflow.</div>
+									</span>
+								</span>
+							</div>
+							Turnip greens yarrow ricebean rutabaga endive cauliflower sea lettuce kohlrabi amaranth
+							water spinach avocado daikon napa cabbage asparagus winter purslane kale. Celery potato
+							scallion desert raisin horseradish spinach carrot soko. Lotus root water spinach fennel
+							kombu maize bamboo shoot green bean swiss chard seakale pumpkin onion chickpea gram corn
+							pea.
+						</td>
+					</tr>
+					</tbody>
+				</table>
+			</div>
+			
+			<div class="uk-width-1-3 uk-padding-small">
+				<div class="uk-overflow-auto">
+					<table class="profile-info uk-table uk-table-small">
+						<tbody>
+						<tr>
+							<td>Home</td>
+							<td>##phone## <span class="uk-text-muted" uk-icon="icon: pencil; ratio: .9"></span></td>
+						</tr>
+						<tr>
+							<td>Cell</td>
+							<td>##cell## <span class="uk-text-muted" uk-icon="icon: pencil; ratio: .9"></span></td>
+						</tr>
+						<tr>
+							<td>Email</td>
+							<td>##email## <span class="uk-text-muted" uk-icon="icon: pencil; ratio: .9"></span></td>
+						</tr>
+						<tr>
+							<td>Birthday</td>
+							<td>##dob## <span class="uk-text-muted" uk-icon="icon: pencil; ratio: .9"></span></td>
+						</tr>
+						<tr>
+							<td>Added</td>
+							<td>##registered## <span class="uk-text-muted" uk-icon="icon: pencil; ratio: .9"></span></td>
+						</tr>
+						</tbody>
+					</table>
+				</div>
+				<br />
+				<img src="http://staticmapmaker.com/img/google.png" alt="">
+			</div>
+		</div>
+	</div>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="people.js"></script>
+</body>
+</html>

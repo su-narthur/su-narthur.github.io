@@ -1,0 +1,189 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	
+	<title>Church Life Tools</title>
+	
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.22/css/uikit.min.css" />
+	<link rel="stylesheet" href="style.css" />
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.22/js/uikit.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.22/js/uikit-icons.min.js"></script>
+	
+	<!--[if lt IE 9]>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
+	<![endif]-->
+</head>
+
+<body class="uk-flex">
+<div class="uk-width-auto uk-text-center uk-flex uk-flex-column uk-flex-between">
+	<div>
+		<div class="uk-padding-small">
+			<img src="https://placeholdit.imgix.net/~text?txtsize=30&txt=LOGO&w=100&h=100" />
+		</div>
+		
+		<ul class="main-nav uk-list uk-list-large uk-panel">
+			<li><a href="#" class="uk-flex uk-flex-column uk-padding-small"><i uk-icon="icon: thumbnails; ratio: 2"></i>Dashboard</a></li>
+			<li><a href="#" class="uk-flex uk-flex-column uk-padding-small"><i uk-icon="icon: user; ratio: 2"></i>People</a></li>
+			<li><a href="#" class="uk-flex uk-flex-column uk-padding-small"><i uk-icon="icon: users; ratio: 2"></i>Groups</a></li>
+			<li><a href="#" class="uk-flex uk-flex-column uk-padding-small uk-background-primary uk-light"><i uk-icon="icon: calendar; ratio: 2"></i>Events</a></li>
+			<li><a href="#" class="uk-flex uk-flex-column uk-padding-small"><i uk-icon="icon: heart; ratio: 2"></i>Giving</a></li>
+			<li><a href="#" class="uk-flex uk-flex-column uk-padding-small"><i uk-icon="icon: world; ratio: 2"></i>Conference</a></li>
+			<li><a href="#" class="uk-flex uk-flex-column uk-padding-small"><i uk-icon="icon: file-edit; ratio: 2"></i>Reports</a>
+			</li>
+		</ul>
+	</div>
+	
+	<div class="uk-text-small uk-padding-small">Version 0.4.18</div>
+</div>
+<div class="page-body uk-card uk-card-default uk-width-expand uk-background-muted">
+	<nav class="uk-navbar-container uk-margin-left uk-margin-right uk-margin-top uk-padding-small" uk-navbar>
+		<h3 class="uk-navbar-left">Events</h3>
+		<div class="uk-navbar-right">
+			<select class="uk-select uk-form-small uk-form-width-medium">
+				<option>Fairplain SDA</option>
+				<option>Coloma SDA</option>
+			</select>
+			
+			<div class="uk-inline uk-margin-left">
+				<a type="button" uk-icon="icon: bell"></a>
+				<div uk-dropdown="mode: click">
+					<ul class="uk-list uk-list-divider uk-margin-remove-bottom">
+						<li><a href="#">Notification 1</a></li>
+						<li><a href="#">Notification 2</a></li>
+						<li><a href="#">Notification 3</a></li>
+					</ul>
+				</div>
+			</div>
+			
+			<div class="uk-inline uk-margin-left">
+				<a type="button" uk-icon="icon: happy"></a>
+				<div uk-dropdown="mode: click">
+					<ul class="uk-list uk-list-divider uk-margin-remove-bottom">
+						<li><a href="#">Account</a></li>
+						<li><a href="#">Settings</a></li>
+						<li><a href="#">Log Out</a></li>
+					</ul>
+				</div>
+			</div>
+		
+		
+		</div>
+	</nav>
+	
+	<div class="uk-padding-small">
+		<table class="uk-table uk-table-striped uk-background-default">
+			<thead>
+			<tr>
+				<th>Name</th>
+				<th>Location</th>
+				<th>Dates</th>
+				<th></th>
+			</tr>
+			</thead>
+			<tbody>
+			<tr>
+				<td><a href="#">Event 1</a></td>
+				<td>Church Gym</td>
+				<td>June 5—June 27</td>
+				<td>
+					<a href="#"><i uk-icon="icon: users"></i></a>
+					<a href="#"><i uk-icon="icon: pencil"></i></a>
+					<a href="#"><i uk-icon="icon: trash"></i></a>
+				</td>
+			</tr>
+			<tr>
+				<td><a href="#">Event 2</a></td>
+				<td>Church Gym</td>
+				<td>June 5—June 27</td>
+				<td>
+					<a href="#"><i uk-icon="icon: users"></i></a>
+					<a href="#"><i uk-icon="icon: pencil"></i></a>
+					<a href="#"><i uk-icon="icon: trash"></i></a>
+				</td>
+			</tr>
+			<tr>
+				<td><a href="#">Event 3</a></td>
+				<td>Church Gym</td>
+				<td>June 5—June 27</td>
+				<td>
+					<a href="#"><i uk-icon="icon: users"></i></a>
+					<a href="#"><i uk-icon="icon: pencil"></i></a>
+					<a href="#"><i uk-icon="icon: trash"></i></a>
+				</td>
+			</tr>
+			</tbody>
+		</table>
+		
+		<button class="uk-button uk-button-primary uk-margin-small-right" type="button" uk-toggle="target: #modal-example">New Event</button>
+		
+		<!-- This is the modal -->
+		<div id="modal-example" uk-modal>
+			<div class="uk-modal-dialog uk-modal-body">
+				<h2 class="uk-modal-title">Add an Event</h2>
+				
+				<form uk-margin>
+					<div>
+						<label for="title" class="uk-form-label">Title</label>
+						<input id="title" type="text" class="uk-input" placeholder="Title">
+					</div>
+					
+					<div>
+						<label for="description" class="uk-form-label">Description</label>
+						<textarea name="description" id="description" cols="30" rows="3" class="uk-textarea" placeholder="Description"></textarea>
+					</div>
+					
+					<div>
+						<label for="location" class="uk-form-label">Location</label>
+						<input id="location" type="text" class="uk-input" placeholder="Location">
+					</div>
+					
+					<div>
+						<label for="start-date" class="uk-form-label">Start Date</label>
+						<input id="start-date" type="text" class="uk-input" placeholder="Start Date">
+					</div>
+					
+					<div>
+						<label for="end-date" class="uk-form-label">End Date</label>
+						<input id="end-date" type="text" class="uk-input" placeholder="End Date">
+					</div>
+					
+					<div>
+						<label for="workflow" class="uk-form-label">Attendees enter workflow</label>
+						<select class="uk-select" id="workflow">
+							<option selected value>none</option>
+							<option>Workflow 1</option>
+							<option>Workflow 2</option>
+							<option>Workflow 3</option>
+						</select>
+					</div>
+					
+					<div>
+						<label class="uk-form-label">Topics</label>
+						<table class="uk-table">
+							<tbody>
+							<tr>
+								<td class="uk-padding-remove-top uk-padding-remove-bottom uk-padding-remove-left"><input type="text" class="uk-input" placeholder="Date"></td>
+								<td class="uk-padding-remove-top uk-padding-remove-bottom uk-padding-remove-left"><input type="text" class="uk-input" placeholder="Topic"></td>
+								<td class="uk-padding-remove-top uk-padding-remove-bottom uk-padding-remove-left"><a href="#"><i uk-icon="icon: trash"></i></a></td>
+							</tr>
+							</tbody>
+						</table>
+						<a href="#"><i uk-icon="icon: plus"></i></a>
+					</div>
+				</form>
+				
+				<p class="uk-text-right">
+					<button class="uk-button uk-button-default uk-modal-close" type="button">Cancel</button>
+					<button class="uk-button uk-button-primary" type="button">Save</button>
+				</p>
+			</div>
+		</div>
+	</div>
+</div>
+</body>
+</html>

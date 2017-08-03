@@ -36,20 +36,20 @@
 			// Create the data table.
 			var data = new google.visualization.DataTable();
 			data.addColumn('string', 'Topping');
+			data.addColumn('number', 'Total');
 			data.addColumn('number', 'Visitors');
 			data.addColumn('number', 'Members');
 			data.addRows([
-				['8/3', 14, 25],
-				['8/4', 23, 11],
-				['8/5', 25, 12],
-				['8/6', 14, 20],
-				['8/7', 23, 24]
+				['8/3', 39, 14, 25],
+				['8/4', 34, 23, 11],
+				['8/5', 37, 25, 12],
+				['8/6', 34, 14, 20],
+				['8/7', 47, 23, 24]
 			]);
 
 			// Set chart options
 			var options = {
 				title: 'Attendance',
-				isStacked: true,
 				legend: { position: 'none' }
 			};
 
@@ -165,38 +165,37 @@
 						<input id="location" type="text" class="uk-input" placeholder="Location">
 					</div>
 					
-					<div>
-						<label for="start-date" class="uk-form-label">Start Date</label>
-						<input id="start-date" type="text" class="uk-input" placeholder="Start Date">
+					
+					<div uk-grid>
+						<div class="uk-width-1-2">
+							<label for="start-date" class="uk-form-label">Start Date</label>
+							<input id="start-date" type="text" class="uk-input" placeholder="Start Date">
+						</div>
+						
+						<div class="uk-width-1-2">
+							<label for="end-date" class="uk-form-label">End Date</label>
+							<input id="end-date" type="text" class="uk-input" placeholder="End Date">
+						</div>
 					</div>
 					
 					<div>
-						<label for="end-date" class="uk-form-label">End Date</label>
-						<input id="end-date" type="text" class="uk-input" placeholder="End Date">
+						<label for="recurrence" class="uk-form-label">Recurs</label>
+						<select class="uk-select" id="recurrence">
+							<option selected value>No recurrence</option>
+							<option>Weekly</option>
+							<option>Monthly</option>
+							<option>Custom</option>
+						</select>
 					</div>
 					
 					<div>
 						<label for="workflow" class="uk-form-label">Attendees enter workflow</label>
 						<select class="uk-select" id="workflow">
-							<option selected value>none</option>
+							<option selected value>None</option>
 							<option>Workflow 1</option>
 							<option>Workflow 2</option>
 							<option>Workflow 3</option>
 						</select>
-					</div>
-					
-					<div>
-						<label class="uk-form-label">Topics</label>
-						<table class="uk-table">
-							<tbody>
-							<tr>
-								<td class="uk-padding-remove-top uk-padding-remove-bottom uk-padding-remove-left"><input type="text" class="uk-input" placeholder="Date"></td>
-								<td class="uk-padding-remove-top uk-padding-remove-bottom uk-padding-remove-left"><input type="text" class="uk-input" placeholder="Topic"></td>
-								<td class="uk-padding-remove-top uk-padding-remove-bottom uk-padding-remove-left"><a href="#"><i uk-icon="icon: trash"></i></a></td>
-							</tr>
-							</tbody>
-						</table>
-						<a href="#"><i uk-icon="icon: plus"></i></a>
 					</div>
 				</form>
 				
@@ -210,88 +209,15 @@
 	
 	<div class="detail-view uk-width-expand uk-card uk-card-default uk-padding-small">
 		<h2 class="uk-margin">Event 2</h2>
-		<ul uk-tab>
-			<li class="uk-active"><a href="#">This</a></li>
-			<li><a href="#">That</a></li>
-			<li><a href="#">The Other</a></li>
-		</ul>
-		
 		<div class="uk-grid-collapse" uk-grid>
 			<div class="uk-width-2-3 uk-padding-small">
+				<ul uk-tab>
+					<li class="uk-active"><a href="#">Statistics</a></li>
+					<li><a href="#">Check-ins</a></li>
+					<li><a href="#">Stations</a></li>
+				</ul>
+				
 				<div id="chart_div"></div>
-				
-				
-				<div class="uk-margin uk-margin-small-left uk-margin-small-right">
-					<textarea class="uk-textarea" placeholder="Note..."></textarea>
-					<div>
-						<button class="uk-button uk-button-primary uk-button-small uk-margin-small-top">Add Note
-						</button>
-						<span class="uk-inline uk-text-muted uk-margin-small-left" style="margin-top:5px;">
-							<span uk-icon="icon: lock; ratio: .9"></span>
-							<div class="uk-padding-small" uk-dropdown>This note will be private. Only you will be able to see it.</div>
-						</span>
-					</div>
-				</div>
-				
-				<table class="uk-table uk-table-divider">
-					<tbody>
-					<tr>
-						<td>
-							<div class="uk-text-muted uk-flex uk-flex-between uk-margin-small-bottom">
-								Me&ensp;&bull;&ensp;February 13, 2017
-								<span>
-									<span uk-icon="icon: pencil; ratio: .9"></span>
-									<span uk-icon="icon: trash; ratio: .9"></span>
-									<span class="uk-inline uk-text-top">
-										<span uk-icon="icon: lock; ratio: .9"></span>
-										<div class="uk-padding-small" uk-dropdown>This note is private. Only you can see it.</div>
-									</span>
-								</span>
-							</div>
-							Veggies es bonus vobis, proinde vos postulo essum magis kohlrabi welsh onion daikon amaranth
-							tatsoi tomatillo melon azuki bean garlic.
-						</td>
-					</tr>
-					<tr>
-						<td>
-							<div class="uk-text-muted uk-flex uk-flex-between uk-margin-small-bottom">
-								Me&ensp;&bull;&ensp;January 5, 2017
-								<span>
-									<span uk-icon="icon: pencil; ratio: .9"></span>
-									<span uk-icon="icon: trash; ratio: .9"></span>
-									<span class="uk-inline uk-text-top">
-										<span uk-icon="icon: lock; ratio: .9"></span>
-										<div class="uk-padding-small" uk-dropdown>This note is private. Only you can see it.</div>
-									</span>
-								</span>
-							</div>
-							Gumbo beet greens corn soko endive gumbo gourd. Parsley shallot courgette tatsoi pea sprouts
-							fava bean collard greens dandelion okra wakame tomato. Dandelion cucumber earthnut pea
-							peanut soko zucchini.
-						</td>
-					</tr>
-					<tr>
-						<td>
-							<div class="uk-text-muted uk-flex uk-flex-between uk-margin-small-bottom">
-								Matt Gregory&ensp;&bull;&ensp;September 21, 2016
-								<span>
-									<span uk-icon="icon: pencil; ratio: .9"></span>
-									<span uk-icon="icon: trash; ratio: .9"></span>
-									<span class="uk-inline uk-text-top">
-										<span uk-icon="icon: users; ratio: .9"></span>
-										<div class="uk-padding-small" uk-dropdown>This note is accessible to all members who have access to the "New Member" workflow.</div>
-									</span>
-								</span>
-							</div>
-							Turnip greens yarrow ricebean rutabaga endive cauliflower sea lettuce kohlrabi amaranth
-							water spinach avocado daikon napa cabbage asparagus winter purslane kale. Celery potato
-							scallion desert raisin horseradish spinach carrot soko. Lotus root water spinach fennel
-							kombu maize bamboo shoot green bean swiss chard seakale pumpkin onion chickpea gram corn
-							pea.
-						</td>
-					</tr>
-					</tbody>
-				</table>
 			</div>
 			
 			<div class="uk-width-1-3 uk-padding-small">
@@ -306,7 +232,7 @@
 					</table>
 				</div>
 				<br />
-				<img src="http://staticmapmaker.com/img/google.png" alt="">
+				<a href="check-in.html" class="uk-button uk-button-primary">Check people in</a>
 			</div>
 		</div>
 	</div>

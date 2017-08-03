@@ -22,74 +22,101 @@
 <body class="uk-background-muted uk-padding-large">
 <div class="check-in uk-margin-auto-left uk-margin-auto-right uk-card uk-card-default uk-padding">
 	<h1>My Event</h1>
-	<input class="uk-input uk-margin-bottom" type="text" placeholder="Search">
-	<div class="uk-margin-small-left uk-margin-small-right">
-		<a href="#" class="person uk-flex uk-flex-middle uk-flex-between uk-padding-small">
-		<span class="uk-flex uk-flex-middle">
-			<div class="people-image"><img src="https://randomuser.me/api/portraits/med/men/42.jpg"
-						class="uk-margin-right"></div>
-			Rasmus Anttila
-		</span>
-			<button class="uk-button uk-button-primary">Check in</button>
-		</a>
-		<a href="#" class="person uk-flex uk-flex-middle uk-flex-between uk-padding-small">
-		<span class="uk-flex uk-flex-middle">
-			<div class="people-image"><img src="https://randomuser.me/api/portraits/med/men/78.jpg"
-						class="uk-margin-right"></div>
-			Thibault Aubert
-		</span>
-			<button class="uk-button uk-button-primary">Check in</button>
-		</a>
-		<a href="#" class="person uk-flex uk-flex-middle uk-flex-between uk-padding-small">
-		<span class="uk-flex uk-flex-middle"><div class="people-image"><img
-						src="https://randomuser.me/api/portraits/med/women/49.jpg" class="uk-margin-right"></div>
-		Olivia Brar</span>
-			<button class="uk-button uk-button-primary">Check in</button>
-		</a>
-		<a href="#" class="person uk-flex uk-flex-middle uk-flex-between uk-padding-small">
-		<span class="uk-flex uk-flex-middle"><div class="people-image"><img
-						src="https://randomuser.me/api/portraits/med/women/20.jpg" class="uk-margin-right"></div>
-		Latife Denkel</span>
-			<button class="uk-button uk-button-primary">Check in</button>
-		</a>
-		<a href="#" class="person uk-flex uk-flex-middle uk-flex-between uk-padding-small">
-		<span class="uk-flex uk-flex-middle"><div class="people-image"><img
-						src="https://randomuser.me/api/portraits/med/men/1.jpg" class="uk-margin-right"></div>
-		Tom Laurent</span>
-			<button class="uk-button uk-button-primary">Check in</button>
-		</a>
-		<a href="#" class="person uk-flex uk-flex-middle uk-flex-between uk-padding-small">
-		<span class="uk-flex uk-flex-middle"><div class="people-image"><img
-						src="https://randomuser.me/api/portraits/med/men/5.jpg" class="uk-margin-right"></div>
-		Henry Moore</span>
-			<button class="uk-button uk-button-primary">Check in</button>
-		</a>
-		<a href="#" class="person uk-flex uk-flex-middle uk-flex-between uk-padding-small">
-		<span class="uk-flex uk-flex-middle"><div class="people-image"><img
-						src="https://randomuser.me/api/portraits/med/men/15.jpg" class="uk-margin-right"></div>
-		Loïc Moulin</span>
-			<button class="uk-button uk-button-primary">Check in</button>
-		</a>
-		<a href="#" class="person uk-flex uk-flex-middle uk-flex-between uk-padding-small">
-		<span class="uk-flex uk-flex-middle"><div class="people-image"><img
-						src="https://randomuser.me/api/portraits/med/men/58.jpg" class="uk-margin-right"></div>
-		Eren Poçan</span>
-			<button class="uk-button uk-button-primary">Check in</button>
-		</a>
-		<a href="#" class="person uk-flex uk-flex-middle uk-flex-between uk-padding-small">
-		<span class="uk-flex uk-flex-middle"><div class="people-image"><img
-						src="https://randomuser.me/api/portraits/med/men/75.jpg" class="uk-margin-right"></div>
-		Ryan Ross</span>
-			<button class="uk-button uk-button-primary">Check in</button>
-		</a>
-		<a href="#" class="person uk-flex uk-flex-middle uk-flex-between uk-padding-small">
-		<span class="uk-flex uk-flex-middle"><div class="people-image"><img
-						src="https://randomuser.me/api/portraits/med/men/76.jpg" class="uk-margin-right"></div>
-		حسین جعفری</span>
-			<button class="uk-button uk-button-primary">Check in</button>
-		</a>
-	</div>
-	<a href="#" class="add-new uk-padding-small uk-text-muted uk-placeholder uk-text-center uk-margin-left uk-margin-right" uk-toggle="target: #modal-example">Add New</a>
+	<a href="event-detail.html" class="uk-modal-close-default" uk-close></a>
+	<input class="uk-input" type="text" placeholder="Search">
+	<table class="uk-table uk-table-striped uk-width-1-1">
+		<tbody>
+		<tr>
+			<td><a href="#" class="person uk-flex uk-flex-middle uk-flex-between uk-padding-small">
+				<span class="uk-flex uk-flex-middle">
+					<div class="people-image"><img src="https://randomuser.me/api/portraits/med/men/42.jpg"
+								class="uk-margin-right"></div>
+					Rasmus Anttila
+				</span>
+					<button class="uk-button uk-button-primary">Check in</button>
+				</a></td>
+		</tr>
+		<tr>
+			<td><a href="#" class="person uk-flex uk-flex-middle uk-flex-between uk-padding-small">
+				<span class="uk-flex uk-flex-middle">
+					<div class="people-image"><img src="https://randomuser.me/api/portraits/med/men/78.jpg"
+								class="uk-margin-right"></div>
+					Thibault Aubert
+				</span>
+					<button class="uk-button uk-button-primary">Check in</button>
+				</a></td>
+		</tr>
+		<tr>
+			<td><a href="#" class="person uk-flex uk-flex-middle uk-flex-between uk-padding-small">
+				<span class="uk-flex uk-flex-middle"><div class="people-image"><img
+								src="https://randomuser.me/api/portraits/med/women/49.jpg"
+								class="uk-margin-right"></div>
+				Olivia Brar</span>
+					<button class="uk-button uk-button-primary">Check in</button>
+				</a></td>
+		</tr>
+		<tr>
+			<td><a href="#" class="person uk-flex uk-flex-middle uk-flex-between uk-padding-small">
+				<span class="uk-flex uk-flex-middle"><div class="people-image"><img
+								src="https://randomuser.me/api/portraits/med/women/20.jpg"
+								class="uk-margin-right"></div>
+				Latife Denkel</span>
+					<button class="uk-button uk-button-primary">Check in</button>
+				</a></td>
+		</tr>
+		<tr>
+			<td><a href="#" class="person uk-flex uk-flex-middle uk-flex-between uk-padding-small">
+				<span class="uk-flex uk-flex-middle"><div class="people-image"><img
+								src="https://randomuser.me/api/portraits/med/men/1.jpg" class="uk-margin-right"></div>
+				Tom Laurent</span>
+					<button class="uk-button uk-button-primary">Check in</button>
+				</a></td>
+		</tr>
+		<tr>
+			<td><a href="#" class="person uk-flex uk-flex-middle uk-flex-between uk-padding-small">
+				<span class="uk-flex uk-flex-middle"><div class="people-image"><img
+								src="https://randomuser.me/api/portraits/med/men/5.jpg" class="uk-margin-right"></div>
+				Henry Moore</span>
+					<button class="uk-button uk-button-primary">Check in</button>
+				</a></td>
+		</tr>
+		<tr>
+			<td><a href="#" class="person uk-flex uk-flex-middle uk-flex-between uk-padding-small">
+				<span class="uk-flex uk-flex-middle"><div class="people-image"><img
+								src="https://randomuser.me/api/portraits/med/men/15.jpg" class="uk-margin-right"></div>
+				Loïc Moulin</span>
+					<button class="uk-button uk-button-primary">Check in</button>
+				</a></td>
+		</tr>
+		<tr>
+			<td><a href="#" class="person uk-flex uk-flex-middle uk-flex-between uk-padding-small">
+				<span class="uk-flex uk-flex-middle"><div class="people-image"><img
+								src="https://randomuser.me/api/portraits/med/men/58.jpg" class="uk-margin-right"></div>
+				Eren Poçan</span>
+					<button class="uk-button uk-button-primary">Check in</button>
+				</a></td>
+		</tr>
+		<tr>
+			<td><a href="#" class="person uk-flex uk-flex-middle uk-flex-between uk-padding-small">
+				<span class="uk-flex uk-flex-middle"><div class="people-image"><img
+								src="https://randomuser.me/api/portraits/med/men/75.jpg" class="uk-margin-right"></div>
+				Ryan Ross</span>
+					<button class="uk-button uk-button-primary">Check in</button>
+				</a></td>
+		</tr>
+		<tr>
+			<td><a href="#" class="person uk-flex uk-flex-middle uk-flex-between uk-padding-small">
+				<span class="uk-flex uk-flex-middle"><div class="people-image"><img
+								src="https://randomuser.me/api/portraits/med/men/76.jpg" class="uk-margin-right"></div>
+				حسین جعفری</span>
+					<button class="uk-button uk-button-primary">Check in</button>
+				</a></td>
+		</tr>
+		</tbody>
+	</table>
+	<a href="#"
+			class="add-new uk-padding-small uk-text-muted uk-placeholder uk-text-center uk-margin-left uk-margin-right"
+			uk-toggle="target: #modal-example">Add New</a>
 </div>
 </body>
 </html>

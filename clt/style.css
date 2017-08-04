@@ -68,6 +68,10 @@ html, body {
 	max-width: 800px;
 }
 
+.cohort {
+	color: rgba(0,0,0,.9);
+}
+
 @font-face {
 	font-family: 'nowayregular';
 	src: url('font/noway-regular-webfont.eot');

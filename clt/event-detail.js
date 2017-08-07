@@ -5,15 +5,19 @@ $('document').ready(function() {
 	$(".cohort td[data-instance]").on("mouseover", function () {
 		var instanceIdentifier = $(this).attr("data-instance");
 		var cell = $(".cohort td[data-instance='"+instanceIdentifier+"']");
-		cell.fadeIn(100).fadeOut(100).fadeIn(100);
-		$(".instance-hint").html( instanceIdentifier )
+		$(".cohort td").removeClass('active');
+		cell.addClass('active');
+		$(".instance-hint").finish().fadeOut(40).html( instanceIdentifier ).fadeIn(300);
+	}).on("mouseout", function () {
+		$(".cohort td").removeClass('active');
 	});
 });
 
 var updateRecurrenceOptions = function( el ) {
 	var value = el.value;
-	$(".recurrence-options").children().hide();
-	$(".recurrence-options").children("."+value).show();
+	var options = $(".recurrence-options");
+	options.children().hide();
+	options.children("."+value).show();
 }
 
 

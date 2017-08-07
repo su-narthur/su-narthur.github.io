@@ -72,6 +72,16 @@ html, body {
 	color: rgba(0,0,0,.9);
 }
 
+.cohort td {
+	position: relative;
+}
+
+.cohort .active {
+	z-index: 10;
+	box-shadow: inset 0 0 1px rgba(0,0,0,.9),
+		0 0 1px rgba(0,0,0,.9);
+}
+
 @font-face {
 	font-family: 'nowayregular';
 	src: url('font/noway-regular-webfont.eot');

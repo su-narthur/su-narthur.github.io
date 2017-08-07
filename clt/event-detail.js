@@ -1,6 +1,13 @@
 $('document').ready(function() {
 	$(".recurrence-options").children().hide();
 	$(".recurrence-options .none").show();
+
+	$(".cohort td[data-instance]").on("mouseover", function () {
+		var instanceIdentifier = $(this).attr("data-instance");
+		var cell = $(".cohort td[data-instance='"+instanceIdentifier+"']");
+		cell.fadeIn(100).fadeOut(100).fadeIn(100);
+		$(".instance-hint").html( instanceIdentifier )
+	});
 });
 
 var updateRecurrenceOptions = function( el ) {

@@ -140,19 +140,19 @@
 						<div class="none">
 							<div>
 								<label for="date" class="uk-form-label">Date</label>
-								<input id="date" type="text" class="uk-input" placeholder="Date">
+								<input id="date" class="uk-input" placeholder="Date">
 							</div>
 						</div>
 						<div class="weekly">
 							<div uk-grid>
 								<div class="uk-width-1-2">
 									<label for="start-date" class="uk-form-label">Start Date</label>
-									<input id="start-date" type="text" class="uk-input" placeholder="Start Date">
+									<input id="start-date" class="uk-input" placeholder="Start Date">
 								</div>
 								
 								<div class="uk-width-1-2">
 									<label for="end-date" class="uk-form-label">End Date</label>
-									<input id="end-date" type="text" class="uk-input" placeholder="End Date">
+									<input id="end-date" class="uk-input" placeholder="End Date">
 								</div>
 							</div>
 							
@@ -170,12 +170,12 @@
 							<div uk-grid>
 								<div class="uk-width-1-2">
 									<label for="start-date" class="uk-form-label">Start Date</label>
-									<input id="start-date" type="text" class="uk-input" placeholder="Start Date">
+									<input id="start-date" class="uk-input" placeholder="Start Date">
 								</div>
 								
 								<div class="uk-width-1-2">
 									<label for="end-date" class="uk-form-label">End Date</label>
-									<input id="end-date" type="text" class="uk-input" placeholder="End Date">
+									<input id="end-date" class="uk-input" placeholder="End Date">
 								</div>
 							</div>
 						</div>
@@ -228,46 +228,52 @@
 
 					<tbody>
 						<tr>
-							<td title="" uk-tooltip>8/3 - The Millennial Man</td>
-							<td style="background: rgb(155,155,255);">4 / 100%</td>
-							<td style="background: rgb(230,230,255);">1 / 25%</td>
-							<td style="background: rgb(230,230,255);">1 / 25%</td>
-							<td style="background: rgb(230,230,255);">1 / 25%</td>
-							<td style="background: rgb(255,255,255);">0 / 0%</td>
+							<td>8/3 - The Millennial Man</td>
+							<td data-instance="8/3 - The Millennial Man" style="background: rgb(155,155,255);">4 / 100%</td>
+							<td data-instance="8/4 - Back to Jerusalem" style="background: rgb(230,230,255);">1 / 25%</td>
+							<td data-instance="8/5 - The Coming King" style="background: rgb(230,230,255);">1 / 25%</td>
+							<td data-instance="8/6 - The Rebellious Prince" style="background: rgb(230,230,255);">1 / 25%</td>
+							<td data-instance="8/7 - The Supreme Sacrifice" style="background: rgb(255,255,255);">0 / 0%</td>
 						</tr>
 						<tr>
-							<td title="" uk-tooltip>8/4 - Back to Jerusalem</td>
-							<td style="background: rgb(155,155,255);">8 / 100%</td>
-							<td style="background: rgb(167,167,255);">7 / 87.5%</td>
-							<td style="background: rgb(205,205,255);">4 / 50%</td>
-							<td style="background: rgb(205,205,255);">4 / 50%</td>
-							<td></td>
-						</tr>
-						<tr>
-							<td title="" uk-tooltip>8/5 - The Coming King</td>
-							<td style="background: rgb(155,155,255);">5 / 100%</td>
-							<td style="background: rgb(175,175,255);">4 / 80%</td>
-							<td style="background: rgb(235,235,255);">1 / 20%</td>
-							<td></td>
+							<td>8/4 - Back to Jerusalem</td>
+							<td data-instance="8/4 - Back to Jerusalem" style="background: rgb(155,155,255);">8 / 100%</td>
+							<td data-instance="8/5 - The Coming King" style="background: rgb(167,167,255);">7 / 87.5%</td>
+							<td data-instance="8/6 - The Rebellious Prince" style="background: rgb(205,205,255);">4 / 50%</td>
+							<td data-instance="8/7 - The Supreme Sacrifice" style="background: rgb(205,205,255);">4 / 50%</td>
 							<td></td>
 						</tr>
 						<tr>
-							<td title="" uk-tooltip>8/6 - The Rebellious Prince</td>
-							<td style="background: rgb(155,155,255);">7 / 100%</td>
-							<td style="background: rgb(198,198,255);">4 / 57%</td>
-							<td></td>
+							<td>8/5 - The Coming King</td>
+							<td data-instance="8/5 - The Coming King" style="background: rgb(155,155,255);">5 / 100%</td>
+							<td data-instance="8/6 - The Rebellious Prince" style="background: rgb(175,175,255);">4 / 80%</td>
+							<td data-instance="8/7 - The Supreme Sacrifice" style="background: rgb(235,235,255);">1 / 20%</td>
 							<td></td>
 							<td></td>
 						</tr>
 						<tr>
-							<td title="" uk-tooltip>8/7 - The Supreme Sacrifice</td>
-							<td style="background: rgb(155,155,255);">5 / 100%</td>
+							<td>8/6 - The Rebellious Prince</td>
+							<td data-instance="8/6 - The Rebellious Prince" style="background: rgb(155,155,255);">7 / 100%</td>
+							<td data-instance="8/7 - The Supreme Sacrifice" style="background: rgb(198,198,255);">4 / 57%</td>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>8/7 - The Supreme Sacrifice</td>
+							<td data-instance="8/7 - The Supreme Sacrifice" style="background: rgb(155,155,255);">5 / 100%</td>
 							<td></td>
 							<td></td>
 							<td></td>
 							<td></td>
 						</tr>
 					</tbody>
+					<tfoot>
+					<tr>
+						<td></td>
+						<td class="instance-hint" colspan="6"></td>
+					</tr>
+					</tfoot>
 				</table>
 			</div>
 			

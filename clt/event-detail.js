@@ -2,16 +2,27 @@ $('document').ready(function() {
 	$(".recurrence-options").children().hide();
 	$(".recurrence-options .none").show();
 
-	$(".cohort td[data-instance]").on("mouseover", function () {
-		var instanceIdentifier = $(this).attr("data-instance");
-		var cell = $(".cohort td[data-instance='"+instanceIdentifier+"']");
-		$(".cohort td").removeClass('active');
-		cell.addClass('active');
-		$(".instance-hint").finish().fadeOut(40).html( instanceIdentifier ).fadeIn(300);
+	$(".cohort td[data-date]").on("mouseover", function () {
+		var date = $(this).attr("data-date");
+		var topic = $(this).attr("data-topic");
+
+		highlightCells(date);
+		updateHint(date, topic);
 	}).on("mouseout", function () {
 		$(".cohort td").removeClass('active');
 	});
 });
+
+function updateHint(date, topic) {
+	var message = date + " - " + topic;
+	$(".instance-hint").finish().fadeOut(40).html(message).fadeIn(300);
+}
+
+function highlightCells(date) {
+	var cells = $(".cohort td[data-date='" + date + "']");
+	$(".cohort td").removeClass('active');
+	cells.addClass('active');
+}
 
 var updateRecurrenceOptions = function( el ) {
 	var value = el.value;

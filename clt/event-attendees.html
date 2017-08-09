@@ -17,11 +17,6 @@
 	<!--[if lt IE 9]>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
 	<![endif]-->
-	
-	<!--Load the AJAX API-->
-	<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
-	
-	<script type="text/javascript" src="event-detail.js"></script>
 </head>
 
 <body class="uk-grid-collapse" uk-grid>
@@ -206,74 +201,101 @@
 		<div class="uk-grid-collapse" uk-grid>
 			<div class="uk-width-2-3 uk-padding-small">
 				<ul uk-tab>
-					<li class="uk-active"><a href="#">Statistics</a></li>
-					<li><a href="event-attendees.html">Attendees</a></li>
+					<li><a href="event-detail.html">Statistics</a></li>
+					<li class="uk-active"><a href="#">Attendees</a></li>
 				</ul>
 				
-				<h3>Attendance Over Time</h3>
-				<div id="chart_div"></div>
-				
-				<h3>Visitor Retention</h3>
-				<table class="cohort uk-table uk-table-small">
-					<thead>
-						<tr>
-							<td>First Visit</td>
-							<td>+0 days</td>
-							<td>+1 days</td>
-							<td>+2 days</td>
-							<td>+3 days</td>
-							<td>+4 days</td>
-						</tr>
-					</thead>
-
+				<table class="uk-table uk-table-striped uk-width-1-1">
 					<tbody>
-						<tr>
-							<td>8/3 - The Millennial Man</td>
-							<td data-date="8/3" data-topic="The Millennial Man" style="background: rgb(155,155,255);">4 / 100%</td>
-							<td data-date="8/4" data-topic="Back to Jerusalem" style="background: rgb(230,230,255);">1 / 25%</td>
-							<td data-date="8/5" data-topic="The Coming King" style="background: rgb(230,230,255);">1 / 25%</td>
-							<td data-date="8/6" data-topic="The Rebellious Prince" style="background: rgb(230,230,255);">1 / 25%</td>
-							<td data-date="8/7" data-topic="The Supreme Sacrifice" style="background: rgb(255,255,255);">0 / 0%</td>
-						</tr>
-						<tr>
-							<td>8/4 - Back to Jerusalem</td>
-							<td data-date="8/4" data-topic="Back to Jerusalem" style="background: rgb(155,155,255);">8 / 100%</td>
-							<td data-date="8/5" data-topic="The Coming King" style="background: rgb(167,167,255);">7 / 87.5%</td>
-							<td data-date="8/6" data-topic="The Rebellious Prince" style="background: rgb(205,205,255);">4 / 50%</td>
-							<td data-date="8/7" data-topic="The Supreme Sacrifice" style="background: rgb(205,205,255);">4 / 50%</td>
-							<td></td>
-						</tr>
-						<tr>
-							<td>8/5 - The Coming King</td>
-							<td data-date="8/5" data-topic="The Coming King" style="background: rgb(155,155,255);">5 / 100%</td>
-							<td data-date="8/6" data-topic="The Rebellious Prince" style="background: rgb(175,175,255);">4 / 80%</td>
-							<td data-date="8/7" data-topic="The Supreme Sacrifice" style="background: rgb(235,235,255);">1 / 20%</td>
-							<td></td>
-							<td></td>
-						</tr>
-						<tr>
-							<td>8/6 - The Rebellious Prince</td>
-							<td data-date="8/6" data-topic="The Rebellious Prince" style="background: rgb(155,155,255);">7 / 100%</td>
-							<td data-date="8/7" data-topic="The Supreme Sacrifice" style="background: rgb(198,198,255);">4 / 57%</td>
-							<td></td>
-							<td></td>
-							<td></td>
-						</tr>
-						<tr>
-							<td>8/7 - The Supreme Sacrifice</td>
-							<td data-date="8/7" data-topic="The Supreme Sacrifice" style="background: rgb(155,155,255);">5 / 100%</td>
-							<td></td>
-							<td></td>
-							<td></td>
-							<td></td>
-						</tr>
-					</tbody>
-					<tfoot>
 					<tr>
-						<td></td>
-						<td class="instance-hint" colspan="6"></td>
+						<td>
+							<a href="#" class="person uk-flex uk-flex-middle uk-flex-between uk-padding-small">
+				<span class="uk-flex uk-flex-middle">
+					<div class="people-image"><img src="https://randomuser.me/api/portraits/med/men/42.jpg"
+								class="uk-margin-right"></div>
+					Rasmus Anttila
+				</span>
+								<button class="uk-button uk-button-danger uk-button-small">Check out</button>
+							</a>
+						</td>
 					</tr>
-					</tfoot>
+					<tr>
+						<td><a href="#" class="person uk-flex uk-flex-middle uk-flex-between uk-padding-small">
+				<span class="uk-flex uk-flex-middle">
+					<div class="people-image"><img src="https://randomuser.me/api/portraits/med/men/78.jpg"
+								class="uk-margin-right"></div>
+					Thibault Aubert
+				</span>
+								<button class="uk-button uk-button-danger uk-button-small">Check out</button>
+							</a></td>
+					</tr>
+					<tr>
+						<td><a href="#" class="person uk-flex uk-flex-middle uk-flex-between uk-padding-small">
+				<span class="uk-flex uk-flex-middle"><div class="people-image"><img
+								src="https://randomuser.me/api/portraits/med/women/49.jpg"
+								class="uk-margin-right"></div>
+				Olivia Brar</span>
+								<button class="uk-button uk-button-danger uk-button-small">Check out</button>
+							</a></td>
+					</tr>
+					<tr>
+						<td><a href="#" class="person uk-flex uk-flex-middle uk-flex-between uk-padding-small">
+				<span class="uk-flex uk-flex-middle"><div class="people-image"><img
+								src="https://randomuser.me/api/portraits/med/women/20.jpg"
+								class="uk-margin-right"></div>
+				Latife Denkel</span>
+								<button class="uk-button uk-button-danger uk-button-small">Check out</button>
+							</a></td>
+					</tr>
+					<tr>
+						<td><a href="#" class="person uk-flex uk-flex-middle uk-flex-between uk-padding-small">
+				<span class="uk-flex uk-flex-middle"><div class="people-image"><img
+								src="https://randomuser.me/api/portraits/med/men/1.jpg" class="uk-margin-right"></div>
+				Tom Laurent</span>
+								<button class="uk-button uk-button-danger uk-button-small">Check out</button>
+							</a></td>
+					</tr>
+					<tr>
+						<td><a href="#" class="person uk-flex uk-flex-middle uk-flex-between uk-padding-small">
+				<span class="uk-flex uk-flex-middle"><div class="people-image"><img
+								src="https://randomuser.me/api/portraits/med/men/5.jpg" class="uk-margin-right"></div>
+				Henry Moore</span>
+								<button class="uk-button uk-button-danger uk-button-small">Check out</button>
+							</a></td>
+					</tr>
+					<tr>
+						<td><a href="#" class="person uk-flex uk-flex-middle uk-flex-between uk-padding-small">
+				<span class="uk-flex uk-flex-middle"><div class="people-image"><img
+								src="https://randomuser.me/api/portraits/med/men/15.jpg" class="uk-margin-right"></div>
+				Loïc Moulin</span>
+								<button class="uk-button uk-button-danger uk-button-small">Check out</button>
+							</a></td>
+					</tr>
+					<tr>
+						<td><a href="#" class="person uk-flex uk-flex-middle uk-flex-between uk-padding-small">
+				<span class="uk-flex uk-flex-middle"><div class="people-image"><img
+								src="https://randomuser.me/api/portraits/med/men/58.jpg" class="uk-margin-right"></div>
+				Eren Poçan</span>
+								<button class="uk-button uk-button-danger uk-button-small">Check out</button>
+							</a></td>
+					</tr>
+					<tr>
+						<td><a href="#" class="person uk-flex uk-flex-middle uk-flex-between uk-padding-small">
+				<span class="uk-flex uk-flex-middle"><div class="people-image"><img
+								src="https://randomuser.me/api/portraits/med/men/75.jpg" class="uk-margin-right"></div>
+				Ryan Ross</span>
+								<button class="uk-button uk-button-danger uk-button-small">Check out</button>
+							</a></td>
+					</tr>
+					<tr>
+						<td><a href="#" class="person uk-flex uk-flex-middle uk-flex-between uk-padding-small">
+				<span class="uk-flex uk-flex-middle"><div class="people-image"><img
+								src="https://randomuser.me/api/portraits/med/men/76.jpg" class="uk-margin-right"></div>
+				حسین جعفری</span>
+								<button class="uk-button uk-button-danger uk-button-small">Check out</button>
+							</a></td>
+					</tr>
+					</tbody>
 				</table>
 			</div>
 			

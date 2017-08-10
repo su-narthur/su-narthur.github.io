@@ -3,7 +3,8 @@ html, body {
 	font-family: nowayregular, sans-serif;
 }
 
-.main-nav .uk-background-primary {
+.main-nav .uk-background-primary,
+.mobile-nav .uk-background-primary {
 	color: white;
 }
 
@@ -115,6 +116,27 @@ html, body {
 	left: 0;
 	right: 0;
 	box-shadow: 0 5px 15px rgba(0,0,0,.5);
+}
+
+.mobile-nav {
+	height: 74px;
+	padding-left: 0;
+	padding-right: 70px;
+	overflow: hidden;
+	margin-bottom: 0;
+}
+
+.mobile-nav > li {
+	display: block;
+	flex: 1 0 64px;
+	height: 74px;
+}
+
+.nav .more {
+	width: 70px;
+	position: absolute;
+	top: 0;
+	right: 0;
 }
 
 .back {

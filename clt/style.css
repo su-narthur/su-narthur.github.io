@@ -82,6 +82,15 @@ html, body {
 		0 0 1px rgba(0,0,0,.9);
 }
 
+.sidebar {
+	overflow: hidden;
+	z-index:10;
+}
+
+.content {
+	overflow: hidden;
+}
+
 @font-face {
 	font-family: 'nowayregular';
 	src: url('font/noway-regular-webfont.eot');

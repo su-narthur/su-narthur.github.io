@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
 
 twig 'src/**/*.html' --root src/ --output dist/
+less-cli ./css
 
 rm ./index.html
 

@@ -11,6 +11,7 @@ do
 	fswatch -1 ${BASEDIR}/src ${BASEDIR}/css
 
 	${BASEDIR}/build.sh
+
 	echo "Finished rebuilding"
-	osascript -e 'on run {t}' -e "display notification \"${d##*/}\" with title \"Finished rebuilding\"" -e end title
+	osascript -e 'on run {t}' -e "display notification \"\" with title \"Finished rebuilding\"" -e end title
 done

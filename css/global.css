@@ -37,7 +37,6 @@ body > * {
   left: 0;
   right: 0;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
-  height: 50px;
   overflow: hidden;
   margin-bottom: 0;
   padding-left: 0;
@@ -48,7 +47,14 @@ body > * {
 .organism-nav > li {
   display: block;
   flex: 1 0 0;
-  height: 50px;
+}
+.organism-nav > li .label {
+  display: none;
+}
+@media (min-width: 600px) {
+  .organism-nav > li .label {
+    display: inline;
+  }
 }
 @media (min-width: 768px) {
   .organism-nav {
@@ -56,7 +62,7 @@ body > * {
     height: auto;
     flex-direction: column;
     justify-content: center;
-    flex: 0 0 3rem;
+    flex: 0 0 7rem;
   }
   .organism-nav > li {
     flex: 0 0 auto;

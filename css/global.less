@@ -1,30 +1,71 @@
+@screenXsMin: 600px;
+@screenSmMin: 768px;
+@screenMdMin: 992px;
+@screenLgMin: 1200px;
+
+@screenXsMax: ( @screenSmMin - 1 );
+@screenSmMax: ( @screenMdMin - 1 );
+@screenMdMax: ( @screenLgMin - 1 );
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	display: flex;
+	flex-direction: column;
+	align-items: stretch;
+	min-height: 100vh;
+	> * {
+		flex: 1 1 auto;
+	}
+	@media (min-width: @screenXsMin) {
+		flex-direction: row;
+	}
+}
+
 .organism-nav {
-	.nav {
-		position: absolute;
-		bottom: 0;
-		left: 0;
-		right: 0;
-		box-shadow: 0 5px 15px rgba(0,0,0,.5);
-	}
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	box-shadow: 0 5px 15px rgba(0,0,0,.5);
+	height: 50px;
+	overflow: hidden;
+	margin-bottom: 0;
+	padding-left: 0;
+	display: flex;
+	z-index: 10;
 
-	.mobile-nav {
-		height: 50px;
-		padding-left: 0;
-		padding-right: 70px;
-		overflow: hidden;
-		margin-bottom: 0;
-	}
-
-	.mobile-nav > li {
+	> li {
 		display: block;
-		flex: 1 0 50px;
+		flex: 1 0 0;
 		height: 50px;
 	}
 
-	.nav .more {
-		width: 50px;
-		position: absolute;
-		top: 0;
-		right: 0;
+	@media (min-width: @screenSmMin) {
+		position: relative;
+		height: auto;
+		flex-direction: column;
+		justify-content: center;
+		flex: 0 0 3rem;
+
+		> li {
+			flex: 0 0 auto;
+		}
+	}
+}
+
+.organism-listPanel {
+	flex: 0 0 50%;
+	@media (min-width: @screenSmMin) {
+		flex: 0 0 33%;
+	}
+}
+
+.organism-content {
+	flex: 0 0 50%;
+	@media (min-width: @screenSmMin) {
+		flex: 0 0 66%;
 	}
 }

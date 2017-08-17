@@ -1,7 +1,9 @@
 #!/usr/bin/env bash
 
-twig 'src/**/*.html' --root src/ --output dist/
-less-cli ./css
+BASEDIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+
+(cd ${BASEDIR}; twig "src/**/*.html" --root src/ --output dist/)
+lessc ${BASEDIR}/css/global.less ${BASEDIR}/css/global.css --include-path=${BASEDIR}/css --source-map
 
 rm ./index.html
 

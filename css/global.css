@@ -15,6 +15,22 @@ body > * {
     flex-direction: row;
   }
 }
+.organism-listPanel {
+  flex: 0 0 50%;
+}
+@media (min-width: 768px) {
+  .organism-listPanel {
+    flex: 0 0 33%;
+  }
+}
+.organism-content {
+  flex: 0 0 50%;
+}
+@media (min-width: 768px) {
+  .organism-content {
+    flex: 0 0 66%;
+  }
+}
 .organism-nav {
   position: fixed;
   bottom: 0;
@@ -27,6 +43,7 @@ body > * {
   padding-left: 0;
   display: flex;
   z-index: 10;
+  margin-top: 0;
 }
 .organism-nav > li {
   display: block;
@@ -45,19 +62,4 @@ body > * {
     flex: 0 0 auto;
   }
 }
-.organism-listPanel {
-  flex: 0 0 50%;
-}
-@media (min-width: 768px) {
-  .organism-listPanel {
-    flex: 0 0 33%;
-  }
-}
-.organism-content {
-  flex: 0 0 50%;
-}
-@media (min-width: 768px) {
-  .organism-content {
-    flex: 0 0 66%;
-  }
-}
+/*# sourceMappingURL=global.css.map */

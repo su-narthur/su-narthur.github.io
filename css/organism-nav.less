@@ -19,22 +19,20 @@
 		}
 	}
 
-	@media (min-width: @screenXsMin) {
-		> li {
-			.label {
-				display: inline;
-			}
-		}
-	}
-
 	@media (min-width: @screenSmMin) {
 		position: relative;
 		height: auto;
 		flex-direction: column;
 		justify-content: center;
 		flex: 0 0 7rem;
-
 		> li {
+			svg {
+				width: 100%;
+				height: 40px;
+			}
+			.label {
+				display: inline;
+			}
 			flex: 0 0 auto;
 		}
 	}

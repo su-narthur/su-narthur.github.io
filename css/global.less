@@ -11,19 +11,21 @@
 	box-sizing: border-box;
 }
 
+html, body {
+	overflow: hidden;
+}
+
 body {
 	display: flex;
-	flex-direction: column;
 	align-items: stretch;
 	height: 100vh;
 	> * {
-		flex: 1 1 auto;
-	}
-	@media (min-width: @screenXsMin) {
-		flex-direction: row;
+		flex: 0 0 100%;
 	}
 }
 
 @import "organism-content";
 @import "organism-listPanel";
 @import "organism-nav";
+
+@import "layout-default";

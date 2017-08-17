@@ -1,19 +1,17 @@
 * {
   box-sizing: border-box;
 }
+html,
+body {
+  overflow: hidden;
+}
 body {
   display: flex;
-  flex-direction: column;
   align-items: stretch;
   height: 100vh;
 }
 body > * {
-  flex: 1 1 auto;
-}
-@media (min-width: 600px) {
-  body {
-    flex-direction: row;
-  }
+  flex: 0 0 100%;
 }
 .organism-content {
   overflow: auto;
@@ -21,7 +19,7 @@ body > * {
 }
 @media (min-width: 600px) {
   .organism-content {
-    flex: 0 0 50%;
+    flex: 0 0 60%;
   }
 }
 @media (min-width: 768px) {
@@ -35,7 +33,7 @@ body > * {
 }
 @media (min-width: 600px) {
   .organism-listPanel {
-    flex: 0 0 50%;
+    flex: 0 0 40%;
   }
 }
 @media (min-width: 768px) {
@@ -63,11 +61,6 @@ body > * {
 .organism-nav > li .label {
   display: none;
 }
-@media (min-width: 600px) {
-  .organism-nav > li .label {
-    display: inline;
-  }
-}
 @media (min-width: 768px) {
   .organism-nav {
     position: relative;
@@ -78,6 +71,32 @@ body > * {
   }
   .organism-nav > li {
     flex: 0 0 auto;
+  }
+  .organism-nav > li svg {
+    width: 100%;
+    height: 40px;
+  }
+  .organism-nav > li .label {
+    display: inline;
+  }
+}
+.organism-listPanel,
+.organism-content {
+  position: relative;
+  left: 0;
+  transition: left 300ms;
+}
+.detail-active .organism-listPanel,
+.detail-active .organism-content {
+  left: -100%;
+}
+@media (min-width: 600px) {
+  .to-list {
+    display: none;
+  }
+  .detail-active .organism-listPanel,
+  .detail-active .organism-content {
+    left: 0;
   }
 }
 /*# sourceMappingURL=global.css.map */

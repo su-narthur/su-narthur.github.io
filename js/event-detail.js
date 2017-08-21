@@ -47,7 +47,7 @@ function drawChart() {
 
 	// Create the data table.
 	var data = new google.visualization.DataTable();
-	data.addColumn('string', 'Topping');
+	data.addColumn('string', 'Date');
 	data.addColumn('number', 'Visitors');
 	data.addColumn('number', 'Members');
 	data.addColumn('number', 'Daily Total Attendance');
@@ -69,5 +69,12 @@ function drawChart() {
 	// Instantiate and draw our chart, passing in some options.
 	var chart = new google.visualization.LineChart(document.getElementById('chart_div'));
 	chart.draw(data, options);
-	$(window).resize(function(){ chart.draw(data, options); });
+	$(window).resize(function(){
+		// redraw twice in order to fix issue with chart inside resizable flex child
+		var chartDiv = $('#chart_div');
+		chartDiv.width(0);
+		chart.draw(data, options);
+		chartDiv.width('auto');
+		chart.draw(data, options);
+	});
 }

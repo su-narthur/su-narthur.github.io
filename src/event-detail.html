@@ -1,9 +1,9 @@
-{% extends "components/layout-default.html" %}
+{% extends "components/layout-contentColumns.html" %}
 
 {% block backTitle %}< Events{% endblock %}
-{% block pageTitle %}Event 3.5bbb{% endblock %}
+{% block pageTitle %}Event 3.5b{% endblock %}
 
-{% block sidebar %}
+{% block listPanel %}
 	<h2>Events</h2>
 	<ul>
 		<li><a href="#" class="to-detail">Event</a></li>
@@ -14,148 +14,144 @@
 	</ul>
 {% endblock %}
 
-{% block content %}
-	{% embed "components/organism-contentColumns.html" %}
-		{% block main %}
-			<ul uk-tab>
-				<li class="uk-active"><a href="#">Statistics</a></li>
-				<li><a href="event-attendees.html">Attendees</a></li>
-			</ul>
-			
-			<h3>Attendance Over Time</h3>
-			<div id="chart_div"></div>
-			
-			<h3>Visitor Retention</h3>
-			<table class="cohort uk-table uk-table-small">
-				<thead>
-				<tr>
-					<td>First Visit</td>
-					<td>+0 days</td>
-					<td>+1 days</td>
-					<td>+2 days</td>
-					<td>+3 days</td>
-					<td>+4 days</td>
-				</tr>
-				</thead>
-				
-				<tbody>
-				<tr>
-					<td>8/3 - The Millennial Man</td>
-					<td data-date="8/3" data-topic="The Millennial Man" style="background: rgb(155,155,255);">4 /
-						100%
-					</td>
-					<td data-date="8/4" data-topic="Back to Jerusalem" style="background: rgb(230,230,255);">1 /
-						25%
-					</td>
-					<td data-date="8/5" data-topic="The Coming King" style="background: rgb(230,230,255);">1 / 25%
-					</td>
-					<td data-date="8/6" data-topic="The Rebellious Prince" style="background: rgb(230,230,255);">1 /
-						25%
-					</td>
-					<td data-date="8/7" data-topic="The Supreme Sacrifice" style="background: rgb(255,255,255);">0 /
-						0%
-					</td>
-				</tr>
-				<tr>
-					<td>8/4 - Back to Jerusalem</td>
-					<td data-date="8/4" data-topic="Back to Jerusalem" style="background: rgb(155,155,255);">8 /
-						100%
-					</td>
-					<td data-date="8/5" data-topic="The Coming King" style="background: rgb(167,167,255);">7 /
-						87.5%
-					</td>
-					<td data-date="8/6" data-topic="The Rebellious Prince" style="background: rgb(205,205,255);">4 /
-						50%
-					</td>
-					<td data-date="8/7" data-topic="The Supreme Sacrifice" style="background: rgb(205,205,255);">4 /
-						50%
-					</td>
-					<td></td>
-				</tr>
-				<tr>
-					<td>8/5 - The Coming King</td>
-					<td data-date="8/5" data-topic="The Coming King" style="background: rgb(155,155,255);">5 /
-						100%
-					</td>
-					<td data-date="8/6" data-topic="The Rebellious Prince" style="background: rgb(175,175,255);">4 /
-						80%
-					</td>
-					<td data-date="8/7" data-topic="The Supreme Sacrifice" style="background: rgb(235,235,255);">1 /
-						20%
-					</td>
-					<td></td>
-					<td></td>
-				</tr>
-				<tr>
-					<td>8/6 - The Rebellious Prince</td>
-					<td data-date="8/6" data-topic="The Rebellious Prince" style="background: rgb(155,155,255);">7 /
-						100%
-					</td>
-					<td data-date="8/7" data-topic="The Supreme Sacrifice" style="background: rgb(198,198,255);">4 /
-						57%
-					</td>
-					<td></td>
-					<td></td>
-					<td></td>
-				</tr>
-				<tr>
-					<td>8/7 - The Supreme Sacrifice</td>
-					<td data-date="8/7" data-topic="The Supreme Sacrifice" style="background: rgb(155,155,255);">5 /
-						100%
-					</td>
-					<td></td>
-					<td></td>
-					<td></td>
-					<td></td>
-				</tr>
-				</tbody>
-				<tfoot>
-				<tr>
-					<td></td>
-					<td class="instance-hint" colspan="6"></td>
-				</tr>
-				</tfoot>
-			</table>
-		{% endblock %}
+{% block main %}
+	<ul uk-tab>
+		<li class="uk-active"><a href="#">Statistics</a></li>
+		<li><a href="event-attendees.html">Attendees</a></li>
+	</ul>
+	
+	<h3>Attendance Over Time</h3>
+	<div id="chart_div"></div>
+	
+	<h3>Visitor Retention</h3>
+	<table class="cohort uk-table uk-table-small">
+		<thead>
+		<tr>
+			<td>First Visit</td>
+			<td>+0 days</td>
+			<td>+1 days</td>
+			<td>+2 days</td>
+			<td>+3 days</td>
+			<td>+4 days</td>
+		</tr>
+		</thead>
 		
-		{% block secondary %}
-			<div class="uk-flex">
-				<select class="uk-select uk-margin-small-right">
-					<option>8/3 7–8pm - The Millennial Man</option>
-					<option>8/4 7–8pm - Back to Jerusalem</option>
-					<option>8/5 7–8pm - The Coming King</option>
-					<option>8/6 7–8pm - The Rebellious Prince</option>
-					<option>8/7 7–8pm - The Supreme Sacrifice</option>
-				</select>
-				<a href="check-in.html" class="uk-button uk-button-primary uk-flex-none">Record Attendance</a>
-			</div>
-			<br>
-			<div class="uk-overflow-auto">
-				<table class="profile-info uk-table uk-table-small uk-table-divider">
-					<tbody>
-					<tr>
-						<td>Location</td>
-						<td>Church Gym</td>
-					</tr>
-					<tr>
-						<td>Recur</td>
-						<td>Weekly: Thur, Fri, Sat</td>
-					</tr>
-					<tr>
-						<td>Start</td>
-						<td>June 7</td>
-					</tr>
-					<tr>
-						<td>End</td>
-						<td>June 27</td>
-					</tr>
-					<tr>
-						<td>Workflow</td>
-						<td>Workflow 3</td>
-					</tr>
-					</tbody>
-				</table>
-			</div>
-		{% endblock %}
-	{% endembed %}
+		<tbody>
+		<tr>
+			<td>8/3 - The Millennial Man</td>
+			<td data-date="8/3" data-topic="The Millennial Man" style="background: rgb(155,155,255);">4 /
+				100%
+			</td>
+			<td data-date="8/4" data-topic="Back to Jerusalem" style="background: rgb(230,230,255);">1 /
+				25%
+			</td>
+			<td data-date="8/5" data-topic="The Coming King" style="background: rgb(230,230,255);">1 / 25%
+			</td>
+			<td data-date="8/6" data-topic="The Rebellious Prince" style="background: rgb(230,230,255);">1 /
+				25%
+			</td>
+			<td data-date="8/7" data-topic="The Supreme Sacrifice" style="background: rgb(255,255,255);">0 /
+				0%
+			</td>
+		</tr>
+		<tr>
+			<td>8/4 - Back to Jerusalem</td>
+			<td data-date="8/4" data-topic="Back to Jerusalem" style="background: rgb(155,155,255);">8 /
+				100%
+			</td>
+			<td data-date="8/5" data-topic="The Coming King" style="background: rgb(167,167,255);">7 /
+				87.5%
+			</td>
+			<td data-date="8/6" data-topic="The Rebellious Prince" style="background: rgb(205,205,255);">4 /
+				50%
+			</td>
+			<td data-date="8/7" data-topic="The Supreme Sacrifice" style="background: rgb(205,205,255);">4 /
+				50%
+			</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td>8/5 - The Coming King</td>
+			<td data-date="8/5" data-topic="The Coming King" style="background: rgb(155,155,255);">5 /
+				100%
+			</td>
+			<td data-date="8/6" data-topic="The Rebellious Prince" style="background: rgb(175,175,255);">4 /
+				80%
+			</td>
+			<td data-date="8/7" data-topic="The Supreme Sacrifice" style="background: rgb(235,235,255);">1 /
+				20%
+			</td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td>8/6 - The Rebellious Prince</td>
+			<td data-date="8/6" data-topic="The Rebellious Prince" style="background: rgb(155,155,255);">7 /
+				100%
+			</td>
+			<td data-date="8/7" data-topic="The Supreme Sacrifice" style="background: rgb(198,198,255);">4 /
+				57%
+			</td>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td>8/7 - The Supreme Sacrifice</td>
+			<td data-date="8/7" data-topic="The Supreme Sacrifice" style="background: rgb(155,155,255);">5 /
+				100%
+			</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+		</tbody>
+		<tfoot>
+		<tr>
+			<td></td>
+			<td class="instance-hint" colspan="6"></td>
+		</tr>
+		</tfoot>
+	</table>
+{% endblock %}
+
+{% block secondary %}
+	<div class="uk-flex">
+		<select class="uk-select uk-margin-small-right">
+			<option>8/3 7–8pm - The Millennial Man</option>
+			<option>8/4 7–8pm - Back to Jerusalem</option>
+			<option>8/5 7–8pm - The Coming King</option>
+			<option>8/6 7–8pm - The Rebellious Prince</option>
+			<option>8/7 7–8pm - The Supreme Sacrifice</option>
+		</select>
+		<a href="check-in.html" class="uk-button uk-button-primary uk-flex-none">Record Attendance</a>
+	</div>
+	<br>
+	<div class="uk-overflow-auto">
+		<table class="profile-info uk-table uk-table-small uk-table-divider">
+			<tbody>
+			<tr>
+				<td>Location</td>
+				<td>Church Gym</td>
+			</tr>
+			<tr>
+				<td>Recur</td>
+				<td>Weekly: Thur, Fri, Sat</td>
+			</tr>
+			<tr>
+				<td>Start</td>
+				<td>June 7</td>
+			</tr>
+			<tr>
+				<td>End</td>
+				<td>June 27</td>
+			</tr>
+			<tr>
+				<td>Workflow</td>
+				<td>Workflow 3</td>
+			</tr>
+			</tbody>
+		</table>
+	</div>
 {% endblock %}

@@ -78,6 +78,17 @@ body > * {
     display: inline;
   }
 }
+@media (min-width: 1550px) {
+  .layout-contentColumns {
+    display: flex;
+  }
+  .layout-contentColumns > .main {
+    flex: 0 0 66%;
+  }
+  .layout-contentColumns > .secondary {
+    flex: 0 0 33%;
+  }
+}
 .organism-listPanel,
 .organism-content {
   position: relative;

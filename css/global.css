@@ -13,18 +13,21 @@ body {
 body > * {
   flex: 0 0 100%;
 }
+.atom-version {
+  color: rgba(0, 0, 0, 0.3);
+}
+@media (min-width: 600px) {
+  .atom-detailTitle {
+    margin-top: 0;
+  }
+}
 .organism-content {
   overflow: auto;
   padding-bottom: 75px;
 }
 @media (min-width: 600px) {
   .organism-content {
-    flex: 0 0 60%;
-  }
-}
-@media (min-width: 768px) {
-  .organism-content {
-    flex: 0 1 66%;
+    flex: 1 2 auto;
   }
 }
 .organism-listPanel {
@@ -33,12 +36,7 @@ body > * {
 }
 @media (min-width: 600px) {
   .organism-listPanel {
-    flex: 0 0 40%;
-  }
-}
-@media (min-width: 768px) {
-  .organism-listPanel {
-    flex: 0 1 33%;
+    flex: 0 0 300px;
   }
 }
 .organism-nav {

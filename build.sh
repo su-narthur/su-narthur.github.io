@@ -2,7 +2,7 @@
 
 BASEDIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 
-(cd ${BASEDIR}; twig "src/**/*.html" --root src/ --output dist/)
+php compile-twig.php
 lessc ${BASEDIR}/css/global.less ${BASEDIR}/css/global.css --include-path=${BASEDIR}/css --source-map
 
 rm ./index.html

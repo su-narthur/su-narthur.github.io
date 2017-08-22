@@ -21,6 +21,15 @@ body > * {
     margin-top: 0;
   }
 }
+.molecule-cohort {
+  font-size: .8rem;
+  max-width: 100%;
+  overflow: auto;
+  display: block;
+}
+.molecule-cohort td {
+  padding: 7px;
+}
 .organism-content {
   overflow: auto;
   padding-bottom: 75px;

@@ -41,8 +41,14 @@ function drawChart() {
 
 	// Set chart options
 	var options = {
-		title: 'Attendance',
-		legend: { position: 'top' }
+		legend: { position: 'top' },
+		'chartArea': {
+			'top': 20,
+			'left': 30,
+			'bottom': 10,
+			'width': '100%',
+			'height': '100%'
+		}
 	};
 
 	// Instantiate and draw our chart, passing in some options.

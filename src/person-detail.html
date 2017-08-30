@@ -1,0 +1,115 @@
+{% extends "components/layout-contentColumns.html" %}
+
+{% block backTitle %}< People{% endblock %}
+{% block pageTitle %}Jesse Doe{% endblock %}
+
+{% block main %}
+  main
+{% endblock %}
+
+{% block secondary %}
+  <button class="uk-button uk-button-default uk-button-small" uk-toggle="target: #edit-modal">Edit</button>
+  <div id="edit-modal" uk-modal>
+    <div class="uk-modal-dialog uk-modal-body">
+      <h2 class="uk-modal-title">Edit Person</h2>
+  
+      <form>
+        <div class="uk-margin">
+          <label class="uk-form-label uk-text-large" for="full-name">Full Name</label>
+          <div class="uk-form-controls">
+            <input class="uk-input uk-form-width-large" id="full-name" type="text" placeholder="Full Name">
+          </div>
+        </div>
+  
+        <div class="uk-margin">
+          <label class="uk-form-label uk-text-large" for="birthday">Birthday</label>
+          <div class="uk-form-controls">
+            <input class="uk-input uk-form-width-large" id="birthday" type="text" placeholder="Birthday">
+          </div>
+        </div>
+  
+        <div class="uk-margin">
+          <div class="uk-form-label uk-text-large">Gender</div>
+          <div class="uk-form-controls">
+            <label><input class="uk-radio" type="radio" name="radio1"> Male</label><br>
+            <label><input class="uk-radio" type="radio" name="radio1"> Female</label><br>
+            <label><input class="uk-radio" type="radio" name="radio1"> Prefer not to say</label>
+          </div>
+        </div>
+  
+        <div class="uk-margin">
+          <label class="uk-form-label uk-text-large" for="birthday">Email Addresses</label>
+          <div class="uk-form-controls">
+            <ul class="uk-list" uk-sortable="handle: .uk-sortable-handle">
+              <li>
+                <span class="uk-sortable-handle uk-margin-small-right" uk-icon="icon: table"></span>
+                <input class="uk-input uk-form-width-small" type="text" placeholder="Label">
+                <input class="uk-input uk-form-width-medium" type="text" placeholder="Address">
+                <a href="#"><span uk-icon="icon: trash"></span></a>
+              </li>
+              <li>
+                <span class="uk-sortable-handle uk-margin-small-right" uk-icon="icon: table"></span>
+                <input class="uk-input uk-form-width-small" type="text" placeholder="Label">
+                <input class="uk-input uk-form-width-medium" type="text" placeholder="Address">
+                <a href="#"><span uk-icon="icon: trash"></span></a>
+              </li>
+            </ul>
+            <a href="#">Add</a>
+          </div>
+        </div>
+  
+        <div class="uk-margin">
+          <label class="uk-form-label uk-text-large" for="birthday">Phone Numbers</label>
+          <div class="uk-form-controls">
+              <ul class="uk-list" uk-sortable="handle: .uk-sortable-handle">
+                <li>
+                  <span class="uk-sortable-handle uk-margin-small-right" uk-icon="icon: table"></span>
+                  <input class="uk-input uk-form-width-small" type="text" placeholder="Label">
+                  <input class="uk-input uk-form-width-medium" type="text" placeholder="Number">
+                  <a href="#"><span uk-icon="icon: trash"></span></a>
+                </li>
+                <li>
+                  <span class="uk-sortable-handle uk-margin-small-right" uk-icon="icon: table"></span>
+                  <input class="uk-input uk-form-width-small" type="text" placeholder="Label">
+                  <input class="uk-input uk-form-width-medium" type="text" placeholder="Number">
+                  <a href="#"><span uk-icon="icon: trash"></span></a>
+                </li>
+              </ul>
+            <a href="#">Add</a>
+          </div>
+        </div>
+  
+        <div class="uk-margin">
+          <label class="uk-form-label uk-text-large" for="label">Addresses</label>
+          <ul class="uk-list uk-list-divider" uk-sortable="handle: .uk-sortable-handle">
+            <li class="uk-form-controls" uk-margin>
+              <span class="uk-sortable-handle uk-margin-small-right" uk-icon="icon: table"></span>
+              <input class="uk-input uk-form-width-large" id="label" type="text" placeholder="Label">
+              <input class="uk-input uk-form-width-large" id="street" type="text" placeholder="Street">
+              <input class="uk-input uk-form-width-medium" id="city" type="text" placeholder="City">
+              <input class="uk-input uk-form-width-small" id="state" type="text" placeholder="State">
+              <input class="uk-input uk-form-width-small" id="zip" type="text" placeholder="Zip">
+              <a href="#"><span uk-icon="icon: trash"></span></a>
+            </li>
+            <li class="uk-form-controls" uk-margin>
+              <span class="uk-sortable-handle uk-margin-small-right" uk-icon="icon: table"></span>
+              <input class="uk-input uk-form-width-large" id="label" type="text" placeholder="Label">
+              <input class="uk-input uk-form-width-large" id="street" type="text" placeholder="Street">
+              <input class="uk-input uk-form-width-medium" id="city" type="text" placeholder="City">
+              <input class="uk-input uk-form-width-small" id="state" type="text" placeholder="State">
+              <input class="uk-input uk-form-width-small" id="zip" type="text" placeholder="Zip">
+              <a href="#"><span uk-icon="icon: trash"></span></a>
+            </li>
+          </ul>
+        </div>
+        
+        <label>Custom Fields</label>
+      </form>
+      
+      <p class="uk-text-right">
+        <button class="uk-button uk-button-default uk-modal-close" type="button">Cancel</button>
+        <button class="uk-button uk-button-primary" type="button">Save</button>
+      </p>
+    </div>
+  </div>
+{% endblock %}

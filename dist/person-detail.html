@@ -1,0 +1,199 @@
+<!doctype html>
+
+<html lang="en" class="uk-width-1-1">
+<head>
+	<meta charset="utf-8">
+	
+	<title>Church Life Tools</title>
+	
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.28/css/uikit.min.css" />
+	<link rel="stylesheet" href="../css/global.css" />
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.28/js/uikit.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.28/js/uikit-icons.min.js"></script>
+	
+	<!--[if lt IE 9]>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
+	<![endif]-->
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<script src="../js/responsive.js"></script>
+	
+	<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+	<script src="../js/event-detail.js"></script>
+</head>
+
+<body>
+
+<ul class="organism-nav uk-text-center uk-background-muted">
+	<li>
+		<a href="#" class="uk-flex uk-flex-column uk-padding-small uk-padding-remove-left uk-padding-remove-right">
+			<i uk-icon="icon: thumbnails"></i>
+			<span class="label">Dashboard</span>
+		</a>
+	</li>
+	<li>
+		<a href="#" class="uk-flex uk-flex-column uk-padding-small uk-padding-remove-left uk-padding-remove-right">
+			<i uk-icon="icon: user"></i>
+			<span class="label">Users</span>
+		</a>
+	</li>
+	<li>
+		<a href="#" class="uk-flex uk-flex-column uk-padding-small uk-padding-remove-left uk-padding-remove-right">
+			<i uk-icon="icon: users"></i>
+			<span class="label">Groups</span>
+		</a>
+	</li>
+	<li>
+		<a href="#" class="uk-flex uk-flex-column uk-padding-small uk-padding-remove-left uk-padding-remove-right uk-background-primary uk-light">
+			<i uk-icon="icon: calendar"></i>
+			<span class="label">Events</span>
+		</a>
+	</li>
+	<li>
+		<a href="#" class="uk-flex uk-flex-column uk-padding-small uk-padding-remove-left uk-padding-remove-right">
+			<i uk-icon="icon: heart"></i>
+			<span class="label">Giving</span>
+		</a>
+	</li>
+	<li>
+		<a href="#" class="uk-flex uk-flex-column uk-padding-small uk-padding-remove-left uk-padding-remove-right">
+			<i uk-icon="icon: world"></i>
+			<span class="label">Conference</span>
+		</a>
+	</li>
+	<li>
+		<a href="#" class="uk-flex uk-flex-column uk-padding-small uk-padding-remove-left uk-padding-remove-right">
+			<i uk-icon="icon: file-edit"></i>
+			<span class="label">Reports</span>
+		</a>
+	</li>
+</ul>
+<div class="organism-listPanel uk-card uk-card-default uk-padding">
+	</div>
+
+<div class="organism-content uk-card uk-card-default uk-padding-small">
+	<a href="#" class="to-list">< People</a>
+	<h2 class="atom-detailTitle">Jesse Doe</h2>
+	
+		<div class="layout-contentColumns">
+		<div class="main">
+			  main
+		</div>
+		
+		<div class="secondary uk-padding-small">
+			  <button class="uk-button uk-button-default uk-button-small" uk-toggle="target: #edit-modal">Edit</button>
+  <div id="edit-modal" uk-modal>
+    <div class="uk-modal-dialog uk-modal-body">
+      <h2 class="uk-modal-title">Edit Person</h2>
+  
+      <form>
+        <div class="uk-margin">
+          <label class="uk-form-label uk-text-large" for="full-name">Full Name</label>
+          <div class="uk-form-controls">
+            <input class="uk-input uk-form-width-large" id="full-name" type="text" placeholder="Full Name">
+          </div>
+        </div>
+  
+        <div class="uk-margin">
+          <label class="uk-form-label uk-text-large" for="birthday">Birthday</label>
+          <div class="uk-form-controls">
+            <input class="uk-input uk-form-width-large" id="birthday" type="text" placeholder="Birthday">
+          </div>
+        </div>
+  
+        <div class="uk-margin">
+          <div class="uk-form-label uk-text-large">Gender</div>
+          <div class="uk-form-controls">
+            <label><input class="uk-radio" type="radio" name="radio1"> Male</label><br>
+            <label><input class="uk-radio" type="radio" name="radio1"> Female</label><br>
+            <label><input class="uk-radio" type="radio" name="radio1"> Prefer not to say</label>
+          </div>
+        </div>
+  
+        <div class="uk-margin">
+          <label class="uk-form-label uk-text-large" for="birthday">Email Addresses</label>
+          <div class="uk-form-controls">
+            <ul class="uk-list" uk-sortable="handle: .uk-sortable-handle">
+              <li>
+                <span class="uk-sortable-handle uk-margin-small-right" uk-icon="icon: table"></span>
+                <input class="uk-input uk-form-width-small" type="text" placeholder="Label">
+                <input class="uk-input uk-form-width-medium" type="text" placeholder="Address">
+                <a href="#"><span uk-icon="icon: trash"></span></a>
+              </li>
+              <li>
+                <span class="uk-sortable-handle uk-margin-small-right" uk-icon="icon: table"></span>
+                <input class="uk-input uk-form-width-small" type="text" placeholder="Label">
+                <input class="uk-input uk-form-width-medium" type="text" placeholder="Address">
+                <a href="#"><span uk-icon="icon: trash"></span></a>
+              </li>
+            </ul>
+            <a href="#">Add</a>
+          </div>
+        </div>
+  
+        <div class="uk-margin">
+          <label class="uk-form-label uk-text-large" for="birthday">Phone Numbers</label>
+          <div class="uk-form-controls">
+              <ul class="uk-list" uk-sortable="handle: .uk-sortable-handle">
+                <li>
+                  <span class="uk-sortable-handle uk-margin-small-right" uk-icon="icon: table"></span>
+                  <input class="uk-input uk-form-width-small" type="text" placeholder="Label">
+                  <input class="uk-input uk-form-width-medium" type="text" placeholder="Number">
+                  <a href="#"><span uk-icon="icon: trash"></span></a>
+                </li>
+                <li>
+                  <span class="uk-sortable-handle uk-margin-small-right" uk-icon="icon: table"></span>
+                  <input class="uk-input uk-form-width-small" type="text" placeholder="Label">
+                  <input class="uk-input uk-form-width-medium" type="text" placeholder="Number">
+                  <a href="#"><span uk-icon="icon: trash"></span></a>
+                </li>
+              </ul>
+            <a href="#">Add</a>
+          </div>
+        </div>
+  
+        <div class="uk-margin">
+          <label class="uk-form-label uk-text-large" for="label">Addresses</label>
+          <ul class="uk-list uk-list-divider" uk-sortable="handle: .uk-sortable-handle">
+            <li class="uk-form-controls" uk-margin>
+              <span class="uk-sortable-handle uk-margin-small-right" uk-icon="icon: table"></span>
+              <input class="uk-input uk-form-width-large" id="label" type="text" placeholder="Label">
+              <input class="uk-input uk-form-width-large" id="street" type="text" placeholder="Street">
+              <input class="uk-input uk-form-width-medium" id="city" type="text" placeholder="City">
+              <input class="uk-input uk-form-width-small" id="state" type="text" placeholder="State">
+              <input class="uk-input uk-form-width-small" id="zip" type="text" placeholder="Zip">
+              <a href="#"><span uk-icon="icon: trash"></span></a>
+            </li>
+            <li class="uk-form-controls" uk-margin>
+              <span class="uk-sortable-handle uk-margin-small-right" uk-icon="icon: table"></span>
+              <input class="uk-input uk-form-width-large" id="label" type="text" placeholder="Label">
+              <input class="uk-input uk-form-width-large" id="street" type="text" placeholder="Street">
+              <input class="uk-input uk-form-width-medium" id="city" type="text" placeholder="City">
+              <input class="uk-input uk-form-width-small" id="state" type="text" placeholder="State">
+              <input class="uk-input uk-form-width-small" id="zip" type="text" placeholder="Zip">
+              <a href="#"><span uk-icon="icon: trash"></span></a>
+            </li>
+          </ul>
+        </div>
+        
+        <label>Custom Fields</label>
+      </form>
+      
+      <p class="uk-text-right">
+        <button class="uk-button uk-button-default uk-modal-close" type="button">Cancel</button>
+        <button class="uk-button uk-button-primary" type="button">Save</button>
+      </p>
+    </div>
+  </div>
+		</div>
+	</div>
+	
+	<span class="atom-version">Version 0.4.18</span>
+</div>
+
+</body>
+</html>

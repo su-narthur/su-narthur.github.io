@@ -77,11 +77,20 @@
 
 <div class="organism-content uk-card uk-card-default uk-padding-small">
 	<a href="#" class="to-list">< People</a>
-	<h2 class="atom-detailTitle">Jesse Doe</h2>
+	<h2 class="atom-detailTitle">	<div class="molecule-personTitle uk-flex uk-flex-middle uk-padding-small">
+	<img src="https://randomuser.me/api/portraits/med/women/71.jpg" class="uk-margin-right uk-border-circle uk-box-shadow-medium">
+	<div class="text">
+		<h2 class="uk-margin uk-margin-remove-bottom uk-margin-remove-top">Naomi Thompson</h2>
+		<div class="badges">
+			<span class="uk-badge">Member</span>
+			<span class="uk-badge">Deaconess</span>
+			<span class="uk-badge">Thompson Household</span></div>
+	</div>
+</div></h2>
 	
 		<div class="layout-contentColumns">
 		<div class="main">
-			  <button class="uk-button uk-button-primary" uk-toggle="target: #my-id, #down-arrow, #up-arrow; animation: uk-animation-fade">
+				<button class="uk-button uk-button-primary uk-button-small" uk-toggle="target: #my-id, #down-arrow, #up-arrow; animation: uk-animation-fade">
 	Add Interaction <span id="down-arrow" uk-icon="icon: chevron-down"></span><span id="up-arrow" uk-icon="icon: chevron-up" hidden></span>
 </button>
 
@@ -110,7 +119,7 @@
 </form>		</div>
 		
 		<div class="secondary uk-padding-small">
-			  <button class="uk-button uk-button-default uk-button-small" uk-toggle="target: #edit-modal">Edit</button>
+				<button class="uk-button uk-button-default uk-button-small" uk-toggle="target: #edit-modal">Edit</button>
 <div id="edit-modal" uk-modal>
 	<div class="uk-modal-dialog uk-modal-body">
 		<h2 class="uk-modal-title">Edit Person</h2>

@@ -1,12 +1,15 @@
 {% extends "components/layout-contentColumns.html" %}
 
 {% block backTitle %}< People{% endblock %}
-{% block pageTitle %}Jesse Doe{% endblock %}
+
+{% block pageTitle %}
+	{% include "components/molecule-personTitle.html" %}
+{% endblock %}
 
 {% block main %}
-  {% include "components/molecule-addUpdateForm.html" %}
+	{% include "components/molecule-addUpdateForm.html" %}
 {% endblock %}
 
 {% block secondary %}
-  {% include "components/molecule-personEditButton.html" %}
+	{% include "components/molecule-personEditButton.html" %}
 {% endblock %}

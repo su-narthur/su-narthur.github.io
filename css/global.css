@@ -30,6 +30,12 @@ body > * {
 .molecule-cohort td {
   padding: 7px;
 }
+.molecule-personTitle .badges {
+  line-height: 0;
+}
+.molecule-personTitle .badges .uk-badge {
+  padding: 0 10px;
+}
 .organism-content {
   overflow: auto;
   padding-bottom: 75px;

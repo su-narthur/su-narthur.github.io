@@ -77,17 +77,47 @@
 
 <div class="organism-content uk-card uk-card-default uk-padding-small">
 	<a href="#" class="to-list">< People</a>
-	<h2 class="atom-detailTitle">	<div class="molecule-personTitle uk-flex uk-flex-middle uk-padding-small">
+	
+		<div class="molecule-personTitle uk-flex uk-flex-middle uk-padding-small">
 	<img src="https://randomuser.me/api/portraits/med/women/71.jpg" class="uk-margin-right uk-border-circle uk-box-shadow-medium">
 	<div class="text">
 		<h2 class="uk-margin uk-margin-remove-bottom uk-margin-remove-top">Naomi Thompson</h2>
 		<div class="badges">
-			<span class="uk-badge">Member</span>
-			<span class="uk-badge">Deaconess</span>
-			<span class="uk-badge">Thompson Household</span></div>
+			<a href="#" class="uk-badge">Member</a>
+			<a href="#" class="uk-badge">Deaconess</a>
+			<a href="#" class="uk-badge">Thompson Household</a>
+			<div class="molecule-intervalBadge uk-inline">
+	<a href="#" class="uk-badge interval">Monthly <span uk-icon="icon: chevron-down"></span></a>
+	<div uk-dropdown class="uk-padding-small">
+		<ul class="uk-list uk-margin-remove-bottom">
+			<li><a href="#">Daily</a></li>
+			<li><a href="#">Weekly</a></li>
+			<li><a href="#">Monthly</a></li>
+			<li><a href="#">Yearly</a></li>
+			<li><a href="#interval-modal" uk-toggle>Custom</a></li>
+		</ul>
 	</div>
-</div></h2>
-	
+</div>
+
+<div id="interval-modal" uk-modal>
+	<div class="uk-modal-dialog uk-modal-body">
+		<h2 class="uk-modal-title">Set Custom Interval</h2>
+
+		<p>Every <input class="uk-input uk-form-width-small" type="number" placeholder="number" value="1"> <select class="uk-select uk-form-width-small">
+				<option>days</option>
+				<option>weeks</option>
+				<option>months</option>
+				<option>years</option>
+			</select></p>
+		
+		<p class="uk-text-right">
+			<button class="uk-button uk-button-default uk-modal-close" type="button">Cancel</button>
+			<button class="uk-button uk-button-primary" type="button">Save</button>
+		</p>
+	</div>
+</div>		</div>
+	</div>
+</div>	
 		<div class="layout-contentColumns">
 		<div class="main">
 				<button class="uk-button uk-button-primary uk-button-small" uk-toggle="target: #my-id, #down-arrow, #up-arrow; animation: uk-animation-fade">

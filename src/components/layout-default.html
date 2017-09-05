@@ -36,7 +36,8 @@
 
 <div class="organism-content uk-card uk-card-default uk-padding-small">
 	<a href="#" class="to-list">{% block backTitle endblock %}</a>
-	<h2 class="atom-detailTitle">{% block pageTitle endblock %}</h2>
+	
+	{% block pageTitle endblock %}
 	
 	{% block content %}{% endblock %}
 	

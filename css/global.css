@@ -33,8 +33,14 @@ body > * {
 .molecule-personTitle .badges {
   line-height: 0;
 }
+.molecule-personTitle .badges * {
+  line-height: initial;
+}
 .molecule-personTitle .badges .uk-badge {
   padding: 0 10px;
+}
+.molecule-personTitle .badges .interval span {
+  margin-left: 2px;
 }
 .organism-content {
   overflow: auto;

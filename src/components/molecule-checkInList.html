@@ -1,72 +1,95 @@
 <div class="molecule-checkInList uk-overflow-auto">
-	<table class="uk-table uk-table-striped uk-width-1-1">
-		<tbody>
-		<tr>
-			<td>
+	<ul class="uk-list uk-list-striped uk-width-1-1">
+		<li class="molecule-checkInList__row">
+			
 				{% include "components/molecule-checkInInterfaceEntry.html" with {
-				"photo": "https://randomuser.me/api/portraits/med/men/42.jpg",
-				"name": "Rasmus Anttila",
-				"isCheckedIn": true
+					"photo": "https://randomuser.me/api/portraits/med/women/49.jpg",
+					"name": "Olivia Brar",
+					"address": "1587 Sunset Blvd"
 				} only %}
 			
-			</td>
-		</tr>
-		<tr>
-			<td>{% include "components/molecule-checkInInterfaceEntry.html" with {
-				"photo": "https://randomuser.me/api/portraits/med/men/78.jpg",
-				"name": "Thibault Aubert",
-				"isCheckedIn": true
-				} only %}
-			</td>
-		</tr>
-		<tr>
-			<td>{% include "components/molecule-checkInInterfaceEntry.html" with {
-				"photo": "https://randomuser.me/api/portraits/med/women/49.jpg",
-				"name": "Olivia Brar" } only %}
-			</td>
-		</tr>
-		<tr>
-			<td>{% include "components/molecule-checkInInterfaceEntry.html" with {
-				"name": "Latife Denkel" } only %}
-			</td>
-		</tr>
-		<tr>
-			<td>{% include "components/molecule-checkInInterfaceEntry.html" with {
-				"photo": "https://randomuser.me/api/portraits/med/men/1.jpg",
-				"name": "Tom Laurent" } only %}
-			</td>
-		</tr>
-		<tr>
-			<td>{% include "components/molecule-checkInInterfaceEntry.html" with {
-				"photo": "https://randomuser.me/api/portraits/med/men/5.jpg",
-				"name": "Henry Moore" } only %}
-			</td>
-		</tr>
-		<tr>
-			<td>
+		</li>
+		<li class="molecule-checkInList__row">
+			
 				{% include "components/molecule-checkInInterfaceEntry.html" with {
-					"name": "Lo"
+					"name": "Latife Denkel",
+					"address": "7040 Robinson Rd"
 				} only %}
-			</td>
-		</tr>
-		<tr>
-			<td>{% include "components/molecule-checkInInterfaceEntry.html" with {
-				"name": "حسین جعفری" } only %}
-			</td>
-		</tr>
-		<tr>
-			<td>{% include "components/molecule-checkInInterfaceEntry.html" with {
-				"photo": "https://randomuser.me/api/portraits/med/men/58.jpg",
-				"name": "Eren Po" } only %}
-			</td>
-		</tr>
-		<tr>
-			<td>{% include "components/molecule-checkInInterfaceEntry.html" with {
-				"photo": "https://randomuser.me/api/portraits/med/men/75.jpg",
-				"name": "Ryan Ross" } only %}
-			</td>
-		</tr>
-		</tbody>
-	</table>
+			
+		</li>
+		<li class="molecule-checkInList__row">
+			
+				{% include "components/molecule-checkInInterfaceEntry.html" with {
+					"photo": "https://randomuser.me/api/portraits/med/men/1.jpg",
+					"name": "Tom Laurent",
+					"address": "1088 Miller Ave"
+				} only %}
+			
+		</li>
+		<li class="molecule-checkInList__row">
+			
+				{% include "components/molecule-checkInInterfaceEntry.html" with {
+					"photo": "https://randomuser.me/api/portraits/med/men/5.jpg",
+					"name": "Henry Moore"
+				} only %}
+			
+		</li>
+		<li class="molecule-checkInList__row">
+			
+				{% include "components/molecule-checkInInterfaceEntry.html" with {
+					"name": "Lo",
+					"address": "1222 Cherry St"
+				} only %}
+			
+		</li>
+		<li class="molecule-checkInList__row">
+			
+				{% include "components/molecule-checkInInterfaceEntry.html" with {
+					"name": "حسین جعفری",
+					"address": "3786 Royal Ln"
+				} only %}
+			
+		</li>
+		<li class="molecule-checkInList__row">
+			
+				{% include "components/molecule-checkInInterfaceEntry.html" with {
+					"photo": "https://randomuser.me/api/portraits/med/men/58.jpg",
+					"name": "Eren Po",
+					"address": "3348 Valwood Pkwy"
+				} only %}
+			
+		</li>
+		<li class="molecule-checkInList__row">
+			
+				{% include "components/molecule-checkInInterfaceEntry.html" with {
+					"photo": "https://randomuser.me/api/portraits/med/men/75.jpg",
+					"name": "Ryan Ross",
+					"address": "7957 Sunset Blvd"
+				} only %}
+			
+		</li>
+		<li class="molecule-checkInList__row">
+			
+				{% include "components/molecule-checkInInterfaceEntry.html" with {
+					"photo": "https://randomuser.me/api/portraits/med/men/42.jpg",
+					"name": "Rasmus Anttila",
+					"isCheckedIn": true,
+					"address": "8621 Valwood Pkwy"
+				} only %}
+			
+			
+		</li>
+		<li class="molecule-checkInList__row">
+			
+				{% include "components/molecule-checkInInterfaceEntry.html" with {
+					"photo": "https://randomuser.me/api/portraits/med/men/78.jpg",
+					"name": "Thibault Aubert",
+					"isCheckedIn": true,
+					"address": "6388 Green Rd"
+				} only %}
+			
+		</li>
+	</ul>
+	
 	{% include "components/molecule-addAndCheckInForm.html" %}
 </div>

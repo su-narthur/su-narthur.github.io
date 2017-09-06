@@ -52,6 +52,16 @@ body > * {
 .molecule-checkInInterfaceEntry__checkOutButton .uk-button-danger:hover {
   opacity: 1;
 }
+.molecule-checkInList {
+  display: flex;
+  flex-direction: column;
+}
+.molecule-checkInList ul {
+  flex: 1 1 100%;
+}
+.molecule-checkInList .molecule-addAndCheckInForm {
+  flex: 1 0 auto;
+}
 .molecule-cohort {
   font-size: .8rem;
   max-width: 100%;
@@ -75,9 +85,13 @@ body > * {
 }
 .organism-checkInInterface {
   max-width: 800px;
-  max-height: 100%;
+  height: 100%;
   display: flex;
   flex-direction: column;
+  box-sizing: border-box;
+}
+.organism-checkInInterface .molecule-checkInList {
+  flex: 1 1 100%;
 }
 .organism-content {
   overflow: auto;

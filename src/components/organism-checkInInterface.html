@@ -1,11 +1,27 @@
 <div class="organism-checkInInterface uk-margin-auto-left uk-margin-auto-right uk-card uk-card-default">
 	<div class="uk-padding">
 		<h1 class="uk-margin-remove-bottom">My Event</h1>
-		<h4 class="uk-margin-remove-top uk-margin-remove-bottom">Thursday, August 3, 7:15–8:00pm</h4>
-		<h4 class="uk-margin-remove-top">The Millennial Man</h4>
+		<h4 class="uk-margin-remove-top uk-text-muted">
+			Thursday, August 3, 7:15–8:00pm<br>
+			The Millennial Man
+		</h4>
 		<a href="event-detail.html" class="uk-modal-close-default" uk-close></a>
-		<input class="uk-input" type="text" placeholder="Search">
+		<input id="checkin-filter" class="uk-input" type="text" placeholder="Search">
 	</div>
 	
 	{% include "components/molecule-checkInList.html" %}
+	
+	<script>
+		$(document).ready(function () {
+			$('#checkin-filter').on('keyup', function () {
+				var val = $(this).val();
+				$('.molecule-checkInList .molecule-checkInList__row').each(function	() {
+					var $this = $(this);
+					var name = $this.find('.molecule-checkInInterfaceEntry__name').text();
+					var filterMatchesName = name.toLowerCase().includes(val.toLowerCase());
+					$this.toggle(filterMatchesName);
+				});
+			});
+		});
+	</script>
 </div>

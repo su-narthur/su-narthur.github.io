@@ -1,15 +1,18 @@
-<div class="molecule-checkInInterfaceEntry uk-flex uk-flex-middle uk-flex-between uk-padding-small">
+<div class="molecule-checkInInterfaceEntry uk-flex uk-flex-middle uk-flex-between uk-margin-small-left uk-margin-small-right">
 	<span class="uk-flex uk-flex-middle">
 		
 		{% if photo %}
-			<img src="{{ photo }}" class="uk-margin-right uk-border-rounded uk-box-shadow-medium">
+			<img src="{{ photo }}" class="uk-margin-large-right uk-border-rounded uk-box-shadow-medium">
 		{% else %}
-			<div class="molecule-checkInInterfaceEntry__placeholder uk-margin-right uk-border-rounded uk-text-large uk-box-shadow-medium uk-background-secondary uk-light">
+			<div class="molecule-checkInInterfaceEntry__placeholder uk-margin-large-right uk-border-rounded uk-text-large uk-box-shadow-medium uk-background-secondary uk-light">
 				<span uk-icon="icon: user; ratio: 2"></span>
 			</div>
 		{% endif %}
 		
-		{{ name }}
+		<div>
+			<div class="molecule-checkInInterfaceEntry__name uk-text-large">{{ name }}</div>
+			<div class="molecule-checkInInterfaceEntry__address uk-text-muted">{{ address }}</div>
+		</div>
 		
 	</span>
 	{% if isCheckedIn %}

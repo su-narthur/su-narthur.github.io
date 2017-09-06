@@ -1,8 +1,4 @@
-<button class="uk-button uk-button-primary uk-button-small" uk-toggle="target: #my-id, #down-arrow, #up-arrow; animation: uk-animation-fade">
-	Add Interaction <span id="down-arrow" uk-icon="icon: chevron-down"></span><span id="up-arrow" uk-icon="icon: chevron-up" hidden></span>
-</button>
-
-<form id="my-id" class="uk-margin" hidden>
+<div class="molecule-addInteractionForm">
 	<div class="uk-margin">
 		<select class="uk-select uk-form-width-medium">
 			<option value="" selected disabled>Select type...</option>
@@ -21,7 +17,4 @@
 	<div class="uk-margin">
 		<textarea class="uk-textarea" rows="5" placeholder="Notes..."></textarea>
 	</div>
-	
-	<button class="uk-button uk-button-primary">Save</button>
-	<button class="uk-button uk-button-default">Cancel</button>
-</form>
+</div>

@@ -11,7 +11,7 @@ body {
   height: 100vh;
 }
 body > * {
-  flex: 0 0 100%;
+  flex: 0 1 100%;
 }
 .atom-version {
   color: rgba(0, 0, 0, 0.3);
@@ -41,6 +41,9 @@ body > * {
 }
 .molecule-personTitle .badges .interval span {
   margin-left: 2px;
+}
+.organism-checkInInterface {
+  max-width: 800px;
 }
 .organism-content {
   overflow: auto;
@@ -110,22 +113,25 @@ body > * {
     flex: 0 0 33%;
   }
 }
-.organism-listPanel,
-.organism-content {
+.layout-listLayout {
+  display: flex;
+}
+.layout-listLayout .organism-listPanel,
+.layout-listLayout .organism-content {
   position: relative;
   left: 0;
   transition: left 300ms;
 }
-.detail-active .organism-listPanel,
-.detail-active .organism-content {
+.layout-listLayout .detail-active .organism-listPanel,
+.layout-listLayout .detail-active .organism-content {
   left: -100%;
 }
 @media (min-width: 600px) {
-  .to-list {
+  .layout-listLayout .to-list {
     display: none;
   }
-  .detail-active .organism-listPanel,
-  .detail-active .organism-content {
+  .layout-listLayout .detail-active .organism-listPanel,
+  .layout-listLayout .detail-active .organism-content {
     left: 0;
   }
 }

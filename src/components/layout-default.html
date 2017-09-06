@@ -28,21 +28,7 @@
 
 <body>
 
-{% include "components/organism-nav.html" %}
-
-<div class="organism-listPanel uk-card uk-card-default uk-padding">
-	{% block listPanel endblock %}
-</div>
-
-<div class="organism-content uk-card uk-card-default uk-padding-small">
-	<a href="#" class="to-list">{% block backTitle endblock %}</a>
-	
-	{% block pageTitle endblock %}
-	
-	{% block content %}{% endblock %}
-	
-	<span class="atom-version">Version 0.4.18</span>
-</div>
+{% block main endblock %}
 
 </body>
 </html>

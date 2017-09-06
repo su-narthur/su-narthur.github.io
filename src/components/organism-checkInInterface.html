@@ -1,0 +1,82 @@
+<div class="organism-checkInInterface uk-margin-auto-left uk-margin-auto-right uk-card uk-card-default">
+	<div class="uk-padding uk-padding-remove-bottom">
+		<h1 class="uk-margin-remove-bottom">My Event</h1>
+		<h4 class="uk-margin-remove-top uk-margin-remove-bottom">Thursday, August 3, 7:15–8:00pm</h4>
+		<h4 class="uk-margin-remove-top">The Millennial Man</h4>
+		<a href="event-detail.html" class="uk-modal-close-default" uk-close></a>
+		<input class="uk-input" type="text" placeholder="Search">
+	</div>
+	<table class="uk-table uk-table-striped uk-width-1-1">
+		<tbody>
+		<tr>
+			<td>
+				{% include "components/molecule-checkInInterfaceEntry.html" with {
+					"photo": "https://randomuser.me/api/portraits/med/men/42.jpg",
+					"name": "Rasmus Anttila",
+					"isCheckedIn": true
+				} only %}
+			
+			</td>
+		</tr>
+		<tr>
+			<td>{% include "components/molecule-checkInInterfaceEntry.html" with {
+					"photo": "https://randomuser.me/api/portraits/med/men/78.jpg",
+					"name": "Thibault Aubert",
+					"isCheckedIn": true
+				} only %}
+			</td>
+		</tr>
+		<tr>
+			<td>{% include "components/molecule-checkInInterfaceEntry.html" with {
+				"photo": "https://randomuser.me/api/portraits/med/women/49.jpg",
+				"name": "Olivia Brar" } only %}
+			</td>
+		</tr>
+		<tr>
+			<td>{% include "components/molecule-checkInInterfaceEntry.html" with {
+				"photo": "https://randomuser.me/api/portraits/med/women/20.jpg",
+				"name": "Latife Denkel" } only %}
+			</td>
+		</tr>
+		<tr>
+			<td>{% include "components/molecule-checkInInterfaceEntry.html" with {
+				"photo": "https://randomuser.me/api/portraits/med/men/1.jpg",
+				"name": "Tom Laurent" } only %}
+			</td>
+		</tr>
+		<tr>
+			<td>{% include "components/molecule-checkInInterfaceEntry.html" with {
+				"photo": "https://randomuser.me/api/portraits/med/men/5.jpg",
+				"name": "Henry Moore" } only %}
+			</td>
+		</tr>
+		<tr>
+			<td>{% include "components/molecule-checkInInterfaceEntry.html" with {
+				"photo": "https://randomuser.me/api/portraits/med/men/15.jpg",
+				"name": "Lo" } only %}
+			</td>
+		</tr>
+		<tr>
+			<td>{% include "components/molecule-checkInInterfaceEntry.html" with {
+				"photo": "https://randomuser.me/api/portraits/med/men/58.jpg",
+				"name": "Eren Po" } only %}
+			</td>
+		</tr>
+		<tr>
+			<td>{% include "components/molecule-checkInInterfaceEntry.html" with {
+				"photo": "https://randomuser.me/api/portraits/med/men/75.jpg",
+				"name": "Ryan Ross" } only %}
+			</td>
+		</tr>
+		<tr>
+			<td>{% include "components/molecule-checkInInterfaceEntry.html" with {
+				"photo": "https://randomuser.me/api/portraits/med/men/76.jpg",
+				"name": "حسین جعفری" } only %}
+			</td>
+		</tr>
+		</tbody>
+	</table>
+	<a href="#"
+			class="add-new uk-padding-small uk-text-muted uk-placeholder uk-text-center uk-margin-left uk-margin-right"
+			uk-toggle="target: #modal-example">Add New</a>
+</div>

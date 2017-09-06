@@ -1,0 +1,15 @@
+<div class="person uk-flex uk-flex-middle uk-flex-between uk-padding-small">
+	<span class="uk-flex uk-flex-middle">
+		<div class="people-image"><img src="{{ photo }}" class="uk-margin-right"></div>
+		{{ name }}
+	</span>
+	{% if isCheckedIn %}
+		<div class="uk-button-group">
+			<button class="uk-button uk-button-default" disabled>Checked in</button>
+			<button class="uk-buttion uk-button-danger" title="Check out" uk-tooltip><span uk-icon="icon: sign-out"></span></button>
+		</div>
+		
+	{% else %}
+		<button class="uk-button uk-button-primary">Check in</button>
+	{% endif %}
+</div>

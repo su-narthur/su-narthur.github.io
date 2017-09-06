@@ -1,0 +1,23 @@
+.layout-listLayout {
+	display: flex;
+	.organism-listPanel, .organism-content {
+		position: relative;
+		left: 0;
+		transition: left 300ms;
+	}
+	.detail-active {
+		.organism-listPanel, .organism-content {
+			left: -100%;
+		}
+	}
+	@media (min-width: @screenXsMin) {
+		.to-list {
+			display: none;
+		}
+		.detail-active {
+			.organism-listPanel, .organism-content {
+				left: 0;
+			}
+		}
+	}
+}

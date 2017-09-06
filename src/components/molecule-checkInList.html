@@ -1,0 +1,72 @@
+<div class="molecule-checkInList uk-overflow-auto">
+	<table class="uk-table uk-table-striped uk-width-1-1">
+		<tbody>
+		<tr>
+			<td>
+				{% include "components/molecule-checkInInterfaceEntry.html" with {
+				"photo": "https://randomuser.me/api/portraits/med/men/42.jpg",
+				"name": "Rasmus Anttila",
+				"isCheckedIn": true
+				} only %}
+			
+			</td>
+		</tr>
+		<tr>
+			<td>{% include "components/molecule-checkInInterfaceEntry.html" with {
+				"photo": "https://randomuser.me/api/portraits/med/men/78.jpg",
+				"name": "Thibault Aubert",
+				"isCheckedIn": true
+				} only %}
+			</td>
+		</tr>
+		<tr>
+			<td>{% include "components/molecule-checkInInterfaceEntry.html" with {
+				"photo": "https://randomuser.me/api/portraits/med/women/49.jpg",
+				"name": "Olivia Brar" } only %}
+			</td>
+		</tr>
+		<tr>
+			<td>{% include "components/molecule-checkInInterfaceEntry.html" with {
+				"name": "Latife Denkel" } only %}
+			</td>
+		</tr>
+		<tr>
+			<td>{% include "components/molecule-checkInInterfaceEntry.html" with {
+				"photo": "https://randomuser.me/api/portraits/med/men/1.jpg",
+				"name": "Tom Laurent" } only %}
+			</td>
+		</tr>
+		<tr>
+			<td>{% include "components/molecule-checkInInterfaceEntry.html" with {
+				"photo": "https://randomuser.me/api/portraits/med/men/5.jpg",
+				"name": "Henry Moore" } only %}
+			</td>
+		</tr>
+		<tr>
+			<td>
+				{% include "components/molecule-checkInInterfaceEntry.html" with {
+					"name": "Lo"
+				} only %}
+			</td>
+		</tr>
+		<tr>
+			<td>{% include "components/molecule-checkInInterfaceEntry.html" with {
+				"name": "حسین جعفری" } only %}
+			</td>
+		</tr>
+		<tr>
+			<td>{% include "components/molecule-checkInInterfaceEntry.html" with {
+				"photo": "https://randomuser.me/api/portraits/med/men/58.jpg",
+				"name": "Eren Po" } only %}
+			</td>
+		</tr>
+		<tr>
+			<td>{% include "components/molecule-checkInInterfaceEntry.html" with {
+				"photo": "https://randomuser.me/api/portraits/med/men/75.jpg",
+				"name": "Ryan Ross" } only %}
+			</td>
+		</tr>
+		</tbody>
+	</table>
+	{% include "components/molecule-addAndCheckInForm.html" %}
+</div>

@@ -24,6 +24,14 @@ body > * {
 .molecule-checkInInterfaceEntry__checkOutButton {
   position: relative;
 }
+.molecule-checkInInterfaceEntry__checkOutButton .uk-icon {
+  position: relative;
+  top: -1px;
+  right: -7px;
+}
+.molecule-checkInInterfaceEntry__checkOutButton .uk-button-default {
+  padding: 0 20px;
+}
 .molecule-checkInInterfaceEntry__checkOutButton .uk-button-danger {
   position: absolute !important;
   top: 0;

@@ -1,14 +1,13 @@
-<div class="person uk-flex uk-flex-middle uk-flex-between uk-padding-small">
+<div class="molecule-checkInInterfaceEntry uk-flex uk-flex-middle uk-flex-between uk-padding-small">
 	<span class="uk-flex uk-flex-middle">
 		<img src="{{ photo }}" class="uk-margin-right uk-border-rounded uk-box-shadow-medium">
 		{{ name }}
 	</span>
 	{% if isCheckedIn %}
-		<div class="uk-button-group">
+		<div class="molecule-checkInInterfaceEntry__checkOutButton">
 			<button class="uk-button uk-button-default" disabled>Checked in</button>
-			<button class="uk-buttion uk-button-danger" title="Check out" uk-tooltip><span uk-icon="icon: sign-out"></span></button>
+			<button class="uk-button uk-button-danger">Check out</button>
 		</div>
-		
 	{% else %}
 		<button class="uk-button uk-button-primary">Check in</button>
 	{% endif %}

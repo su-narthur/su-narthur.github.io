@@ -21,6 +21,22 @@ body > * {
     margin-top: 0;
   }
 }
+.molecule-checkInInterfaceEntry__checkOutButton {
+  position: relative;
+}
+.molecule-checkInInterfaceEntry__checkOutButton .uk-button-danger {
+  position: absolute !important;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  opacity: 0;
+  transition: opacity 100ms;
+}
+.molecule-checkInInterfaceEntry__checkOutButton .uk-button-danger:hover {
+  opacity: 1;
+}
 .molecule-cohort {
   font-size: .8rem;
   max-width: 100%;

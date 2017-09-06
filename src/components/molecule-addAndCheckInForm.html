@@ -1,9 +1,9 @@
-<div class="molecule-addAndCheckInForm uk-margin-small-left uk-margin-right uk-margin-top uk-margin-bottom uk-grid-small" uk-grid>
-	<div class="uk-width-1-2"><input class="uk-input" type="text" placeholder="First Name"></div>
-	<div class="uk-width-1-2"><input class="uk-input" type="text" placeholder="Last Name"></div>
-	<div class="uk-width-1-1"><input class="uk-input" type="text" placeholder="Address"></div>
+<div class="molecule-addAndCheckInForm uk-flex uk-flex-middle uk-flex-between uk-margin-small-left uk-margin-small-right">
+	<span class="uk-flex uk-flex-middle">
+		{% include "components/atom-avatar.html" with { "className": "uk-margin-large-right" } only %}
+		
+		<div class="molecule-addAndCheckInForm__name uk-text-large"></div>
+	</span>
 	
-	<div>
-		<button class="uk-button uk-button-primary">Create and check in</button>
-	</div>
+	<button class="uk-button uk-button-primary">Create and check in</button>
 </div>

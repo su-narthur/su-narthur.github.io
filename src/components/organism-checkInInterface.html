@@ -15,12 +15,15 @@
 		$(document).ready(function () {
 			$('#checkin-filter').on('keyup', function () {
 				var val = $(this).val();
+				
 				$('.molecule-checkInList .molecule-checkInList__row').each(function	() {
 					var $this = $(this);
 					var name = $this.find('.molecule-checkInInterfaceEntry__name').text();
 					var filterMatchesName = name.toLowerCase().includes(val.toLowerCase());
 					$this.toggle(filterMatchesName);
 				});
+				
+				$('.molecule-addAndCheckInForm__name').html(val);
 			});
 		});
 	</script>

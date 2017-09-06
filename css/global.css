@@ -16,17 +16,27 @@ body > * {
 .atom-version {
   color: rgba(0, 0, 0, 0.3);
 }
+.atom-avatar {
+  width: 75px;
+  height: 75px;
+  display: flex;
+  align-items: stretch;
+  justify-content: center;
+  overflow: hidden;
+}
+.atom-avatar img {
+  flex: 0 0 100%;
+}
+.atom-avatar .uk-icon {
+  line-height: 75px;
+}
 @media (min-width: 600px) {
   .atom-detailTitle {
     margin-top: 0;
   }
 }
-.molecule-checkInInterfaceEntry__placeholder {
-  width: 75px;
-  height: 75px;
-  text-align: center;
-  line-height: 75px;
-  font-style: italic;
+.molecule-addAndCheckInForm .molecule-addAndCheckInForm__name {
+  text-transform: capitalize;
 }
 .molecule-checkInInterfaceEntry__checkOutButton {
   position: relative;
@@ -51,16 +61,6 @@ body > * {
 }
 .molecule-checkInInterfaceEntry__checkOutButton .uk-button-danger:hover {
   opacity: 1;
-}
-.molecule-checkInList {
-  display: flex;
-  flex-direction: column;
-}
-.molecule-checkInList ul {
-  flex: 1 1 100%;
-}
-.molecule-checkInList .molecule-addAndCheckInForm {
-  flex: 1 0 auto;
 }
 .molecule-cohort {
   font-size: .8rem;

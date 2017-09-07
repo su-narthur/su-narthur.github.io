@@ -33,9 +33,12 @@
 					var results = data.results;
 					randomAvatars.each(function() {
 						var result = results.pop();
-						$(this).attr('title',result.name.first+' '+result.name.last);
-						UIkit.tooltip(this);
-						if (Math.random() > .2) $(this).find('img').attr('src',result.picture.large);
+						$(this).closest('.molecule-workflowEntry').find('.molecule-workflowEntry__name').html(result.name.first+' '+result.name.last);
+						if (Math.random() > .2) {
+							$(this).find('img').attr('src',result.picture.large);
+						} else {
+							$(this).find('img').remove();
+						}
 					});
 				}
 			});
@@ -68,8 +71,7 @@
 		
 		<div class="atom-avatar uk-border-rounded uk-text-large uk-box-shadow-medium uk-background-secondary uk-light
 uk-flex-none  uk-margin-large-right">
-	<img src="https://randomuser.me/api/portraits/med/women/49.jpg" class="uk-border-rounded">
-	<span uk-icon="icon: user; ratio: 2"></span>
+	<img src="https://randomuser.me/api/portraits/med/women/49.jpg" class="uk-border-rounded">	<span uk-icon="icon: user; ratio: 2"></span>
 </div>		
 		<div>
 			<div class="molecule-checkInInterfaceEntry__name uk-text-large">Olivia Brar</div>
@@ -87,8 +89,7 @@ uk-flex-none  uk-margin-large-right">
 		
 		<div class="atom-avatar uk-border-rounded uk-text-large uk-box-shadow-medium uk-background-secondary uk-light
 uk-flex-none  uk-margin-large-right">
-	<img src="//:0" class="uk-border-rounded">
-	<span uk-icon="icon: user; ratio: 2"></span>
+		<span uk-icon="icon: user; ratio: 2"></span>
 </div>		
 		<div>
 			<div class="molecule-checkInInterfaceEntry__name uk-text-large">Latife Denkel</div>
@@ -106,8 +107,7 @@ uk-flex-none  uk-margin-large-right">
 		
 		<div class="atom-avatar uk-border-rounded uk-text-large uk-box-shadow-medium uk-background-secondary uk-light
 uk-flex-none  uk-margin-large-right">
-	<img src="https://randomuser.me/api/portraits/med/men/1.jpg" class="uk-border-rounded">
-	<span uk-icon="icon: user; ratio: 2"></span>
+	<img src="https://randomuser.me/api/portraits/med/men/1.jpg" class="uk-border-rounded">	<span uk-icon="icon: user; ratio: 2"></span>
 </div>		
 		<div>
 			<div class="molecule-checkInInterfaceEntry__name uk-text-large">Tom Laurent</div>
@@ -125,8 +125,7 @@ uk-flex-none  uk-margin-large-right">
 		
 		<div class="atom-avatar uk-border-rounded uk-text-large uk-box-shadow-medium uk-background-secondary uk-light
 uk-flex-none  uk-margin-large-right">
-	<img src="https://randomuser.me/api/portraits/med/men/5.jpg" class="uk-border-rounded">
-	<span uk-icon="icon: user; ratio: 2"></span>
+	<img src="https://randomuser.me/api/portraits/med/men/5.jpg" class="uk-border-rounded">	<span uk-icon="icon: user; ratio: 2"></span>
 </div>		
 		<div>
 			<div class="molecule-checkInInterfaceEntry__name uk-text-large">Henry Moore</div>
@@ -144,8 +143,7 @@ uk-flex-none  uk-margin-large-right">
 		
 		<div class="atom-avatar uk-border-rounded uk-text-large uk-box-shadow-medium uk-background-secondary uk-light
 uk-flex-none  uk-margin-large-right">
-	<img src="//:0" class="uk-border-rounded">
-	<span uk-icon="icon: user; ratio: 2"></span>
+		<span uk-icon="icon: user; ratio: 2"></span>
 </div>		
 		<div>
 			<div class="molecule-checkInInterfaceEntry__name uk-text-large">Lo</div>
@@ -163,8 +161,7 @@ uk-flex-none  uk-margin-large-right">
 		
 		<div class="atom-avatar uk-border-rounded uk-text-large uk-box-shadow-medium uk-background-secondary uk-light
 uk-flex-none  uk-margin-large-right">
-	<img src="//:0" class="uk-border-rounded">
-	<span uk-icon="icon: user; ratio: 2"></span>
+		<span uk-icon="icon: user; ratio: 2"></span>
 </div>		
 		<div>
 			<div class="molecule-checkInInterfaceEntry__name uk-text-large">حسین جعفری</div>
@@ -182,8 +179,7 @@ uk-flex-none  uk-margin-large-right">
 		
 		<div class="atom-avatar uk-border-rounded uk-text-large uk-box-shadow-medium uk-background-secondary uk-light
 uk-flex-none  uk-margin-large-right">
-	<img src="https://randomuser.me/api/portraits/med/men/58.jpg" class="uk-border-rounded">
-	<span uk-icon="icon: user; ratio: 2"></span>
+	<img src="https://randomuser.me/api/portraits/med/men/58.jpg" class="uk-border-rounded">	<span uk-icon="icon: user; ratio: 2"></span>
 </div>		
 		<div>
 			<div class="molecule-checkInInterfaceEntry__name uk-text-large">Eren Po</div>
@@ -201,8 +197,7 @@ uk-flex-none  uk-margin-large-right">
 		
 		<div class="atom-avatar uk-border-rounded uk-text-large uk-box-shadow-medium uk-background-secondary uk-light
 uk-flex-none  uk-margin-large-right">
-	<img src="https://randomuser.me/api/portraits/med/men/75.jpg" class="uk-border-rounded">
-	<span uk-icon="icon: user; ratio: 2"></span>
+	<img src="https://randomuser.me/api/portraits/med/men/75.jpg" class="uk-border-rounded">	<span uk-icon="icon: user; ratio: 2"></span>
 </div>		
 		<div>
 			<div class="molecule-checkInInterfaceEntry__name uk-text-large">Ryan Ross</div>
@@ -220,8 +215,7 @@ uk-flex-none  uk-margin-large-right">
 		
 		<div class="atom-avatar uk-border-rounded uk-text-large uk-box-shadow-medium uk-background-secondary uk-light
 uk-flex-none  uk-margin-large-right">
-	<img src="https://randomuser.me/api/portraits/med/men/42.jpg" class="uk-border-rounded">
-	<span uk-icon="icon: user; ratio: 2"></span>
+	<img src="https://randomuser.me/api/portraits/med/men/42.jpg" class="uk-border-rounded">	<span uk-icon="icon: user; ratio: 2"></span>
 </div>		
 		<div>
 			<div class="molecule-checkInInterfaceEntry__name uk-text-large">Rasmus Anttila</div>
@@ -243,8 +237,7 @@ uk-flex-none  uk-margin-large-right">
 		
 		<div class="atom-avatar uk-border-rounded uk-text-large uk-box-shadow-medium uk-background-secondary uk-light
 uk-flex-none  uk-margin-large-right">
-	<img src="https://randomuser.me/api/portraits/med/men/78.jpg" class="uk-border-rounded">
-	<span uk-icon="icon: user; ratio: 2"></span>
+	<img src="https://randomuser.me/api/portraits/med/men/78.jpg" class="uk-border-rounded">	<span uk-icon="icon: user; ratio: 2"></span>
 </div>		
 		<div>
 			<div class="molecule-checkInInterfaceEntry__name uk-text-large">Thibault Aubert</div>
@@ -263,8 +256,7 @@ uk-flex-none  uk-margin-large-right">
 	<span class="uk-flex uk-flex-middle">
 		<div class="atom-avatar uk-border-rounded uk-text-large uk-box-shadow-medium uk-background-secondary uk-light
 uk-flex-none  uk-margin-large-right">
-	<img src="//:0" class="uk-border-rounded">
-	<span uk-icon="icon: user; ratio: 2"></span>
+		<span uk-icon="icon: user; ratio: 2"></span>
 </div>		
 		<div class="molecule-addAndCheckInForm__name uk-text-large"></div>
 	</span>

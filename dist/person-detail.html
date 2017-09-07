@@ -33,9 +33,12 @@
 					var results = data.results;
 					randomAvatars.each(function() {
 						var result = results.pop();
-						$(this).attr('title',result.name.first+' '+result.name.last);
-						UIkit.tooltip(this);
-						if (Math.random() > .2) $(this).find('img').attr('src',result.picture.large);
+						$(this).closest('.molecule-workflowEntry').find('.molecule-workflowEntry__name').html(result.name.first+' '+result.name.last);
+						if (Math.random() > .2) {
+							$(this).find('img').attr('src',result.picture.large);
+						} else {
+							$(this).find('img').remove();
+						}
 					});
 				}
 			});

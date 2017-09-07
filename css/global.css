@@ -91,8 +91,26 @@ body > * {
 .molecule-personTitle .badges .interval span {
   margin-left: 2px;
 }
-.molecule-workflowStep .atom-avatar {
-  margin: 5px;
+.molecule-workflowEntry {
+  display: flex;
+  margin: 5px !important;
+}
+.molecule-workflowEntry .atom-avatar {
+  box-shadow: none !important;
+  position: relative;
+  left: -1px;
+}
+.molecule-workflowEntry .atom-avatar img {
+  border-radius: 5px 0 0 5px;
+}
+.molecule-workflowEntry .molecule-workflowEntry__name {
+  padding: .8rem;
+  width: 121px;
+  height: 75px;
+  overflow: hidden;
+  text-transform: capitalize;
+  display: flex;
+  align-items: center;
 }
 .molecule-workflowStep .molecule-workflowStep__body {
   min-height: 115px;

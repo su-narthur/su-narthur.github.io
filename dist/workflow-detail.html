@@ -33,9 +33,12 @@
 					var results = data.results;
 					randomAvatars.each(function() {
 						var result = results.pop();
-						$(this).attr('title',result.name.first+' '+result.name.last);
-						UIkit.tooltip(this);
-						if (Math.random() > .2) $(this).find('img').attr('src',result.picture.large);
+						$(this).closest('.molecule-workflowEntry').find('.molecule-workflowEntry__name').html(result.name.first+' '+result.name.last);
+						if (Math.random() > .2) {
+							$(this).find('img').attr('src',result.picture.large);
+						} else {
+							$(this).find('img').remove();
+						}
 					});
 				}
 			});
@@ -103,244 +106,415 @@
 	<div class="molecule-workflowStep uk-margin">
 	<h3 class="uk-margin-remove uk-text-muted">The Heart of God</h3>
 	<div class="molecule-workflowStep__body uk-drag uk-background-muted uk-flex uk-flex-wrap uk-padding-small uk-box-shadow-medium" data-uk-sortable="group: workflow">
-					<div class="atom-avatar uk-border-rounded uk-text-large uk-box-shadow-medium uk-background-secondary uk-light
+					<div class="molecule-workflowEntry uk-background-secondary uk-light uk-border-rounded uk-box-shadow-medium">
+	<div class="atom-avatar uk-border-rounded uk-text-large uk-box-shadow-medium uk-background-secondary uk-light
 uk-flex-none random ">
-	<img src="//:0" class="uk-border-rounded">
-	<span uk-icon="icon: user; ratio: 2"></span>
-</div>			<div class="atom-avatar uk-border-rounded uk-text-large uk-box-shadow-medium uk-background-secondary uk-light
+	<img src="//:0" class="uk-border-rounded">	<span uk-icon="icon: user; ratio: 2"></span>
+</div>	<div class="molecule-workflowEntry__name">
+		Mark Jones
+	</div>
+</div>			<div class="molecule-workflowEntry uk-background-secondary uk-light uk-border-rounded uk-box-shadow-medium">
+	<div class="atom-avatar uk-border-rounded uk-text-large uk-box-shadow-medium uk-background-secondary uk-light
 uk-flex-none random ">
-	<img src="//:0" class="uk-border-rounded">
-	<span uk-icon="icon: user; ratio: 2"></span>
-</div>			<div class="atom-avatar uk-border-rounded uk-text-large uk-box-shadow-medium uk-background-secondary uk-light
+	<img src="//:0" class="uk-border-rounded">	<span uk-icon="icon: user; ratio: 2"></span>
+</div>	<div class="molecule-workflowEntry__name">
+		Mark Jones
+	</div>
+</div>			<div class="molecule-workflowEntry uk-background-secondary uk-light uk-border-rounded uk-box-shadow-medium">
+	<div class="atom-avatar uk-border-rounded uk-text-large uk-box-shadow-medium uk-background-secondary uk-light
 uk-flex-none random ">
-	<img src="//:0" class="uk-border-rounded">
-	<span uk-icon="icon: user; ratio: 2"></span>
-</div>			<div class="atom-avatar uk-border-rounded uk-text-large uk-box-shadow-medium uk-background-secondary uk-light
+	<img src="//:0" class="uk-border-rounded">	<span uk-icon="icon: user; ratio: 2"></span>
+</div>	<div class="molecule-workflowEntry__name">
+		Mark Jones
+	</div>
+</div>			<div class="molecule-workflowEntry uk-background-secondary uk-light uk-border-rounded uk-box-shadow-medium">
+	<div class="atom-avatar uk-border-rounded uk-text-large uk-box-shadow-medium uk-background-secondary uk-light
 uk-flex-none random ">
-	<img src="//:0" class="uk-border-rounded">
-	<span uk-icon="icon: user; ratio: 2"></span>
-</div>			<div class="atom-avatar uk-border-rounded uk-text-large uk-box-shadow-medium uk-background-secondary uk-light
+	<img src="//:0" class="uk-border-rounded">	<span uk-icon="icon: user; ratio: 2"></span>
+</div>	<div class="molecule-workflowEntry__name">
+		Mark Jones
+	</div>
+</div>			<div class="molecule-workflowEntry uk-background-secondary uk-light uk-border-rounded uk-box-shadow-medium">
+	<div class="atom-avatar uk-border-rounded uk-text-large uk-box-shadow-medium uk-background-secondary uk-light
 uk-flex-none random ">
-	<img src="//:0" class="uk-border-rounded">
-	<span uk-icon="icon: user; ratio: 2"></span>
-</div>			<div class="atom-avatar uk-border-rounded uk-text-large uk-box-shadow-medium uk-background-secondary uk-light
+	<img src="//:0" class="uk-border-rounded">	<span uk-icon="icon: user; ratio: 2"></span>
+</div>	<div class="molecule-workflowEntry__name">
+		Mark Jones
+	</div>
+</div>			<div class="molecule-workflowEntry uk-background-secondary uk-light uk-border-rounded uk-box-shadow-medium">
+	<div class="atom-avatar uk-border-rounded uk-text-large uk-box-shadow-medium uk-background-secondary uk-light
 uk-flex-none random ">
-	<img src="//:0" class="uk-border-rounded">
-	<span uk-icon="icon: user; ratio: 2"></span>
-</div>			<div class="atom-avatar uk-border-rounded uk-text-large uk-box-shadow-medium uk-background-secondary uk-light
+	<img src="//:0" class="uk-border-rounded">	<span uk-icon="icon: user; ratio: 2"></span>
+</div>	<div class="molecule-workflowEntry__name">
+		Mark Jones
+	</div>
+</div>			<div class="molecule-workflowEntry uk-background-secondary uk-light uk-border-rounded uk-box-shadow-medium">
+	<div class="atom-avatar uk-border-rounded uk-text-large uk-box-shadow-medium uk-background-secondary uk-light
 uk-flex-none random ">
-	<img src="//:0" class="uk-border-rounded">
-	<span uk-icon="icon: user; ratio: 2"></span>
-</div>			<div class="atom-avatar uk-border-rounded uk-text-large uk-box-shadow-medium uk-background-secondary uk-light
+	<img src="//:0" class="uk-border-rounded">	<span uk-icon="icon: user; ratio: 2"></span>
+</div>	<div class="molecule-workflowEntry__name">
+		Mark Jones
+	</div>
+</div>			<div class="molecule-workflowEntry uk-background-secondary uk-light uk-border-rounded uk-box-shadow-medium">
+	<div class="atom-avatar uk-border-rounded uk-text-large uk-box-shadow-medium uk-background-secondary uk-light
 uk-flex-none random ">
-	<img src="//:0" class="uk-border-rounded">
-	<span uk-icon="icon: user; ratio: 2"></span>
-</div>			<div class="atom-avatar uk-border-rounded uk-text-large uk-box-shadow-medium uk-background-secondary uk-light
+	<img src="//:0" class="uk-border-rounded">	<span uk-icon="icon: user; ratio: 2"></span>
+</div>	<div class="molecule-workflowEntry__name">
+		Mark Jones
+	</div>
+</div>			<div class="molecule-workflowEntry uk-background-secondary uk-light uk-border-rounded uk-box-shadow-medium">
+	<div class="atom-avatar uk-border-rounded uk-text-large uk-box-shadow-medium uk-background-secondary uk-light
 uk-flex-none random ">
-	<img src="//:0" class="uk-border-rounded">
-	<span uk-icon="icon: user; ratio: 2"></span>
-</div>			<div class="atom-avatar uk-border-rounded uk-text-large uk-box-shadow-medium uk-background-secondary uk-light
+	<img src="//:0" class="uk-border-rounded">	<span uk-icon="icon: user; ratio: 2"></span>
+</div>	<div class="molecule-workflowEntry__name">
+		Mark Jones
+	</div>
+</div>			<div class="molecule-workflowEntry uk-background-secondary uk-light uk-border-rounded uk-box-shadow-medium">
+	<div class="atom-avatar uk-border-rounded uk-text-large uk-box-shadow-medium uk-background-secondary uk-light
 uk-flex-none random ">
-	<img src="//:0" class="uk-border-rounded">
-	<span uk-icon="icon: user; ratio: 2"></span>
-</div>			<div class="atom-avatar uk-border-rounded uk-text-large uk-box-shadow-medium uk-background-secondary uk-light
+	<img src="//:0" class="uk-border-rounded">	<span uk-icon="icon: user; ratio: 2"></span>
+</div>	<div class="molecule-workflowEntry__name">
+		Mark Jones
+	</div>
+</div>			<div class="molecule-workflowEntry uk-background-secondary uk-light uk-border-rounded uk-box-shadow-medium">
+	<div class="atom-avatar uk-border-rounded uk-text-large uk-box-shadow-medium uk-background-secondary uk-light
 uk-flex-none random ">
-	<img src="//:0" class="uk-border-rounded">
-	<span uk-icon="icon: user; ratio: 2"></span>
-</div>			<div class="atom-avatar uk-border-rounded uk-text-large uk-box-shadow-medium uk-background-secondary uk-light
+	<img src="//:0" class="uk-border-rounded">	<span uk-icon="icon: user; ratio: 2"></span>
+</div>	<div class="molecule-workflowEntry__name">
+		Mark Jones
+	</div>
+</div>			<div class="molecule-workflowEntry uk-background-secondary uk-light uk-border-rounded uk-box-shadow-medium">
+	<div class="atom-avatar uk-border-rounded uk-text-large uk-box-shadow-medium uk-background-secondary uk-light
 uk-flex-none random ">
-	<img src="//:0" class="uk-border-rounded">
-	<span uk-icon="icon: user; ratio: 2"></span>
-</div>			<div class="atom-avatar uk-border-rounded uk-text-large uk-box-shadow-medium uk-background-secondary uk-light
+	<img src="//:0" class="uk-border-rounded">	<span uk-icon="icon: user; ratio: 2"></span>
+</div>	<div class="molecule-workflowEntry__name">
+		Mark Jones
+	</div>
+</div>			<div class="molecule-workflowEntry uk-background-secondary uk-light uk-border-rounded uk-box-shadow-medium">
+	<div class="atom-avatar uk-border-rounded uk-text-large uk-box-shadow-medium uk-background-secondary uk-light
 uk-flex-none random ">
-	<img src="//:0" class="uk-border-rounded">
-	<span uk-icon="icon: user; ratio: 2"></span>
-</div>			<div class="atom-avatar uk-border-rounded uk-text-large uk-box-shadow-medium uk-background-secondary uk-light
+	<img src="//:0" class="uk-border-rounded">	<span uk-icon="icon: user; ratio: 2"></span>
+</div>	<div class="molecule-workflowEntry__name">
+		Mark Jones
+	</div>
+</div>			<div class="molecule-workflowEntry uk-background-secondary uk-light uk-border-rounded uk-box-shadow-medium">
+	<div class="atom-avatar uk-border-rounded uk-text-large uk-box-shadow-medium uk-background-secondary uk-light
 uk-flex-none random ">
-	<img src="//:0" class="uk-border-rounded">
-	<span uk-icon="icon: user; ratio: 2"></span>
+	<img src="//:0" class="uk-border-rounded">	<span uk-icon="icon: user; ratio: 2"></span>
+</div>	<div class="molecule-workflowEntry__name">
+		Mark Jones
+	</div>
 </div>			</div>
 </div>	
 	<div class="molecule-workflowStep uk-margin">
 	<h3 class="uk-margin-remove uk-text-muted">The Heart of God</h3>
 	<div class="molecule-workflowStep__body uk-drag uk-background-muted uk-flex uk-flex-wrap uk-padding-small uk-box-shadow-medium" data-uk-sortable="group: workflow">
-					<div class="atom-avatar uk-border-rounded uk-text-large uk-box-shadow-medium uk-background-secondary uk-light
+					<div class="molecule-workflowEntry uk-background-secondary uk-light uk-border-rounded uk-box-shadow-medium">
+	<div class="atom-avatar uk-border-rounded uk-text-large uk-box-shadow-medium uk-background-secondary uk-light
 uk-flex-none random ">
-	<img src="//:0" class="uk-border-rounded">
-	<span uk-icon="icon: user; ratio: 2"></span>
-</div>			<div class="atom-avatar uk-border-rounded uk-text-large uk-box-shadow-medium uk-background-secondary uk-light
+	<img src="//:0" class="uk-border-rounded">	<span uk-icon="icon: user; ratio: 2"></span>
+</div>	<div class="molecule-workflowEntry__name">
+		Mark Jones
+	</div>
+</div>			<div class="molecule-workflowEntry uk-background-secondary uk-light uk-border-rounded uk-box-shadow-medium">
+	<div class="atom-avatar uk-border-rounded uk-text-large uk-box-shadow-medium uk-background-secondary uk-light
 uk-flex-none random ">
-	<img src="//:0" class="uk-border-rounded">
-	<span uk-icon="icon: user; ratio: 2"></span>
-</div>			<div class="atom-avatar uk-border-rounded uk-text-large uk-box-shadow-medium uk-background-secondary uk-light
+	<img src="//:0" class="uk-border-rounded">	<span uk-icon="icon: user; ratio: 2"></span>
+</div>	<div class="molecule-workflowEntry__name">
+		Mark Jones
+	</div>
+</div>			<div class="molecule-workflowEntry uk-background-secondary uk-light uk-border-rounded uk-box-shadow-medium">
+	<div class="atom-avatar uk-border-rounded uk-text-large uk-box-shadow-medium uk-background-secondary uk-light
 uk-flex-none random ">
-	<img src="//:0" class="uk-border-rounded">
-	<span uk-icon="icon: user; ratio: 2"></span>
+	<img src="//:0" class="uk-border-rounded">	<span uk-icon="icon: user; ratio: 2"></span>
+</div>	<div class="molecule-workflowEntry__name">
+		Mark Jones
+	</div>
 </div>			</div>
 </div>	
 	<div class="molecule-workflowStep uk-margin">
 	<h3 class="uk-margin-remove uk-text-muted">The Heart of God</h3>
 	<div class="molecule-workflowStep__body uk-drag uk-background-muted uk-flex uk-flex-wrap uk-padding-small uk-box-shadow-medium" data-uk-sortable="group: workflow">
-					<div class="atom-avatar uk-border-rounded uk-text-large uk-box-shadow-medium uk-background-secondary uk-light
+					<div class="molecule-workflowEntry uk-background-secondary uk-light uk-border-rounded uk-box-shadow-medium">
+	<div class="atom-avatar uk-border-rounded uk-text-large uk-box-shadow-medium uk-background-secondary uk-light
 uk-flex-none random ">
-	<img src="//:0" class="uk-border-rounded">
-	<span uk-icon="icon: user; ratio: 2"></span>
-</div>			<div class="atom-avatar uk-border-rounded uk-text-large uk-box-shadow-medium uk-background-secondary uk-light
+	<img src="//:0" class="uk-border-rounded">	<span uk-icon="icon: user; ratio: 2"></span>
+</div>	<div class="molecule-workflowEntry__name">
+		Mark Jones
+	</div>
+</div>			<div class="molecule-workflowEntry uk-background-secondary uk-light uk-border-rounded uk-box-shadow-medium">
+	<div class="atom-avatar uk-border-rounded uk-text-large uk-box-shadow-medium uk-background-secondary uk-light
 uk-flex-none random ">
-	<img src="//:0" class="uk-border-rounded">
-	<span uk-icon="icon: user; ratio: 2"></span>
-</div>			<div class="atom-avatar uk-border-rounded uk-text-large uk-box-shadow-medium uk-background-secondary uk-light
+	<img src="//:0" class="uk-border-rounded">	<span uk-icon="icon: user; ratio: 2"></span>
+</div>	<div class="molecule-workflowEntry__name">
+		Mark Jones
+	</div>
+</div>			<div class="molecule-workflowEntry uk-background-secondary uk-light uk-border-rounded uk-box-shadow-medium">
+	<div class="atom-avatar uk-border-rounded uk-text-large uk-box-shadow-medium uk-background-secondary uk-light
 uk-flex-none random ">
-	<img src="//:0" class="uk-border-rounded">
-	<span uk-icon="icon: user; ratio: 2"></span>
-</div>			<div class="atom-avatar uk-border-rounded uk-text-large uk-box-shadow-medium uk-background-secondary uk-light
+	<img src="//:0" class="uk-border-rounded">	<span uk-icon="icon: user; ratio: 2"></span>
+</div>	<div class="molecule-workflowEntry__name">
+		Mark Jones
+	</div>
+</div>			<div class="molecule-workflowEntry uk-background-secondary uk-light uk-border-rounded uk-box-shadow-medium">
+	<div class="atom-avatar uk-border-rounded uk-text-large uk-box-shadow-medium uk-background-secondary uk-light
 uk-flex-none random ">
-	<img src="//:0" class="uk-border-rounded">
-	<span uk-icon="icon: user; ratio: 2"></span>
-</div>			<div class="atom-avatar uk-border-rounded uk-text-large uk-box-shadow-medium uk-background-secondary uk-light
+	<img src="//:0" class="uk-border-rounded">	<span uk-icon="icon: user; ratio: 2"></span>
+</div>	<div class="molecule-workflowEntry__name">
+		Mark Jones
+	</div>
+</div>			<div class="molecule-workflowEntry uk-background-secondary uk-light uk-border-rounded uk-box-shadow-medium">
+	<div class="atom-avatar uk-border-rounded uk-text-large uk-box-shadow-medium uk-background-secondary uk-light
 uk-flex-none random ">
-	<img src="//:0" class="uk-border-rounded">
-	<span uk-icon="icon: user; ratio: 2"></span>
-</div>			<div class="atom-avatar uk-border-rounded uk-text-large uk-box-shadow-medium uk-background-secondary uk-light
+	<img src="//:0" class="uk-border-rounded">	<span uk-icon="icon: user; ratio: 2"></span>
+</div>	<div class="molecule-workflowEntry__name">
+		Mark Jones
+	</div>
+</div>			<div class="molecule-workflowEntry uk-background-secondary uk-light uk-border-rounded uk-box-shadow-medium">
+	<div class="atom-avatar uk-border-rounded uk-text-large uk-box-shadow-medium uk-background-secondary uk-light
 uk-flex-none random ">
-	<img src="//:0" class="uk-border-rounded">
-	<span uk-icon="icon: user; ratio: 2"></span>
-</div>			<div class="atom-avatar uk-border-rounded uk-text-large uk-box-shadow-medium uk-background-secondary uk-light
+	<img src="//:0" class="uk-border-rounded">	<span uk-icon="icon: user; ratio: 2"></span>
+</div>	<div class="molecule-workflowEntry__name">
+		Mark Jones
+	</div>
+</div>			<div class="molecule-workflowEntry uk-background-secondary uk-light uk-border-rounded uk-box-shadow-medium">
+	<div class="atom-avatar uk-border-rounded uk-text-large uk-box-shadow-medium uk-background-secondary uk-light
 uk-flex-none random ">
-	<img src="//:0" class="uk-border-rounded">
-	<span uk-icon="icon: user; ratio: 2"></span>
-</div>			<div class="atom-avatar uk-border-rounded uk-text-large uk-box-shadow-medium uk-background-secondary uk-light
+	<img src="//:0" class="uk-border-rounded">	<span uk-icon="icon: user; ratio: 2"></span>
+</div>	<div class="molecule-workflowEntry__name">
+		Mark Jones
+	</div>
+</div>			<div class="molecule-workflowEntry uk-background-secondary uk-light uk-border-rounded uk-box-shadow-medium">
+	<div class="atom-avatar uk-border-rounded uk-text-large uk-box-shadow-medium uk-background-secondary uk-light
 uk-flex-none random ">
-	<img src="//:0" class="uk-border-rounded">
-	<span uk-icon="icon: user; ratio: 2"></span>
-</div>			<div class="atom-avatar uk-border-rounded uk-text-large uk-box-shadow-medium uk-background-secondary uk-light
+	<img src="//:0" class="uk-border-rounded">	<span uk-icon="icon: user; ratio: 2"></span>
+</div>	<div class="molecule-workflowEntry__name">
+		Mark Jones
+	</div>
+</div>			<div class="molecule-workflowEntry uk-background-secondary uk-light uk-border-rounded uk-box-shadow-medium">
+	<div class="atom-avatar uk-border-rounded uk-text-large uk-box-shadow-medium uk-background-secondary uk-light
 uk-flex-none random ">
-	<img src="//:0" class="uk-border-rounded">
-	<span uk-icon="icon: user; ratio: 2"></span>
-</div>			<div class="atom-avatar uk-border-rounded uk-text-large uk-box-shadow-medium uk-background-secondary uk-light
+	<img src="//:0" class="uk-border-rounded">	<span uk-icon="icon: user; ratio: 2"></span>
+</div>	<div class="molecule-workflowEntry__name">
+		Mark Jones
+	</div>
+</div>			<div class="molecule-workflowEntry uk-background-secondary uk-light uk-border-rounded uk-box-shadow-medium">
+	<div class="atom-avatar uk-border-rounded uk-text-large uk-box-shadow-medium uk-background-secondary uk-light
 uk-flex-none random ">
-	<img src="//:0" class="uk-border-rounded">
-	<span uk-icon="icon: user; ratio: 2"></span>
-</div>			<div class="atom-avatar uk-border-rounded uk-text-large uk-box-shadow-medium uk-background-secondary uk-light
+	<img src="//:0" class="uk-border-rounded">	<span uk-icon="icon: user; ratio: 2"></span>
+</div>	<div class="molecule-workflowEntry__name">
+		Mark Jones
+	</div>
+</div>			<div class="molecule-workflowEntry uk-background-secondary uk-light uk-border-rounded uk-box-shadow-medium">
+	<div class="atom-avatar uk-border-rounded uk-text-large uk-box-shadow-medium uk-background-secondary uk-light
 uk-flex-none random ">
-	<img src="//:0" class="uk-border-rounded">
-	<span uk-icon="icon: user; ratio: 2"></span>
-</div>			<div class="atom-avatar uk-border-rounded uk-text-large uk-box-shadow-medium uk-background-secondary uk-light
+	<img src="//:0" class="uk-border-rounded">	<span uk-icon="icon: user; ratio: 2"></span>
+</div>	<div class="molecule-workflowEntry__name">
+		Mark Jones
+	</div>
+</div>			<div class="molecule-workflowEntry uk-background-secondary uk-light uk-border-rounded uk-box-shadow-medium">
+	<div class="atom-avatar uk-border-rounded uk-text-large uk-box-shadow-medium uk-background-secondary uk-light
 uk-flex-none random ">
-	<img src="//:0" class="uk-border-rounded">
-	<span uk-icon="icon: user; ratio: 2"></span>
-</div>			<div class="atom-avatar uk-border-rounded uk-text-large uk-box-shadow-medium uk-background-secondary uk-light
+	<img src="//:0" class="uk-border-rounded">	<span uk-icon="icon: user; ratio: 2"></span>
+</div>	<div class="molecule-workflowEntry__name">
+		Mark Jones
+	</div>
+</div>			<div class="molecule-workflowEntry uk-background-secondary uk-light uk-border-rounded uk-box-shadow-medium">
+	<div class="atom-avatar uk-border-rounded uk-text-large uk-box-shadow-medium uk-background-secondary uk-light
 uk-flex-none random ">
-	<img src="//:0" class="uk-border-rounded">
-	<span uk-icon="icon: user; ratio: 2"></span>
-</div>			<div class="atom-avatar uk-border-rounded uk-text-large uk-box-shadow-medium uk-background-secondary uk-light
+	<img src="//:0" class="uk-border-rounded">	<span uk-icon="icon: user; ratio: 2"></span>
+</div>	<div class="molecule-workflowEntry__name">
+		Mark Jones
+	</div>
+</div>			<div class="molecule-workflowEntry uk-background-secondary uk-light uk-border-rounded uk-box-shadow-medium">
+	<div class="atom-avatar uk-border-rounded uk-text-large uk-box-shadow-medium uk-background-secondary uk-light
 uk-flex-none random ">
-	<img src="//:0" class="uk-border-rounded">
-	<span uk-icon="icon: user; ratio: 2"></span>
-</div>			<div class="atom-avatar uk-border-rounded uk-text-large uk-box-shadow-medium uk-background-secondary uk-light
+	<img src="//:0" class="uk-border-rounded">	<span uk-icon="icon: user; ratio: 2"></span>
+</div>	<div class="molecule-workflowEntry__name">
+		Mark Jones
+	</div>
+</div>			<div class="molecule-workflowEntry uk-background-secondary uk-light uk-border-rounded uk-box-shadow-medium">
+	<div class="atom-avatar uk-border-rounded uk-text-large uk-box-shadow-medium uk-background-secondary uk-light
 uk-flex-none random ">
-	<img src="//:0" class="uk-border-rounded">
-	<span uk-icon="icon: user; ratio: 2"></span>
-</div>			<div class="atom-avatar uk-border-rounded uk-text-large uk-box-shadow-medium uk-background-secondary uk-light
+	<img src="//:0" class="uk-border-rounded">	<span uk-icon="icon: user; ratio: 2"></span>
+</div>	<div class="molecule-workflowEntry__name">
+		Mark Jones
+	</div>
+</div>			<div class="molecule-workflowEntry uk-background-secondary uk-light uk-border-rounded uk-box-shadow-medium">
+	<div class="atom-avatar uk-border-rounded uk-text-large uk-box-shadow-medium uk-background-secondary uk-light
 uk-flex-none random ">
-	<img src="//:0" class="uk-border-rounded">
-	<span uk-icon="icon: user; ratio: 2"></span>
-</div>			<div class="atom-avatar uk-border-rounded uk-text-large uk-box-shadow-medium uk-background-secondary uk-light
+	<img src="//:0" class="uk-border-rounded">	<span uk-icon="icon: user; ratio: 2"></span>
+</div>	<div class="molecule-workflowEntry__name">
+		Mark Jones
+	</div>
+</div>			<div class="molecule-workflowEntry uk-background-secondary uk-light uk-border-rounded uk-box-shadow-medium">
+	<div class="atom-avatar uk-border-rounded uk-text-large uk-box-shadow-medium uk-background-secondary uk-light
 uk-flex-none random ">
-	<img src="//:0" class="uk-border-rounded">
-	<span uk-icon="icon: user; ratio: 2"></span>
-</div>			<div class="atom-avatar uk-border-rounded uk-text-large uk-box-shadow-medium uk-background-secondary uk-light
+	<img src="//:0" class="uk-border-rounded">	<span uk-icon="icon: user; ratio: 2"></span>
+</div>	<div class="molecule-workflowEntry__name">
+		Mark Jones
+	</div>
+</div>			<div class="molecule-workflowEntry uk-background-secondary uk-light uk-border-rounded uk-box-shadow-medium">
+	<div class="atom-avatar uk-border-rounded uk-text-large uk-box-shadow-medium uk-background-secondary uk-light
 uk-flex-none random ">
-	<img src="//:0" class="uk-border-rounded">
-	<span uk-icon="icon: user; ratio: 2"></span>
-</div>			<div class="atom-avatar uk-border-rounded uk-text-large uk-box-shadow-medium uk-background-secondary uk-light
+	<img src="//:0" class="uk-border-rounded">	<span uk-icon="icon: user; ratio: 2"></span>
+</div>	<div class="molecule-workflowEntry__name">
+		Mark Jones
+	</div>
+</div>			<div class="molecule-workflowEntry uk-background-secondary uk-light uk-border-rounded uk-box-shadow-medium">
+	<div class="atom-avatar uk-border-rounded uk-text-large uk-box-shadow-medium uk-background-secondary uk-light
 uk-flex-none random ">
-	<img src="//:0" class="uk-border-rounded">
-	<span uk-icon="icon: user; ratio: 2"></span>
-</div>			<div class="atom-avatar uk-border-rounded uk-text-large uk-box-shadow-medium uk-background-secondary uk-light
+	<img src="//:0" class="uk-border-rounded">	<span uk-icon="icon: user; ratio: 2"></span>
+</div>	<div class="molecule-workflowEntry__name">
+		Mark Jones
+	</div>
+</div>			<div class="molecule-workflowEntry uk-background-secondary uk-light uk-border-rounded uk-box-shadow-medium">
+	<div class="atom-avatar uk-border-rounded uk-text-large uk-box-shadow-medium uk-background-secondary uk-light
 uk-flex-none random ">
-	<img src="//:0" class="uk-border-rounded">
-	<span uk-icon="icon: user; ratio: 2"></span>
-</div>			<div class="atom-avatar uk-border-rounded uk-text-large uk-box-shadow-medium uk-background-secondary uk-light
+	<img src="//:0" class="uk-border-rounded">	<span uk-icon="icon: user; ratio: 2"></span>
+</div>	<div class="molecule-workflowEntry__name">
+		Mark Jones
+	</div>
+</div>			<div class="molecule-workflowEntry uk-background-secondary uk-light uk-border-rounded uk-box-shadow-medium">
+	<div class="atom-avatar uk-border-rounded uk-text-large uk-box-shadow-medium uk-background-secondary uk-light
 uk-flex-none random ">
-	<img src="//:0" class="uk-border-rounded">
-	<span uk-icon="icon: user; ratio: 2"></span>
-</div>			<div class="atom-avatar uk-border-rounded uk-text-large uk-box-shadow-medium uk-background-secondary uk-light
+	<img src="//:0" class="uk-border-rounded">	<span uk-icon="icon: user; ratio: 2"></span>
+</div>	<div class="molecule-workflowEntry__name">
+		Mark Jones
+	</div>
+</div>			<div class="molecule-workflowEntry uk-background-secondary uk-light uk-border-rounded uk-box-shadow-medium">
+	<div class="atom-avatar uk-border-rounded uk-text-large uk-box-shadow-medium uk-background-secondary uk-light
 uk-flex-none random ">
-	<img src="//:0" class="uk-border-rounded">
-	<span uk-icon="icon: user; ratio: 2"></span>
-</div>			<div class="atom-avatar uk-border-rounded uk-text-large uk-box-shadow-medium uk-background-secondary uk-light
+	<img src="//:0" class="uk-border-rounded">	<span uk-icon="icon: user; ratio: 2"></span>
+</div>	<div class="molecule-workflowEntry__name">
+		Mark Jones
+	</div>
+</div>			<div class="molecule-workflowEntry uk-background-secondary uk-light uk-border-rounded uk-box-shadow-medium">
+	<div class="atom-avatar uk-border-rounded uk-text-large uk-box-shadow-medium uk-background-secondary uk-light
 uk-flex-none random ">
-	<img src="//:0" class="uk-border-rounded">
-	<span uk-icon="icon: user; ratio: 2"></span>
-</div>			<div class="atom-avatar uk-border-rounded uk-text-large uk-box-shadow-medium uk-background-secondary uk-light
+	<img src="//:0" class="uk-border-rounded">	<span uk-icon="icon: user; ratio: 2"></span>
+</div>	<div class="molecule-workflowEntry__name">
+		Mark Jones
+	</div>
+</div>			<div class="molecule-workflowEntry uk-background-secondary uk-light uk-border-rounded uk-box-shadow-medium">
+	<div class="atom-avatar uk-border-rounded uk-text-large uk-box-shadow-medium uk-background-secondary uk-light
 uk-flex-none random ">
-	<img src="//:0" class="uk-border-rounded">
-	<span uk-icon="icon: user; ratio: 2"></span>
-</div>			<div class="atom-avatar uk-border-rounded uk-text-large uk-box-shadow-medium uk-background-secondary uk-light
+	<img src="//:0" class="uk-border-rounded">	<span uk-icon="icon: user; ratio: 2"></span>
+</div>	<div class="molecule-workflowEntry__name">
+		Mark Jones
+	</div>
+</div>			<div class="molecule-workflowEntry uk-background-secondary uk-light uk-border-rounded uk-box-shadow-medium">
+	<div class="atom-avatar uk-border-rounded uk-text-large uk-box-shadow-medium uk-background-secondary uk-light
 uk-flex-none random ">
-	<img src="//:0" class="uk-border-rounded">
-	<span uk-icon="icon: user; ratio: 2"></span>
-</div>			<div class="atom-avatar uk-border-rounded uk-text-large uk-box-shadow-medium uk-background-secondary uk-light
+	<img src="//:0" class="uk-border-rounded">	<span uk-icon="icon: user; ratio: 2"></span>
+</div>	<div class="molecule-workflowEntry__name">
+		Mark Jones
+	</div>
+</div>			<div class="molecule-workflowEntry uk-background-secondary uk-light uk-border-rounded uk-box-shadow-medium">
+	<div class="atom-avatar uk-border-rounded uk-text-large uk-box-shadow-medium uk-background-secondary uk-light
 uk-flex-none random ">
-	<img src="//:0" class="uk-border-rounded">
-	<span uk-icon="icon: user; ratio: 2"></span>
-</div>			<div class="atom-avatar uk-border-rounded uk-text-large uk-box-shadow-medium uk-background-secondary uk-light
+	<img src="//:0" class="uk-border-rounded">	<span uk-icon="icon: user; ratio: 2"></span>
+</div>	<div class="molecule-workflowEntry__name">
+		Mark Jones
+	</div>
+</div>			<div class="molecule-workflowEntry uk-background-secondary uk-light uk-border-rounded uk-box-shadow-medium">
+	<div class="atom-avatar uk-border-rounded uk-text-large uk-box-shadow-medium uk-background-secondary uk-light
 uk-flex-none random ">
-	<img src="//:0" class="uk-border-rounded">
-	<span uk-icon="icon: user; ratio: 2"></span>
-</div>			<div class="atom-avatar uk-border-rounded uk-text-large uk-box-shadow-medium uk-background-secondary uk-light
+	<img src="//:0" class="uk-border-rounded">	<span uk-icon="icon: user; ratio: 2"></span>
+</div>	<div class="molecule-workflowEntry__name">
+		Mark Jones
+	</div>
+</div>			<div class="molecule-workflowEntry uk-background-secondary uk-light uk-border-rounded uk-box-shadow-medium">
+	<div class="atom-avatar uk-border-rounded uk-text-large uk-box-shadow-medium uk-background-secondary uk-light
 uk-flex-none random ">
-	<img src="//:0" class="uk-border-rounded">
-	<span uk-icon="icon: user; ratio: 2"></span>
-</div>			<div class="atom-avatar uk-border-rounded uk-text-large uk-box-shadow-medium uk-background-secondary uk-light
+	<img src="//:0" class="uk-border-rounded">	<span uk-icon="icon: user; ratio: 2"></span>
+</div>	<div class="molecule-workflowEntry__name">
+		Mark Jones
+	</div>
+</div>			<div class="molecule-workflowEntry uk-background-secondary uk-light uk-border-rounded uk-box-shadow-medium">
+	<div class="atom-avatar uk-border-rounded uk-text-large uk-box-shadow-medium uk-background-secondary uk-light
 uk-flex-none random ">
-	<img src="//:0" class="uk-border-rounded">
-	<span uk-icon="icon: user; ratio: 2"></span>
-</div>			<div class="atom-avatar uk-border-rounded uk-text-large uk-box-shadow-medium uk-background-secondary uk-light
+	<img src="//:0" class="uk-border-rounded">	<span uk-icon="icon: user; ratio: 2"></span>
+</div>	<div class="molecule-workflowEntry__name">
+		Mark Jones
+	</div>
+</div>			<div class="molecule-workflowEntry uk-background-secondary uk-light uk-border-rounded uk-box-shadow-medium">
+	<div class="atom-avatar uk-border-rounded uk-text-large uk-box-shadow-medium uk-background-secondary uk-light
 uk-flex-none random ">
-	<img src="//:0" class="uk-border-rounded">
-	<span uk-icon="icon: user; ratio: 2"></span>
-</div>			<div class="atom-avatar uk-border-rounded uk-text-large uk-box-shadow-medium uk-background-secondary uk-light
+	<img src="//:0" class="uk-border-rounded">	<span uk-icon="icon: user; ratio: 2"></span>
+</div>	<div class="molecule-workflowEntry__name">
+		Mark Jones
+	</div>
+</div>			<div class="molecule-workflowEntry uk-background-secondary uk-light uk-border-rounded uk-box-shadow-medium">
+	<div class="atom-avatar uk-border-rounded uk-text-large uk-box-shadow-medium uk-background-secondary uk-light
 uk-flex-none random ">
-	<img src="//:0" class="uk-border-rounded">
-	<span uk-icon="icon: user; ratio: 2"></span>
-</div>			<div class="atom-avatar uk-border-rounded uk-text-large uk-box-shadow-medium uk-background-secondary uk-light
+	<img src="//:0" class="uk-border-rounded">	<span uk-icon="icon: user; ratio: 2"></span>
+</div>	<div class="molecule-workflowEntry__name">
+		Mark Jones
+	</div>
+</div>			<div class="molecule-workflowEntry uk-background-secondary uk-light uk-border-rounded uk-box-shadow-medium">
+	<div class="atom-avatar uk-border-rounded uk-text-large uk-box-shadow-medium uk-background-secondary uk-light
 uk-flex-none random ">
-	<img src="//:0" class="uk-border-rounded">
-	<span uk-icon="icon: user; ratio: 2"></span>
-</div>			<div class="atom-avatar uk-border-rounded uk-text-large uk-box-shadow-medium uk-background-secondary uk-light
+	<img src="//:0" class="uk-border-rounded">	<span uk-icon="icon: user; ratio: 2"></span>
+</div>	<div class="molecule-workflowEntry__name">
+		Mark Jones
+	</div>
+</div>			<div class="molecule-workflowEntry uk-background-secondary uk-light uk-border-rounded uk-box-shadow-medium">
+	<div class="atom-avatar uk-border-rounded uk-text-large uk-box-shadow-medium uk-background-secondary uk-light
 uk-flex-none random ">
-	<img src="//:0" class="uk-border-rounded">
-	<span uk-icon="icon: user; ratio: 2"></span>
-</div>			<div class="atom-avatar uk-border-rounded uk-text-large uk-box-shadow-medium uk-background-secondary uk-light
+	<img src="//:0" class="uk-border-rounded">	<span uk-icon="icon: user; ratio: 2"></span>
+</div>	<div class="molecule-workflowEntry__name">
+		Mark Jones
+	</div>
+</div>			<div class="molecule-workflowEntry uk-background-secondary uk-light uk-border-rounded uk-box-shadow-medium">
+	<div class="atom-avatar uk-border-rounded uk-text-large uk-box-shadow-medium uk-background-secondary uk-light
 uk-flex-none random ">
-	<img src="//:0" class="uk-border-rounded">
-	<span uk-icon="icon: user; ratio: 2"></span>
-</div>			<div class="atom-avatar uk-border-rounded uk-text-large uk-box-shadow-medium uk-background-secondary uk-light
+	<img src="//:0" class="uk-border-rounded">	<span uk-icon="icon: user; ratio: 2"></span>
+</div>	<div class="molecule-workflowEntry__name">
+		Mark Jones
+	</div>
+</div>			<div class="molecule-workflowEntry uk-background-secondary uk-light uk-border-rounded uk-box-shadow-medium">
+	<div class="atom-avatar uk-border-rounded uk-text-large uk-box-shadow-medium uk-background-secondary uk-light
 uk-flex-none random ">
-	<img src="//:0" class="uk-border-rounded">
-	<span uk-icon="icon: user; ratio: 2"></span>
-</div>			<div class="atom-avatar uk-border-rounded uk-text-large uk-box-shadow-medium uk-background-secondary uk-light
+	<img src="//:0" class="uk-border-rounded">	<span uk-icon="icon: user; ratio: 2"></span>
+</div>	<div class="molecule-workflowEntry__name">
+		Mark Jones
+	</div>
+</div>			<div class="molecule-workflowEntry uk-background-secondary uk-light uk-border-rounded uk-box-shadow-medium">
+	<div class="atom-avatar uk-border-rounded uk-text-large uk-box-shadow-medium uk-background-secondary uk-light
 uk-flex-none random ">
-	<img src="//:0" class="uk-border-rounded">
-	<span uk-icon="icon: user; ratio: 2"></span>
-</div>			<div class="atom-avatar uk-border-rounded uk-text-large uk-box-shadow-medium uk-background-secondary uk-light
+	<img src="//:0" class="uk-border-rounded">	<span uk-icon="icon: user; ratio: 2"></span>
+</div>	<div class="molecule-workflowEntry__name">
+		Mark Jones
+	</div>
+</div>			<div class="molecule-workflowEntry uk-background-secondary uk-light uk-border-rounded uk-box-shadow-medium">
+	<div class="atom-avatar uk-border-rounded uk-text-large uk-box-shadow-medium uk-background-secondary uk-light
 uk-flex-none random ">
-	<img src="//:0" class="uk-border-rounded">
-	<span uk-icon="icon: user; ratio: 2"></span>
-</div>			<div class="atom-avatar uk-border-rounded uk-text-large uk-box-shadow-medium uk-background-secondary uk-light
+	<img src="//:0" class="uk-border-rounded">	<span uk-icon="icon: user; ratio: 2"></span>
+</div>	<div class="molecule-workflowEntry__name">
+		Mark Jones
+	</div>
+</div>			<div class="molecule-workflowEntry uk-background-secondary uk-light uk-border-rounded uk-box-shadow-medium">
+	<div class="atom-avatar uk-border-rounded uk-text-large uk-box-shadow-medium uk-background-secondary uk-light
 uk-flex-none random ">
-	<img src="//:0" class="uk-border-rounded">
-	<span uk-icon="icon: user; ratio: 2"></span>
-</div>			<div class="atom-avatar uk-border-rounded uk-text-large uk-box-shadow-medium uk-background-secondary uk-light
+	<img src="//:0" class="uk-border-rounded">	<span uk-icon="icon: user; ratio: 2"></span>
+</div>	<div class="molecule-workflowEntry__name">
+		Mark Jones
+	</div>
+</div>			<div class="molecule-workflowEntry uk-background-secondary uk-light uk-border-rounded uk-box-shadow-medium">
+	<div class="atom-avatar uk-border-rounded uk-text-large uk-box-shadow-medium uk-background-secondary uk-light
 uk-flex-none random ">
-	<img src="//:0" class="uk-border-rounded">
-	<span uk-icon="icon: user; ratio: 2"></span>
-</div>			<div class="atom-avatar uk-border-rounded uk-text-large uk-box-shadow-medium uk-background-secondary uk-light
+	<img src="//:0" class="uk-border-rounded">	<span uk-icon="icon: user; ratio: 2"></span>
+</div>	<div class="molecule-workflowEntry__name">
+		Mark Jones
+	</div>
+</div>			<div class="molecule-workflowEntry uk-background-secondary uk-light uk-border-rounded uk-box-shadow-medium">
+	<div class="atom-avatar uk-border-rounded uk-text-large uk-box-shadow-medium uk-background-secondary uk-light
 uk-flex-none random ">
-	<img src="//:0" class="uk-border-rounded">
-	<span uk-icon="icon: user; ratio: 2"></span>
+	<img src="//:0" class="uk-border-rounded">	<span uk-icon="icon: user; ratio: 2"></span>
+</div>	<div class="molecule-workflowEntry__name">
+		Mark Jones
+	</div>
 </div>			</div>
 </div>	
 	<div class="molecule-workflowStep uk-margin">

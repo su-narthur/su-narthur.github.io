@@ -3,6 +3,8 @@
 {% block content %}
 	<h1>My Workflow</h1>
 	
+	<input id="workflow-filter" class="uk-input" type="text" placeholder="Search">
+	
 	{% embed "components/molecule-workflowStep.html" with {title: "The Heart of God"} only %}
 		{% block stepBody %}
 			{% include "components/molecule-workflowEntry.html" %}
@@ -79,4 +81,19 @@
 		{% block stepBody %}
 		{% endblock %}
 	{% endembed %}
+	
+	<script>
+		$(document).ready(function () {
+			$('#workflow-filter').on('keyup', function () {
+				var val = $(this).val();
+
+				$('.molecule-workflowEntry').each(function	() {
+					var $this = $(this);
+					var name = $this.find('.molecule-workflowEntry__name').text();
+					var filterMatchesName = name.toLowerCase().includes(val.toLowerCase());
+					$this.toggle(filterMatchesName);
+				});
+			});
+		});
+	</script>
 {% endblock %}

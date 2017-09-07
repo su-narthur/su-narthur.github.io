@@ -103,6 +103,8 @@
 						
 				<h1>My Workflow</h1>
 	
+	<input id="workflow-filter" class="uk-input" type="text" placeholder="Search">
+	
 	<div class="molecule-workflowStep uk-margin">
 	<h3 class="uk-margin-remove uk-text-muted">The Heart of God</h3>
 	<div class="molecule-workflowStep__body uk-drag uk-background-muted uk-flex uk-flex-wrap uk-padding-small uk-box-shadow-medium" data-uk-sortable="group: workflow">
@@ -521,7 +523,22 @@ uk-flex-none random ">
 	<h3 class="uk-margin-remove uk-text-muted">The Heart of God</h3>
 	<div class="molecule-workflowStep__body uk-drag uk-background-muted uk-flex uk-flex-wrap uk-padding-small uk-box-shadow-medium" data-uk-sortable="group: workflow">
 					</div>
-</div>			
+</div>	
+	<script>
+		$(document).ready(function () {
+			$('#workflow-filter').on('keyup', function () {
+				var val = $(this).val();
+
+				$('.molecule-workflowEntry').each(function	() {
+					var $this = $(this);
+					var name = $this.find('.molecule-workflowEntry__name').text();
+					var filterMatchesName = name.toLowerCase().includes(val.toLowerCase());
+					$this.toggle(filterMatchesName);
+				});
+			});
+		});
+	</script>
+			
 			<span class="atom-version">Version 0.4.18</span>
 		</div>
 	</div>

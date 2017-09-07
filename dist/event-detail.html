@@ -22,6 +22,26 @@
 	
 	<script src="../js/responsive.js"></script>
 	
+	<script>
+		$(document).ready(function () {
+			var randomAvatars = $('.random');
+			var quantity = randomAvatars.length;
+			$.ajax({
+				url: 'https://randomuser.me/api/?results='+quantity,
+				dataType: 'json',
+				success: function(data) {
+					var results = data.results;
+					randomAvatars.each(function() {
+						var result = results.pop();
+						$(this).attr('title',result.name.first+' '+result.name.last);
+						UIkit.tooltip(this);
+						if (Math.random() > .2) $(this).find('img').attr('src',result.picture.large);
+					});
+				}
+			});
+		});
+	</script>
+	
 		<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
 	<script src="../js/event-detail.js"></script>
 </head>

@@ -1,7 +1,5 @@
-<div class="atom-avatar uk-border-rounded uk-text-large uk-box-shadow-medium uk-background-secondary uk-light {{ className }}">
-	{% if photo %}
-		<img src="{{ photo }}">
-	{% else %}
-		<span uk-icon="icon: user; ratio: 2"></span>
-	{% endif %}
+<div class="atom-avatar uk-border-rounded uk-text-large uk-box-shadow-medium uk-background-secondary uk-light
+uk-flex-none {% if random %}random{% endif %} {{ className }}">
+	<img src="{{ photo ? photo : '//:0' }}" class="uk-border-rounded">
+	<span uk-icon="icon: user; ratio: 2"></span>
 </div>

@@ -1,0 +1,356 @@
+<!doctype html>
+
+<html lang="en" class="uk-width-1-1">
+<head>
+	<meta charset="utf-8">
+	
+	<title>Church Life Tools</title>
+	
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.28/css/uikit.min.css" />
+	<link rel="stylesheet" href="../css/global.css" />
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.28/js/uikit.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.28/js/uikit-icons.min.js"></script>
+	
+	<!--[if lt IE 9]>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
+	<![endif]-->
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<script src="../js/responsive.js"></script>
+	
+	<script>
+		$(document).ready(function () {
+			var randomAvatars = $('.random');
+			var quantity = randomAvatars.length;
+			$.ajax({
+				url: 'https://randomuser.me/api/?results='+quantity,
+				dataType: 'json',
+				success: function(data) {
+					var results = data.results;
+					randomAvatars.each(function() {
+						var result = results.pop();
+						$(this).attr('title',result.name.first+' '+result.name.last);
+						UIkit.tooltip(this);
+						if (Math.random() > .2) $(this).find('img').attr('src',result.picture.large);
+					});
+				}
+			});
+		});
+	</script>
+	
+	</head>
+
+<body>
+
+	<ul class="organism-nav uk-text-center uk-background-muted">
+	<li>
+		<a href="#" class="uk-flex uk-flex-column uk-padding-small uk-padding-remove-left uk-padding-remove-right">
+			<i uk-icon="icon: thumbnails"></i>
+			<span class="label">Dashboard</span>
+		</a>
+	</li>
+	<li>
+		<a href="#" class="uk-flex uk-flex-column uk-padding-small uk-padding-remove-left uk-padding-remove-right">
+			<i uk-icon="icon: user"></i>
+			<span class="label">Users</span>
+		</a>
+	</li>
+	<li>
+		<a href="#" class="uk-flex uk-flex-column uk-padding-small uk-padding-remove-left uk-padding-remove-right">
+			<i uk-icon="icon: users"></i>
+			<span class="label">Groups</span>
+		</a>
+	</li>
+	<li>
+		<a href="#" class="uk-flex uk-flex-column uk-padding-small uk-padding-remove-left uk-padding-remove-right uk-background-primary uk-light">
+			<i uk-icon="icon: calendar"></i>
+			<span class="label">Events</span>
+		</a>
+	</li>
+	<li>
+		<a href="#" class="uk-flex uk-flex-column uk-padding-small uk-padding-remove-left uk-padding-remove-right">
+			<i uk-icon="icon: heart"></i>
+			<span class="label">Giving</span>
+		</a>
+	</li>
+	<li>
+		<a href="#" class="uk-flex uk-flex-column uk-padding-small uk-padding-remove-left uk-padding-remove-right">
+			<i uk-icon="icon: world"></i>
+			<span class="label">Conference</span>
+		</a>
+	</li>
+	<li>
+		<a href="#" class="uk-flex uk-flex-column uk-padding-small uk-padding-remove-left uk-padding-remove-right">
+			<i uk-icon="icon: file-edit"></i>
+			<span class="label">Reports</span>
+		</a>
+	</li>
+</ul>	
+		<div class="layout-listLayout">
+		<div class="organism-listPanel uk-card uk-card-default uk-padding">
+					</div>
+		
+		<div class="organism-content uk-card uk-card-default uk-padding-small">
+			<a href="#" class="to-list"></a>
+			
+						
+				<h1>My Workflow</h1>
+	
+	<div class="molecule-workflowStep uk-margin">
+	<h3 class="uk-margin-remove uk-text-muted">The Heart of God</h3>
+	<div class="molecule-workflowStep__body uk-drag uk-background-muted uk-flex uk-flex-wrap uk-padding-small uk-box-shadow-medium" data-uk-sortable="group: workflow">
+					<div class="atom-avatar uk-border-rounded uk-text-large uk-box-shadow-medium uk-background-secondary uk-light
+uk-flex-none random ">
+	<img src="//:0" class="uk-border-rounded">
+	<span uk-icon="icon: user; ratio: 2"></span>
+</div>			<div class="atom-avatar uk-border-rounded uk-text-large uk-box-shadow-medium uk-background-secondary uk-light
+uk-flex-none random ">
+	<img src="//:0" class="uk-border-rounded">
+	<span uk-icon="icon: user; ratio: 2"></span>
+</div>			<div class="atom-avatar uk-border-rounded uk-text-large uk-box-shadow-medium uk-background-secondary uk-light
+uk-flex-none random ">
+	<img src="//:0" class="uk-border-rounded">
+	<span uk-icon="icon: user; ratio: 2"></span>
+</div>			<div class="atom-avatar uk-border-rounded uk-text-large uk-box-shadow-medium uk-background-secondary uk-light
+uk-flex-none random ">
+	<img src="//:0" class="uk-border-rounded">
+	<span uk-icon="icon: user; ratio: 2"></span>
+</div>			<div class="atom-avatar uk-border-rounded uk-text-large uk-box-shadow-medium uk-background-secondary uk-light
+uk-flex-none random ">
+	<img src="//:0" class="uk-border-rounded">
+	<span uk-icon="icon: user; ratio: 2"></span>
+</div>			<div class="atom-avatar uk-border-rounded uk-text-large uk-box-shadow-medium uk-background-secondary uk-light
+uk-flex-none random ">
+	<img src="//:0" class="uk-border-rounded">
+	<span uk-icon="icon: user; ratio: 2"></span>
+</div>			<div class="atom-avatar uk-border-rounded uk-text-large uk-box-shadow-medium uk-background-secondary uk-light
+uk-flex-none random ">
+	<img src="//:0" class="uk-border-rounded">
+	<span uk-icon="icon: user; ratio: 2"></span>
+</div>			<div class="atom-avatar uk-border-rounded uk-text-large uk-box-shadow-medium uk-background-secondary uk-light
+uk-flex-none random ">
+	<img src="//:0" class="uk-border-rounded">
+	<span uk-icon="icon: user; ratio: 2"></span>
+</div>			<div class="atom-avatar uk-border-rounded uk-text-large uk-box-shadow-medium uk-background-secondary uk-light
+uk-flex-none random ">
+	<img src="//:0" class="uk-border-rounded">
+	<span uk-icon="icon: user; ratio: 2"></span>
+</div>			<div class="atom-avatar uk-border-rounded uk-text-large uk-box-shadow-medium uk-background-secondary uk-light
+uk-flex-none random ">
+	<img src="//:0" class="uk-border-rounded">
+	<span uk-icon="icon: user; ratio: 2"></span>
+</div>			<div class="atom-avatar uk-border-rounded uk-text-large uk-box-shadow-medium uk-background-secondary uk-light
+uk-flex-none random ">
+	<img src="//:0" class="uk-border-rounded">
+	<span uk-icon="icon: user; ratio: 2"></span>
+</div>			<div class="atom-avatar uk-border-rounded uk-text-large uk-box-shadow-medium uk-background-secondary uk-light
+uk-flex-none random ">
+	<img src="//:0" class="uk-border-rounded">
+	<span uk-icon="icon: user; ratio: 2"></span>
+</div>			<div class="atom-avatar uk-border-rounded uk-text-large uk-box-shadow-medium uk-background-secondary uk-light
+uk-flex-none random ">
+	<img src="//:0" class="uk-border-rounded">
+	<span uk-icon="icon: user; ratio: 2"></span>
+</div>			<div class="atom-avatar uk-border-rounded uk-text-large uk-box-shadow-medium uk-background-secondary uk-light
+uk-flex-none random ">
+	<img src="//:0" class="uk-border-rounded">
+	<span uk-icon="icon: user; ratio: 2"></span>
+</div>			</div>
+</div>	
+	<div class="molecule-workflowStep uk-margin">
+	<h3 class="uk-margin-remove uk-text-muted">The Heart of God</h3>
+	<div class="molecule-workflowStep__body uk-drag uk-background-muted uk-flex uk-flex-wrap uk-padding-small uk-box-shadow-medium" data-uk-sortable="group: workflow">
+					<div class="atom-avatar uk-border-rounded uk-text-large uk-box-shadow-medium uk-background-secondary uk-light
+uk-flex-none random ">
+	<img src="//:0" class="uk-border-rounded">
+	<span uk-icon="icon: user; ratio: 2"></span>
+</div>			<div class="atom-avatar uk-border-rounded uk-text-large uk-box-shadow-medium uk-background-secondary uk-light
+uk-flex-none random ">
+	<img src="//:0" class="uk-border-rounded">
+	<span uk-icon="icon: user; ratio: 2"></span>
+</div>			<div class="atom-avatar uk-border-rounded uk-text-large uk-box-shadow-medium uk-background-secondary uk-light
+uk-flex-none random ">
+	<img src="//:0" class="uk-border-rounded">
+	<span uk-icon="icon: user; ratio: 2"></span>
+</div>			</div>
+</div>	
+	<div class="molecule-workflowStep uk-margin">
+	<h3 class="uk-margin-remove uk-text-muted">The Heart of God</h3>
+	<div class="molecule-workflowStep__body uk-drag uk-background-muted uk-flex uk-flex-wrap uk-padding-small uk-box-shadow-medium" data-uk-sortable="group: workflow">
+					<div class="atom-avatar uk-border-rounded uk-text-large uk-box-shadow-medium uk-background-secondary uk-light
+uk-flex-none random ">
+	<img src="//:0" class="uk-border-rounded">
+	<span uk-icon="icon: user; ratio: 2"></span>
+</div>			<div class="atom-avatar uk-border-rounded uk-text-large uk-box-shadow-medium uk-background-secondary uk-light
+uk-flex-none random ">
+	<img src="//:0" class="uk-border-rounded">
+	<span uk-icon="icon: user; ratio: 2"></span>
+</div>			<div class="atom-avatar uk-border-rounded uk-text-large uk-box-shadow-medium uk-background-secondary uk-light
+uk-flex-none random ">
+	<img src="//:0" class="uk-border-rounded">
+	<span uk-icon="icon: user; ratio: 2"></span>
+</div>			<div class="atom-avatar uk-border-rounded uk-text-large uk-box-shadow-medium uk-background-secondary uk-light
+uk-flex-none random ">
+	<img src="//:0" class="uk-border-rounded">
+	<span uk-icon="icon: user; ratio: 2"></span>
+</div>			<div class="atom-avatar uk-border-rounded uk-text-large uk-box-shadow-medium uk-background-secondary uk-light
+uk-flex-none random ">
+	<img src="//:0" class="uk-border-rounded">
+	<span uk-icon="icon: user; ratio: 2"></span>
+</div>			<div class="atom-avatar uk-border-rounded uk-text-large uk-box-shadow-medium uk-background-secondary uk-light
+uk-flex-none random ">
+	<img src="//:0" class="uk-border-rounded">
+	<span uk-icon="icon: user; ratio: 2"></span>
+</div>			<div class="atom-avatar uk-border-rounded uk-text-large uk-box-shadow-medium uk-background-secondary uk-light
+uk-flex-none random ">
+	<img src="//:0" class="uk-border-rounded">
+	<span uk-icon="icon: user; ratio: 2"></span>
+</div>			<div class="atom-avatar uk-border-rounded uk-text-large uk-box-shadow-medium uk-background-secondary uk-light
+uk-flex-none random ">
+	<img src="//:0" class="uk-border-rounded">
+	<span uk-icon="icon: user; ratio: 2"></span>
+</div>			<div class="atom-avatar uk-border-rounded uk-text-large uk-box-shadow-medium uk-background-secondary uk-light
+uk-flex-none random ">
+	<img src="//:0" class="uk-border-rounded">
+	<span uk-icon="icon: user; ratio: 2"></span>
+</div>			<div class="atom-avatar uk-border-rounded uk-text-large uk-box-shadow-medium uk-background-secondary uk-light
+uk-flex-none random ">
+	<img src="//:0" class="uk-border-rounded">
+	<span uk-icon="icon: user; ratio: 2"></span>
+</div>			<div class="atom-avatar uk-border-rounded uk-text-large uk-box-shadow-medium uk-background-secondary uk-light
+uk-flex-none random ">
+	<img src="//:0" class="uk-border-rounded">
+	<span uk-icon="icon: user; ratio: 2"></span>
+</div>			<div class="atom-avatar uk-border-rounded uk-text-large uk-box-shadow-medium uk-background-secondary uk-light
+uk-flex-none random ">
+	<img src="//:0" class="uk-border-rounded">
+	<span uk-icon="icon: user; ratio: 2"></span>
+</div>			<div class="atom-avatar uk-border-rounded uk-text-large uk-box-shadow-medium uk-background-secondary uk-light
+uk-flex-none random ">
+	<img src="//:0" class="uk-border-rounded">
+	<span uk-icon="icon: user; ratio: 2"></span>
+</div>			<div class="atom-avatar uk-border-rounded uk-text-large uk-box-shadow-medium uk-background-secondary uk-light
+uk-flex-none random ">
+	<img src="//:0" class="uk-border-rounded">
+	<span uk-icon="icon: user; ratio: 2"></span>
+</div>			<div class="atom-avatar uk-border-rounded uk-text-large uk-box-shadow-medium uk-background-secondary uk-light
+uk-flex-none random ">
+	<img src="//:0" class="uk-border-rounded">
+	<span uk-icon="icon: user; ratio: 2"></span>
+</div>			<div class="atom-avatar uk-border-rounded uk-text-large uk-box-shadow-medium uk-background-secondary uk-light
+uk-flex-none random ">
+	<img src="//:0" class="uk-border-rounded">
+	<span uk-icon="icon: user; ratio: 2"></span>
+</div>			<div class="atom-avatar uk-border-rounded uk-text-large uk-box-shadow-medium uk-background-secondary uk-light
+uk-flex-none random ">
+	<img src="//:0" class="uk-border-rounded">
+	<span uk-icon="icon: user; ratio: 2"></span>
+</div>			<div class="atom-avatar uk-border-rounded uk-text-large uk-box-shadow-medium uk-background-secondary uk-light
+uk-flex-none random ">
+	<img src="//:0" class="uk-border-rounded">
+	<span uk-icon="icon: user; ratio: 2"></span>
+</div>			<div class="atom-avatar uk-border-rounded uk-text-large uk-box-shadow-medium uk-background-secondary uk-light
+uk-flex-none random ">
+	<img src="//:0" class="uk-border-rounded">
+	<span uk-icon="icon: user; ratio: 2"></span>
+</div>			<div class="atom-avatar uk-border-rounded uk-text-large uk-box-shadow-medium uk-background-secondary uk-light
+uk-flex-none random ">
+	<img src="//:0" class="uk-border-rounded">
+	<span uk-icon="icon: user; ratio: 2"></span>
+</div>			<div class="atom-avatar uk-border-rounded uk-text-large uk-box-shadow-medium uk-background-secondary uk-light
+uk-flex-none random ">
+	<img src="//:0" class="uk-border-rounded">
+	<span uk-icon="icon: user; ratio: 2"></span>
+</div>			<div class="atom-avatar uk-border-rounded uk-text-large uk-box-shadow-medium uk-background-secondary uk-light
+uk-flex-none random ">
+	<img src="//:0" class="uk-border-rounded">
+	<span uk-icon="icon: user; ratio: 2"></span>
+</div>			<div class="atom-avatar uk-border-rounded uk-text-large uk-box-shadow-medium uk-background-secondary uk-light
+uk-flex-none random ">
+	<img src="//:0" class="uk-border-rounded">
+	<span uk-icon="icon: user; ratio: 2"></span>
+</div>			<div class="atom-avatar uk-border-rounded uk-text-large uk-box-shadow-medium uk-background-secondary uk-light
+uk-flex-none random ">
+	<img src="//:0" class="uk-border-rounded">
+	<span uk-icon="icon: user; ratio: 2"></span>
+</div>			<div class="atom-avatar uk-border-rounded uk-text-large uk-box-shadow-medium uk-background-secondary uk-light
+uk-flex-none random ">
+	<img src="//:0" class="uk-border-rounded">
+	<span uk-icon="icon: user; ratio: 2"></span>
+</div>			<div class="atom-avatar uk-border-rounded uk-text-large uk-box-shadow-medium uk-background-secondary uk-light
+uk-flex-none random ">
+	<img src="//:0" class="uk-border-rounded">
+	<span uk-icon="icon: user; ratio: 2"></span>
+</div>			<div class="atom-avatar uk-border-rounded uk-text-large uk-box-shadow-medium uk-background-secondary uk-light
+uk-flex-none random ">
+	<img src="//:0" class="uk-border-rounded">
+	<span uk-icon="icon: user; ratio: 2"></span>
+</div>			<div class="atom-avatar uk-border-rounded uk-text-large uk-box-shadow-medium uk-background-secondary uk-light
+uk-flex-none random ">
+	<img src="//:0" class="uk-border-rounded">
+	<span uk-icon="icon: user; ratio: 2"></span>
+</div>			<div class="atom-avatar uk-border-rounded uk-text-large uk-box-shadow-medium uk-background-secondary uk-light
+uk-flex-none random ">
+	<img src="//:0" class="uk-border-rounded">
+	<span uk-icon="icon: user; ratio: 2"></span>
+</div>			<div class="atom-avatar uk-border-rounded uk-text-large uk-box-shadow-medium uk-background-secondary uk-light
+uk-flex-none random ">
+	<img src="//:0" class="uk-border-rounded">
+	<span uk-icon="icon: user; ratio: 2"></span>
+</div>			<div class="atom-avatar uk-border-rounded uk-text-large uk-box-shadow-medium uk-background-secondary uk-light
+uk-flex-none random ">
+	<img src="//:0" class="uk-border-rounded">
+	<span uk-icon="icon: user; ratio: 2"></span>
+</div>			<div class="atom-avatar uk-border-rounded uk-text-large uk-box-shadow-medium uk-background-secondary uk-light
+uk-flex-none random ">
+	<img src="//:0" class="uk-border-rounded">
+	<span uk-icon="icon: user; ratio: 2"></span>
+</div>			<div class="atom-avatar uk-border-rounded uk-text-large uk-box-shadow-medium uk-background-secondary uk-light
+uk-flex-none random ">
+	<img src="//:0" class="uk-border-rounded">
+	<span uk-icon="icon: user; ratio: 2"></span>
+</div>			<div class="atom-avatar uk-border-rounded uk-text-large uk-box-shadow-medium uk-background-secondary uk-light
+uk-flex-none random ">
+	<img src="//:0" class="uk-border-rounded">
+	<span uk-icon="icon: user; ratio: 2"></span>
+</div>			<div class="atom-avatar uk-border-rounded uk-text-large uk-box-shadow-medium uk-background-secondary uk-light
+uk-flex-none random ">
+	<img src="//:0" class="uk-border-rounded">
+	<span uk-icon="icon: user; ratio: 2"></span>
+</div>			<div class="atom-avatar uk-border-rounded uk-text-large uk-box-shadow-medium uk-background-secondary uk-light
+uk-flex-none random ">
+	<img src="//:0" class="uk-border-rounded">
+	<span uk-icon="icon: user; ratio: 2"></span>
+</div>			<div class="atom-avatar uk-border-rounded uk-text-large uk-box-shadow-medium uk-background-secondary uk-light
+uk-flex-none random ">
+	<img src="//:0" class="uk-border-rounded">
+	<span uk-icon="icon: user; ratio: 2"></span>
+</div>			<div class="atom-avatar uk-border-rounded uk-text-large uk-box-shadow-medium uk-background-secondary uk-light
+uk-flex-none random ">
+	<img src="//:0" class="uk-border-rounded">
+	<span uk-icon="icon: user; ratio: 2"></span>
+</div>			<div class="atom-avatar uk-border-rounded uk-text-large uk-box-shadow-medium uk-background-secondary uk-light
+uk-flex-none random ">
+	<img src="//:0" class="uk-border-rounded">
+	<span uk-icon="icon: user; ratio: 2"></span>
+</div>			<div class="atom-avatar uk-border-rounded uk-text-large uk-box-shadow-medium uk-background-secondary uk-light
+uk-flex-none random ">
+	<img src="//:0" class="uk-border-rounded">
+	<span uk-icon="icon: user; ratio: 2"></span>
+</div>			</div>
+</div>	
+	<div class="molecule-workflowStep uk-margin">
+	<h3 class="uk-margin-remove uk-text-muted">The Heart of God</h3>
+	<div class="molecule-workflowStep__body uk-drag uk-background-muted uk-flex uk-flex-wrap uk-padding-small uk-box-shadow-medium" data-uk-sortable="group: workflow">
+					</div>
+</div>			
+			<span class="atom-version">Version 0.4.18</span>
+		</div>
+	</div>
+
+</body>
+</html>

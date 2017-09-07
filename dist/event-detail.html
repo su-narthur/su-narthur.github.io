@@ -22,29 +22,6 @@
 	
 	<script src="../js/responsive.js"></script>
 	
-	<script>
-		$(document).ready(function () {
-			var randomAvatars = $('.random');
-			var quantity = randomAvatars.length;
-			$.ajax({
-				url: 'https://randomuser.me/api/?results='+quantity,
-				dataType: 'json',
-				success: function(data) {
-					var results = data.results;
-					randomAvatars.each(function() {
-						var result = results.pop();
-						$(this).closest('.molecule-workflowEntry').find('.molecule-workflowEntry__name').html(result.name.first+' '+result.name.last);
-						if (Math.random() > .2) {
-							$(this).find('img').attr('src',result.picture.large);
-						} else {
-							$(this).find('img').remove();
-						}
-					});
-				}
-			});
-		});
-	</script>
-	
 		<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
 	<script src="../js/event-detail.js"></script>
 </head>

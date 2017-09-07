@@ -91,21 +91,25 @@ body > * {
 .molecule-personTitle .badges .interval span {
   margin-left: 2px;
 }
-.molecule-workflowEntry {
+.molecule-workflowEntry .molecule-workflowEntry__card {
   display: flex;
   margin: 5px !important;
+  color: #666;
 }
-.molecule-workflowEntry .atom-avatar {
+.molecule-workflowEntry .molecule-workflowEntry__card:hover {
+  text-decoration: none;
+}
+.molecule-workflowEntry .molecule-workflowEntry__card .atom-avatar {
   box-shadow: none !important;
   position: relative;
   left: -1px;
   color: #666;
   background-color: white;
 }
-.molecule-workflowEntry .atom-avatar img {
+.molecule-workflowEntry .molecule-workflowEntry__card .atom-avatar img {
   border-radius: 5px 0 0 5px;
 }
-.molecule-workflowEntry .molecule-workflowEntry__name {
+.molecule-workflowEntry .molecule-workflowEntry__card .molecule-workflowEntry__name {
   padding: .8rem;
   width: 121px;
   height: 75px;
@@ -113,6 +117,10 @@ body > * {
   text-transform: capitalize;
   display: flex;
   align-items: center;
+  font-size: .8em;
+}
+.molecule-workflowEntry__modal .uk-modal-title {
+  text-transform: capitalize !important;
 }
 .molecule-workflowStep .molecule-workflowStep__body {
   min-height: 115px;

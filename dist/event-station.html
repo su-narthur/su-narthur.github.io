@@ -22,29 +22,6 @@
 	
 	<script src="../js/responsive.js"></script>
 	
-	<script>
-		$(document).ready(function () {
-			var randomAvatars = $('.random');
-			var quantity = randomAvatars.length;
-			$.ajax({
-				url: 'https://randomuser.me/api/?results='+quantity,
-				dataType: 'json',
-				success: function(data) {
-					var results = data.results;
-					randomAvatars.each(function() {
-						var result = results.pop();
-						$(this).closest('.molecule-workflowEntry').find('.molecule-workflowEntry__name').html(result.name.first+' '+result.name.last);
-						if (Math.random() > .2) {
-							$(this).find('img').attr('src',result.picture.large);
-						} else {
-							$(this).find('img').remove();
-						}
-					});
-				}
-			});
-		});
-	</script>
-	
 	</head>
 
 <body>
@@ -70,7 +47,7 @@
 	<span class="uk-flex uk-flex-middle">
 		
 		<div class="atom-avatar uk-border-rounded uk-text-large uk-box-shadow-medium uk-background-secondary uk-light
-uk-flex-none  uk-margin-large-right">
+uk-flex-none uk-margin-large-right">
 	<img src="https://randomuser.me/api/portraits/med/women/49.jpg" class="uk-border-rounded">	<span uk-icon="icon: user; ratio: 2"></span>
 </div>		
 		<div>
@@ -88,7 +65,7 @@ uk-flex-none  uk-margin-large-right">
 	<span class="uk-flex uk-flex-middle">
 		
 		<div class="atom-avatar uk-border-rounded uk-text-large uk-box-shadow-medium uk-background-secondary uk-light
-uk-flex-none  uk-margin-large-right">
+uk-flex-none uk-margin-large-right">
 		<span uk-icon="icon: user; ratio: 2"></span>
 </div>		
 		<div>
@@ -106,7 +83,7 @@ uk-flex-none  uk-margin-large-right">
 	<span class="uk-flex uk-flex-middle">
 		
 		<div class="atom-avatar uk-border-rounded uk-text-large uk-box-shadow-medium uk-background-secondary uk-light
-uk-flex-none  uk-margin-large-right">
+uk-flex-none uk-margin-large-right">
 	<img src="https://randomuser.me/api/portraits/med/men/1.jpg" class="uk-border-rounded">	<span uk-icon="icon: user; ratio: 2"></span>
 </div>		
 		<div>
@@ -124,7 +101,7 @@ uk-flex-none  uk-margin-large-right">
 	<span class="uk-flex uk-flex-middle">
 		
 		<div class="atom-avatar uk-border-rounded uk-text-large uk-box-shadow-medium uk-background-secondary uk-light
-uk-flex-none  uk-margin-large-right">
+uk-flex-none uk-margin-large-right">
 	<img src="https://randomuser.me/api/portraits/med/men/5.jpg" class="uk-border-rounded">	<span uk-icon="icon: user; ratio: 2"></span>
 </div>		
 		<div>
@@ -142,7 +119,7 @@ uk-flex-none  uk-margin-large-right">
 	<span class="uk-flex uk-flex-middle">
 		
 		<div class="atom-avatar uk-border-rounded uk-text-large uk-box-shadow-medium uk-background-secondary uk-light
-uk-flex-none  uk-margin-large-right">
+uk-flex-none uk-margin-large-right">
 		<span uk-icon="icon: user; ratio: 2"></span>
 </div>		
 		<div>
@@ -160,7 +137,7 @@ uk-flex-none  uk-margin-large-right">
 	<span class="uk-flex uk-flex-middle">
 		
 		<div class="atom-avatar uk-border-rounded uk-text-large uk-box-shadow-medium uk-background-secondary uk-light
-uk-flex-none  uk-margin-large-right">
+uk-flex-none uk-margin-large-right">
 		<span uk-icon="icon: user; ratio: 2"></span>
 </div>		
 		<div>
@@ -178,7 +155,7 @@ uk-flex-none  uk-margin-large-right">
 	<span class="uk-flex uk-flex-middle">
 		
 		<div class="atom-avatar uk-border-rounded uk-text-large uk-box-shadow-medium uk-background-secondary uk-light
-uk-flex-none  uk-margin-large-right">
+uk-flex-none uk-margin-large-right">
 	<img src="https://randomuser.me/api/portraits/med/men/58.jpg" class="uk-border-rounded">	<span uk-icon="icon: user; ratio: 2"></span>
 </div>		
 		<div>
@@ -196,7 +173,7 @@ uk-flex-none  uk-margin-large-right">
 	<span class="uk-flex uk-flex-middle">
 		
 		<div class="atom-avatar uk-border-rounded uk-text-large uk-box-shadow-medium uk-background-secondary uk-light
-uk-flex-none  uk-margin-large-right">
+uk-flex-none uk-margin-large-right">
 	<img src="https://randomuser.me/api/portraits/med/men/75.jpg" class="uk-border-rounded">	<span uk-icon="icon: user; ratio: 2"></span>
 </div>		
 		<div>
@@ -214,7 +191,7 @@ uk-flex-none  uk-margin-large-right">
 	<span class="uk-flex uk-flex-middle">
 		
 		<div class="atom-avatar uk-border-rounded uk-text-large uk-box-shadow-medium uk-background-secondary uk-light
-uk-flex-none  uk-margin-large-right">
+uk-flex-none uk-margin-large-right">
 	<img src="https://randomuser.me/api/portraits/med/men/42.jpg" class="uk-border-rounded">	<span uk-icon="icon: user; ratio: 2"></span>
 </div>		
 		<div>
@@ -236,7 +213,7 @@ uk-flex-none  uk-margin-large-right">
 	<span class="uk-flex uk-flex-middle">
 		
 		<div class="atom-avatar uk-border-rounded uk-text-large uk-box-shadow-medium uk-background-secondary uk-light
-uk-flex-none  uk-margin-large-right">
+uk-flex-none uk-margin-large-right">
 	<img src="https://randomuser.me/api/portraits/med/men/78.jpg" class="uk-border-rounded">	<span uk-icon="icon: user; ratio: 2"></span>
 </div>		
 		<div>
@@ -255,7 +232,7 @@ uk-flex-none  uk-margin-large-right">
 			<div class="molecule-addAndCheckInForm uk-flex uk-flex-middle uk-flex-between uk-margin-small-left uk-margin-small-right">
 	<span class="uk-flex uk-flex-middle">
 		<div class="atom-avatar uk-border-rounded uk-text-large uk-box-shadow-medium uk-background-secondary uk-light
-uk-flex-none  uk-margin-large-right">
+uk-flex-none uk-margin-large-right">
 		<span uk-icon="icon: user; ratio: 2"></span>
 </div>		
 		<div class="molecule-addAndCheckInForm__name uk-text-large"></div>

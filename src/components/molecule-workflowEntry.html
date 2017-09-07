@@ -1,6 +1,25 @@
-<div class="molecule-workflowEntry uk-background-default uk-border-rounded uk-box-shadow-medium">
-	{% include "components/atom-avatar.html" with {random:true} only %}
-	<div class="molecule-workflowEntry__name">
-		Mark Jones
+{% set entryId = random() %}
+
+<div class="molecule-workflowEntry">
+	<a href="#{{ entryId }}" uk-toggle class="molecule-workflowEntry__card uk-background-default uk-border-rounded uk-box-shadow-medium">
+		{% include "components/atom-avatar.html" %}
+		<div class="molecule-workflowEntry__name">
+			Mark Jones
+		</div>
+	</a>
+	
+	<div id="{{ entryId }}" uk-modal>
+		<div class="molecule-workflowEntry__modal uk-modal-dialog uk-modal-body">
+			<button class="uk-modal-close-default" type="button" uk-close></button>
+			<div class="uk-flex uk-flex-middle">
+				{% include "components/atom-avatar.html" with {className:"uk-margin-right"} only %}
+				<h2 class="uk-modal-title uk-margin-remove-top uk-margin-remove-bottom">Headline</h2>
+			</div>
+			<ul class="uk-list uk-list-divider">
+				<li>item 1</li>
+				<li>item 2</li>
+				<li>item 3</li>
+			</ul>
+		</div>
 	</div>
 </div>

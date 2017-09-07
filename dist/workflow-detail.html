@@ -22,29 +22,6 @@
 	
 	<script src="../js/responsive.js"></script>
 	
-	<script>
-		$(document).ready(function () {
-			var randomAvatars = $('.random');
-			var quantity = randomAvatars.length;
-			$.ajax({
-				url: 'https://randomuser.me/api/?results='+quantity,
-				dataType: 'json',
-				success: function(data) {
-					var results = data.results;
-					randomAvatars.each(function() {
-						var result = results.pop();
-						$(this).closest('.molecule-workflowEntry').find('.molecule-workflowEntry__name').html(result.name.first+' '+result.name.last);
-						if (Math.random() > .2) {
-							$(this).find('img').attr('src',result.picture.large);
-						} else {
-							$(this).find('img').remove();
-						}
-					});
-				}
-			});
-		});
-	</script>
-	
 	</head>
 
 <body>
@@ -107,425 +84,1580 @@
 	
 	<div class="molecule-workflowStep uk-margin">
 	<h3 class="uk-margin-remove uk-text-muted">The Heart of God</h3>
-	<div class="molecule-workflowStep__body uk-drag uk-background-muted uk-flex uk-flex-wrap uk-padding-small uk-box-shadow-medium" data-uk-sortable="group: workflow">
-					<div class="molecule-workflowEntry uk-background-default uk-border-rounded uk-box-shadow-medium">
-	<div class="atom-avatar uk-border-rounded uk-text-large uk-box-shadow-medium uk-background-secondary uk-light
-uk-flex-none random ">
-	<img src="//:0" class="uk-border-rounded">	<span uk-icon="icon: user; ratio: 2"></span>
-</div>	<div class="molecule-workflowEntry__name">
-		Mark Jones
+	<div class="molecule-workflowStep__body uk-background-muted uk-flex uk-flex-wrap uk-padding-small uk-box-shadow-medium" data-uk-sortable="group: workflow">
+					
+<div class="molecule-workflowEntry">
+	<a href="#1626723348" uk-toggle class="molecule-workflowEntry__card uk-background-default uk-border-rounded uk-box-shadow-medium">
+		<div class="atom-avatar uk-border-rounded uk-text-large uk-box-shadow-medium uk-background-secondary uk-light
+uk-flex-none ">
+		<span uk-icon="icon: user; ratio: 2"></span>
+</div>		<div class="molecule-workflowEntry__name">
+			Mark Jones
+		</div>
+	</a>
+	
+	<div id="1626723348" uk-modal>
+		<div class="molecule-workflowEntry__modal uk-modal-dialog uk-modal-body">
+			<button class="uk-modal-close-default" type="button" uk-close></button>
+			<div class="uk-flex uk-flex-middle">
+				<div class="atom-avatar uk-border-rounded uk-text-large uk-box-shadow-medium uk-background-secondary uk-light
+uk-flex-none uk-margin-right">
+		<span uk-icon="icon: user; ratio: 2"></span>
+</div>				<h2 class="uk-modal-title uk-margin-remove-top uk-margin-remove-bottom">Headline</h2>
+			</div>
+			<ul class="uk-list uk-list-divider">
+				<li>item 1</li>
+				<li>item 2</li>
+				<li>item 3</li>
+			</ul>
+		</div>
 	</div>
-</div>			<div class="molecule-workflowEntry uk-background-default uk-border-rounded uk-box-shadow-medium">
-	<div class="atom-avatar uk-border-rounded uk-text-large uk-box-shadow-medium uk-background-secondary uk-light
-uk-flex-none random ">
-	<img src="//:0" class="uk-border-rounded">	<span uk-icon="icon: user; ratio: 2"></span>
-</div>	<div class="molecule-workflowEntry__name">
-		Mark Jones
+</div>			
+<div class="molecule-workflowEntry">
+	<a href="#1664046658" uk-toggle class="molecule-workflowEntry__card uk-background-default uk-border-rounded uk-box-shadow-medium">
+		<div class="atom-avatar uk-border-rounded uk-text-large uk-box-shadow-medium uk-background-secondary uk-light
+uk-flex-none ">
+		<span uk-icon="icon: user; ratio: 2"></span>
+</div>		<div class="molecule-workflowEntry__name">
+			Mark Jones
+		</div>
+	</a>
+	
+	<div id="1664046658" uk-modal>
+		<div class="molecule-workflowEntry__modal uk-modal-dialog uk-modal-body">
+			<button class="uk-modal-close-default" type="button" uk-close></button>
+			<div class="uk-flex uk-flex-middle">
+				<div class="atom-avatar uk-border-rounded uk-text-large uk-box-shadow-medium uk-background-secondary uk-light
+uk-flex-none uk-margin-right">
+		<span uk-icon="icon: user; ratio: 2"></span>
+</div>				<h2 class="uk-modal-title uk-margin-remove-top uk-margin-remove-bottom">Headline</h2>
+			</div>
+			<ul class="uk-list uk-list-divider">
+				<li>item 1</li>
+				<li>item 2</li>
+				<li>item 3</li>
+			</ul>
+		</div>
 	</div>
-</div>			<div class="molecule-workflowEntry uk-background-default uk-border-rounded uk-box-shadow-medium">
-	<div class="atom-avatar uk-border-rounded uk-text-large uk-box-shadow-medium uk-background-secondary uk-light
-uk-flex-none random ">
-	<img src="//:0" class="uk-border-rounded">	<span uk-icon="icon: user; ratio: 2"></span>
-</div>	<div class="molecule-workflowEntry__name">
-		Mark Jones
+</div>			
+<div class="molecule-workflowEntry">
+	<a href="#465557405" uk-toggle class="molecule-workflowEntry__card uk-background-default uk-border-rounded uk-box-shadow-medium">
+		<div class="atom-avatar uk-border-rounded uk-text-large uk-box-shadow-medium uk-background-secondary uk-light
+uk-flex-none ">
+		<span uk-icon="icon: user; ratio: 2"></span>
+</div>		<div class="molecule-workflowEntry__name">
+			Mark Jones
+		</div>
+	</a>
+	
+	<div id="465557405" uk-modal>
+		<div class="molecule-workflowEntry__modal uk-modal-dialog uk-modal-body">
+			<button class="uk-modal-close-default" type="button" uk-close></button>
+			<div class="uk-flex uk-flex-middle">
+				<div class="atom-avatar uk-border-rounded uk-text-large uk-box-shadow-medium uk-background-secondary uk-light
+uk-flex-none uk-margin-right">
+		<span uk-icon="icon: user; ratio: 2"></span>
+</div>				<h2 class="uk-modal-title uk-margin-remove-top uk-margin-remove-bottom">Headline</h2>
+			</div>
+			<ul class="uk-list uk-list-divider">
+				<li>item 1</li>
+				<li>item 2</li>
+				<li>item 3</li>
+			</ul>
+		</div>
 	</div>
-</div>			<div class="molecule-workflowEntry uk-background-default uk-border-rounded uk-box-shadow-medium">
-	<div class="atom-avatar uk-border-rounded uk-text-large uk-box-shadow-medium uk-background-secondary uk-light
-uk-flex-none random ">
-	<img src="//:0" class="uk-border-rounded">	<span uk-icon="icon: user; ratio: 2"></span>
-</div>	<div class="molecule-workflowEntry__name">
-		Mark Jones
+</div>			
+<div class="molecule-workflowEntry">
+	<a href="#1831336779" uk-toggle class="molecule-workflowEntry__card uk-background-default uk-border-rounded uk-box-shadow-medium">
+		<div class="atom-avatar uk-border-rounded uk-text-large uk-box-shadow-medium uk-background-secondary uk-light
+uk-flex-none ">
+		<span uk-icon="icon: user; ratio: 2"></span>
+</div>		<div class="molecule-workflowEntry__name">
+			Mark Jones
+		</div>
+	</a>
+	
+	<div id="1831336779" uk-modal>
+		<div class="molecule-workflowEntry__modal uk-modal-dialog uk-modal-body">
+			<button class="uk-modal-close-default" type="button" uk-close></button>
+			<div class="uk-flex uk-flex-middle">
+				<div class="atom-avatar uk-border-rounded uk-text-large uk-box-shadow-medium uk-background-secondary uk-light
+uk-flex-none uk-margin-right">
+		<span uk-icon="icon: user; ratio: 2"></span>
+</div>				<h2 class="uk-modal-title uk-margin-remove-top uk-margin-remove-bottom">Headline</h2>
+			</div>
+			<ul class="uk-list uk-list-divider">
+				<li>item 1</li>
+				<li>item 2</li>
+				<li>item 3</li>
+			</ul>
+		</div>
 	</div>
-</div>			<div class="molecule-workflowEntry uk-background-default uk-border-rounded uk-box-shadow-medium">
-	<div class="atom-avatar uk-border-rounded uk-text-large uk-box-shadow-medium uk-background-secondary uk-light
-uk-flex-none random ">
-	<img src="//:0" class="uk-border-rounded">	<span uk-icon="icon: user; ratio: 2"></span>
-</div>	<div class="molecule-workflowEntry__name">
-		Mark Jones
+</div>			
+<div class="molecule-workflowEntry">
+	<a href="#1750174039" uk-toggle class="molecule-workflowEntry__card uk-background-default uk-border-rounded uk-box-shadow-medium">
+		<div class="atom-avatar uk-border-rounded uk-text-large uk-box-shadow-medium uk-background-secondary uk-light
+uk-flex-none ">
+		<span uk-icon="icon: user; ratio: 2"></span>
+</div>		<div class="molecule-workflowEntry__name">
+			Mark Jones
+		</div>
+	</a>
+	
+	<div id="1750174039" uk-modal>
+		<div class="molecule-workflowEntry__modal uk-modal-dialog uk-modal-body">
+			<button class="uk-modal-close-default" type="button" uk-close></button>
+			<div class="uk-flex uk-flex-middle">
+				<div class="atom-avatar uk-border-rounded uk-text-large uk-box-shadow-medium uk-background-secondary uk-light
+uk-flex-none uk-margin-right">
+		<span uk-icon="icon: user; ratio: 2"></span>
+</div>				<h2 class="uk-modal-title uk-margin-remove-top uk-margin-remove-bottom">Headline</h2>
+			</div>
+			<ul class="uk-list uk-list-divider">
+				<li>item 1</li>
+				<li>item 2</li>
+				<li>item 3</li>
+			</ul>
+		</div>
 	</div>
-</div>			<div class="molecule-workflowEntry uk-background-default uk-border-rounded uk-box-shadow-medium">
-	<div class="atom-avatar uk-border-rounded uk-text-large uk-box-shadow-medium uk-background-secondary uk-light
-uk-flex-none random ">
-	<img src="//:0" class="uk-border-rounded">	<span uk-icon="icon: user; ratio: 2"></span>
-</div>	<div class="molecule-workflowEntry__name">
-		Mark Jones
+</div>			
+<div class="molecule-workflowEntry">
+	<a href="#1888683172" uk-toggle class="molecule-workflowEntry__card uk-background-default uk-border-rounded uk-box-shadow-medium">
+		<div class="atom-avatar uk-border-rounded uk-text-large uk-box-shadow-medium uk-background-secondary uk-light
+uk-flex-none ">
+		<span uk-icon="icon: user; ratio: 2"></span>
+</div>		<div class="molecule-workflowEntry__name">
+			Mark Jones
+		</div>
+	</a>
+	
+	<div id="1888683172" uk-modal>
+		<div class="molecule-workflowEntry__modal uk-modal-dialog uk-modal-body">
+			<button class="uk-modal-close-default" type="button" uk-close></button>
+			<div class="uk-flex uk-flex-middle">
+				<div class="atom-avatar uk-border-rounded uk-text-large uk-box-shadow-medium uk-background-secondary uk-light
+uk-flex-none uk-margin-right">
+		<span uk-icon="icon: user; ratio: 2"></span>
+</div>				<h2 class="uk-modal-title uk-margin-remove-top uk-margin-remove-bottom">Headline</h2>
+			</div>
+			<ul class="uk-list uk-list-divider">
+				<li>item 1</li>
+				<li>item 2</li>
+				<li>item 3</li>
+			</ul>
+		</div>
 	</div>
-</div>			<div class="molecule-workflowEntry uk-background-default uk-border-rounded uk-box-shadow-medium">
-	<div class="atom-avatar uk-border-rounded uk-text-large uk-box-shadow-medium uk-background-secondary uk-light
-uk-flex-none random ">
-	<img src="//:0" class="uk-border-rounded">	<span uk-icon="icon: user; ratio: 2"></span>
-</div>	<div class="molecule-workflowEntry__name">
-		Mark Jones
+</div>			
+<div class="molecule-workflowEntry">
+	<a href="#7096758" uk-toggle class="molecule-workflowEntry__card uk-background-default uk-border-rounded uk-box-shadow-medium">
+		<div class="atom-avatar uk-border-rounded uk-text-large uk-box-shadow-medium uk-background-secondary uk-light
+uk-flex-none ">
+		<span uk-icon="icon: user; ratio: 2"></span>
+</div>		<div class="molecule-workflowEntry__name">
+			Mark Jones
+		</div>
+	</a>
+	
+	<div id="7096758" uk-modal>
+		<div class="molecule-workflowEntry__modal uk-modal-dialog uk-modal-body">
+			<button class="uk-modal-close-default" type="button" uk-close></button>
+			<div class="uk-flex uk-flex-middle">
+				<div class="atom-avatar uk-border-rounded uk-text-large uk-box-shadow-medium uk-background-secondary uk-light
+uk-flex-none uk-margin-right">
+		<span uk-icon="icon: user; ratio: 2"></span>
+</div>				<h2 class="uk-modal-title uk-margin-remove-top uk-margin-remove-bottom">Headline</h2>
+			</div>
+			<ul class="uk-list uk-list-divider">
+				<li>item 1</li>
+				<li>item 2</li>
+				<li>item 3</li>
+			</ul>
+		</div>
 	</div>
-</div>			<div class="molecule-workflowEntry uk-background-default uk-border-rounded uk-box-shadow-medium">
-	<div class="atom-avatar uk-border-rounded uk-text-large uk-box-shadow-medium uk-background-secondary uk-light
-uk-flex-none random ">
-	<img src="//:0" class="uk-border-rounded">	<span uk-icon="icon: user; ratio: 2"></span>
-</div>	<div class="molecule-workflowEntry__name">
-		Mark Jones
+</div>			
+<div class="molecule-workflowEntry">
+	<a href="#1593459873" uk-toggle class="molecule-workflowEntry__card uk-background-default uk-border-rounded uk-box-shadow-medium">
+		<div class="atom-avatar uk-border-rounded uk-text-large uk-box-shadow-medium uk-background-secondary uk-light
+uk-flex-none ">
+		<span uk-icon="icon: user; ratio: 2"></span>
+</div>		<div class="molecule-workflowEntry__name">
+			Mark Jones
+		</div>
+	</a>
+	
+	<div id="1593459873" uk-modal>
+		<div class="molecule-workflowEntry__modal uk-modal-dialog uk-modal-body">
+			<button class="uk-modal-close-default" type="button" uk-close></button>
+			<div class="uk-flex uk-flex-middle">
+				<div class="atom-avatar uk-border-rounded uk-text-large uk-box-shadow-medium uk-background-secondary uk-light
+uk-flex-none uk-margin-right">
+		<span uk-icon="icon: user; ratio: 2"></span>
+</div>				<h2 class="uk-modal-title uk-margin-remove-top uk-margin-remove-bottom">Headline</h2>
+			</div>
+			<ul class="uk-list uk-list-divider">
+				<li>item 1</li>
+				<li>item 2</li>
+				<li>item 3</li>
+			</ul>
+		</div>
 	</div>
-</div>			<div class="molecule-workflowEntry uk-background-default uk-border-rounded uk-box-shadow-medium">
-	<div class="atom-avatar uk-border-rounded uk-text-large uk-box-shadow-medium uk-background-secondary uk-light
-uk-flex-none random ">
-	<img src="//:0" class="uk-border-rounded">	<span uk-icon="icon: user; ratio: 2"></span>
-</div>	<div class="molecule-workflowEntry__name">
-		Mark Jones
+</div>			
+<div class="molecule-workflowEntry">
+	<a href="#1636327944" uk-toggle class="molecule-workflowEntry__card uk-background-default uk-border-rounded uk-box-shadow-medium">
+		<div class="atom-avatar uk-border-rounded uk-text-large uk-box-shadow-medium uk-background-secondary uk-light
+uk-flex-none ">
+		<span uk-icon="icon: user; ratio: 2"></span>
+</div>		<div class="molecule-workflowEntry__name">
+			Mark Jones
+		</div>
+	</a>
+	
+	<div id="1636327944" uk-modal>
+		<div class="molecule-workflowEntry__modal uk-modal-dialog uk-modal-body">
+			<button class="uk-modal-close-default" type="button" uk-close></button>
+			<div class="uk-flex uk-flex-middle">
+				<div class="atom-avatar uk-border-rounded uk-text-large uk-box-shadow-medium uk-background-secondary uk-light
+uk-flex-none uk-margin-right">
+		<span uk-icon="icon: user; ratio: 2"></span>
+</div>				<h2 class="uk-modal-title uk-margin-remove-top uk-margin-remove-bottom">Headline</h2>
+			</div>
+			<ul class="uk-list uk-list-divider">
+				<li>item 1</li>
+				<li>item 2</li>
+				<li>item 3</li>
+			</ul>
+		</div>
 	</div>
-</div>			<div class="molecule-workflowEntry uk-background-default uk-border-rounded uk-box-shadow-medium">
-	<div class="atom-avatar uk-border-rounded uk-text-large uk-box-shadow-medium uk-background-secondary uk-light
-uk-flex-none random ">
-	<img src="//:0" class="uk-border-rounded">	<span uk-icon="icon: user; ratio: 2"></span>
-</div>	<div class="molecule-workflowEntry__name">
-		Mark Jones
+</div>			
+<div class="molecule-workflowEntry">
+	<a href="#1291954232" uk-toggle class="molecule-workflowEntry__card uk-background-default uk-border-rounded uk-box-shadow-medium">
+		<div class="atom-avatar uk-border-rounded uk-text-large uk-box-shadow-medium uk-background-secondary uk-light
+uk-flex-none ">
+		<span uk-icon="icon: user; ratio: 2"></span>
+</div>		<div class="molecule-workflowEntry__name">
+			Mark Jones
+		</div>
+	</a>
+	
+	<div id="1291954232" uk-modal>
+		<div class="molecule-workflowEntry__modal uk-modal-dialog uk-modal-body">
+			<button class="uk-modal-close-default" type="button" uk-close></button>
+			<div class="uk-flex uk-flex-middle">
+				<div class="atom-avatar uk-border-rounded uk-text-large uk-box-shadow-medium uk-background-secondary uk-light
+uk-flex-none uk-margin-right">
+		<span uk-icon="icon: user; ratio: 2"></span>
+</div>				<h2 class="uk-modal-title uk-margin-remove-top uk-margin-remove-bottom">Headline</h2>
+			</div>
+			<ul class="uk-list uk-list-divider">
+				<li>item 1</li>
+				<li>item 2</li>
+				<li>item 3</li>
+			</ul>
+		</div>
 	</div>
-</div>			<div class="molecule-workflowEntry uk-background-default uk-border-rounded uk-box-shadow-medium">
-	<div class="atom-avatar uk-border-rounded uk-text-large uk-box-shadow-medium uk-background-secondary uk-light
-uk-flex-none random ">
-	<img src="//:0" class="uk-border-rounded">	<span uk-icon="icon: user; ratio: 2"></span>
-</div>	<div class="molecule-workflowEntry__name">
-		Mark Jones
+</div>			
+<div class="molecule-workflowEntry">
+	<a href="#583122921" uk-toggle class="molecule-workflowEntry__card uk-background-default uk-border-rounded uk-box-shadow-medium">
+		<div class="atom-avatar uk-border-rounded uk-text-large uk-box-shadow-medium uk-background-secondary uk-light
+uk-flex-none ">
+		<span uk-icon="icon: user; ratio: 2"></span>
+</div>		<div class="molecule-workflowEntry__name">
+			Mark Jones
+		</div>
+	</a>
+	
+	<div id="583122921" uk-modal>
+		<div class="molecule-workflowEntry__modal uk-modal-dialog uk-modal-body">
+			<button class="uk-modal-close-default" type="button" uk-close></button>
+			<div class="uk-flex uk-flex-middle">
+				<div class="atom-avatar uk-border-rounded uk-text-large uk-box-shadow-medium uk-background-secondary uk-light
+uk-flex-none uk-margin-right">
+		<span uk-icon="icon: user; ratio: 2"></span>
+</div>				<h2 class="uk-modal-title uk-margin-remove-top uk-margin-remove-bottom">Headline</h2>
+			</div>
+			<ul class="uk-list uk-list-divider">
+				<li>item 1</li>
+				<li>item 2</li>
+				<li>item 3</li>
+			</ul>
+		</div>
 	</div>
-</div>			<div class="molecule-workflowEntry uk-background-default uk-border-rounded uk-box-shadow-medium">
-	<div class="atom-avatar uk-border-rounded uk-text-large uk-box-shadow-medium uk-background-secondary uk-light
-uk-flex-none random ">
-	<img src="//:0" class="uk-border-rounded">	<span uk-icon="icon: user; ratio: 2"></span>
-</div>	<div class="molecule-workflowEntry__name">
-		Mark Jones
+</div>			
+<div class="molecule-workflowEntry">
+	<a href="#221249049" uk-toggle class="molecule-workflowEntry__card uk-background-default uk-border-rounded uk-box-shadow-medium">
+		<div class="atom-avatar uk-border-rounded uk-text-large uk-box-shadow-medium uk-background-secondary uk-light
+uk-flex-none ">
+		<span uk-icon="icon: user; ratio: 2"></span>
+</div>		<div class="molecule-workflowEntry__name">
+			Mark Jones
+		</div>
+	</a>
+	
+	<div id="221249049" uk-modal>
+		<div class="molecule-workflowEntry__modal uk-modal-dialog uk-modal-body">
+			<button class="uk-modal-close-default" type="button" uk-close></button>
+			<div class="uk-flex uk-flex-middle">
+				<div class="atom-avatar uk-border-rounded uk-text-large uk-box-shadow-medium uk-background-secondary uk-light
+uk-flex-none uk-margin-right">
+		<span uk-icon="icon: user; ratio: 2"></span>
+</div>				<h2 class="uk-modal-title uk-margin-remove-top uk-margin-remove-bottom">Headline</h2>
+			</div>
+			<ul class="uk-list uk-list-divider">
+				<li>item 1</li>
+				<li>item 2</li>
+				<li>item 3</li>
+			</ul>
+		</div>
 	</div>
-</div>			<div class="molecule-workflowEntry uk-background-default uk-border-rounded uk-box-shadow-medium">
-	<div class="atom-avatar uk-border-rounded uk-text-large uk-box-shadow-medium uk-background-secondary uk-light
-uk-flex-none random ">
-	<img src="//:0" class="uk-border-rounded">	<span uk-icon="icon: user; ratio: 2"></span>
-</div>	<div class="molecule-workflowEntry__name">
-		Mark Jones
+</div>			
+<div class="molecule-workflowEntry">
+	<a href="#1259855357" uk-toggle class="molecule-workflowEntry__card uk-background-default uk-border-rounded uk-box-shadow-medium">
+		<div class="atom-avatar uk-border-rounded uk-text-large uk-box-shadow-medium uk-background-secondary uk-light
+uk-flex-none ">
+		<span uk-icon="icon: user; ratio: 2"></span>
+</div>		<div class="molecule-workflowEntry__name">
+			Mark Jones
+		</div>
+	</a>
+	
+	<div id="1259855357" uk-modal>
+		<div class="molecule-workflowEntry__modal uk-modal-dialog uk-modal-body">
+			<button class="uk-modal-close-default" type="button" uk-close></button>
+			<div class="uk-flex uk-flex-middle">
+				<div class="atom-avatar uk-border-rounded uk-text-large uk-box-shadow-medium uk-background-secondary uk-light
+uk-flex-none uk-margin-right">
+		<span uk-icon="icon: user; ratio: 2"></span>
+</div>				<h2 class="uk-modal-title uk-margin-remove-top uk-margin-remove-bottom">Headline</h2>
+			</div>
+			<ul class="uk-list uk-list-divider">
+				<li>item 1</li>
+				<li>item 2</li>
+				<li>item 3</li>
+			</ul>
+		</div>
 	</div>
-</div>			<div class="molecule-workflowEntry uk-background-default uk-border-rounded uk-box-shadow-medium">
-	<div class="atom-avatar uk-border-rounded uk-text-large uk-box-shadow-medium uk-background-secondary uk-light
-uk-flex-none random ">
-	<img src="//:0" class="uk-border-rounded">	<span uk-icon="icon: user; ratio: 2"></span>
-</div>	<div class="molecule-workflowEntry__name">
-		Mark Jones
-	</div>
-</div>			</div>
-</div>	
-	<div class="molecule-workflowStep uk-margin">
-	<h3 class="uk-margin-remove uk-text-muted">The Heart of God</h3>
-	<div class="molecule-workflowStep__body uk-drag uk-background-muted uk-flex uk-flex-wrap uk-padding-small uk-box-shadow-medium" data-uk-sortable="group: workflow">
-					<div class="molecule-workflowEntry uk-background-default uk-border-rounded uk-box-shadow-medium">
-	<div class="atom-avatar uk-border-rounded uk-text-large uk-box-shadow-medium uk-background-secondary uk-light
-uk-flex-none random ">
-	<img src="//:0" class="uk-border-rounded">	<span uk-icon="icon: user; ratio: 2"></span>
-</div>	<div class="molecule-workflowEntry__name">
-		Mark Jones
-	</div>
-</div>			<div class="molecule-workflowEntry uk-background-default uk-border-rounded uk-box-shadow-medium">
-	<div class="atom-avatar uk-border-rounded uk-text-large uk-box-shadow-medium uk-background-secondary uk-light
-uk-flex-none random ">
-	<img src="//:0" class="uk-border-rounded">	<span uk-icon="icon: user; ratio: 2"></span>
-</div>	<div class="molecule-workflowEntry__name">
-		Mark Jones
-	</div>
-</div>			<div class="molecule-workflowEntry uk-background-default uk-border-rounded uk-box-shadow-medium">
-	<div class="atom-avatar uk-border-rounded uk-text-large uk-box-shadow-medium uk-background-secondary uk-light
-uk-flex-none random ">
-	<img src="//:0" class="uk-border-rounded">	<span uk-icon="icon: user; ratio: 2"></span>
-</div>	<div class="molecule-workflowEntry__name">
-		Mark Jones
-	</div>
-</div>			</div>
-</div>	
-	<div class="molecule-workflowStep uk-margin">
-	<h3 class="uk-margin-remove uk-text-muted">The Heart of God</h3>
-	<div class="molecule-workflowStep__body uk-drag uk-background-muted uk-flex uk-flex-wrap uk-padding-small uk-box-shadow-medium" data-uk-sortable="group: workflow">
-					<div class="molecule-workflowEntry uk-background-default uk-border-rounded uk-box-shadow-medium">
-	<div class="atom-avatar uk-border-rounded uk-text-large uk-box-shadow-medium uk-background-secondary uk-light
-uk-flex-none random ">
-	<img src="//:0" class="uk-border-rounded">	<span uk-icon="icon: user; ratio: 2"></span>
-</div>	<div class="molecule-workflowEntry__name">
-		Mark Jones
-	</div>
-</div>			<div class="molecule-workflowEntry uk-background-default uk-border-rounded uk-box-shadow-medium">
-	<div class="atom-avatar uk-border-rounded uk-text-large uk-box-shadow-medium uk-background-secondary uk-light
-uk-flex-none random ">
-	<img src="//:0" class="uk-border-rounded">	<span uk-icon="icon: user; ratio: 2"></span>
-</div>	<div class="molecule-workflowEntry__name">
-		Mark Jones
-	</div>
-</div>			<div class="molecule-workflowEntry uk-background-default uk-border-rounded uk-box-shadow-medium">
-	<div class="atom-avatar uk-border-rounded uk-text-large uk-box-shadow-medium uk-background-secondary uk-light
-uk-flex-none random ">
-	<img src="//:0" class="uk-border-rounded">	<span uk-icon="icon: user; ratio: 2"></span>
-</div>	<div class="molecule-workflowEntry__name">
-		Mark Jones
-	</div>
-</div>			<div class="molecule-workflowEntry uk-background-default uk-border-rounded uk-box-shadow-medium">
-	<div class="atom-avatar uk-border-rounded uk-text-large uk-box-shadow-medium uk-background-secondary uk-light
-uk-flex-none random ">
-	<img src="//:0" class="uk-border-rounded">	<span uk-icon="icon: user; ratio: 2"></span>
-</div>	<div class="molecule-workflowEntry__name">
-		Mark Jones
-	</div>
-</div>			<div class="molecule-workflowEntry uk-background-default uk-border-rounded uk-box-shadow-medium">
-	<div class="atom-avatar uk-border-rounded uk-text-large uk-box-shadow-medium uk-background-secondary uk-light
-uk-flex-none random ">
-	<img src="//:0" class="uk-border-rounded">	<span uk-icon="icon: user; ratio: 2"></span>
-</div>	<div class="molecule-workflowEntry__name">
-		Mark Jones
-	</div>
-</div>			<div class="molecule-workflowEntry uk-background-default uk-border-rounded uk-box-shadow-medium">
-	<div class="atom-avatar uk-border-rounded uk-text-large uk-box-shadow-medium uk-background-secondary uk-light
-uk-flex-none random ">
-	<img src="//:0" class="uk-border-rounded">	<span uk-icon="icon: user; ratio: 2"></span>
-</div>	<div class="molecule-workflowEntry__name">
-		Mark Jones
-	</div>
-</div>			<div class="molecule-workflowEntry uk-background-default uk-border-rounded uk-box-shadow-medium">
-	<div class="atom-avatar uk-border-rounded uk-text-large uk-box-shadow-medium uk-background-secondary uk-light
-uk-flex-none random ">
-	<img src="//:0" class="uk-border-rounded">	<span uk-icon="icon: user; ratio: 2"></span>
-</div>	<div class="molecule-workflowEntry__name">
-		Mark Jones
-	</div>
-</div>			<div class="molecule-workflowEntry uk-background-default uk-border-rounded uk-box-shadow-medium">
-	<div class="atom-avatar uk-border-rounded uk-text-large uk-box-shadow-medium uk-background-secondary uk-light
-uk-flex-none random ">
-	<img src="//:0" class="uk-border-rounded">	<span uk-icon="icon: user; ratio: 2"></span>
-</div>	<div class="molecule-workflowEntry__name">
-		Mark Jones
-	</div>
-</div>			<div class="molecule-workflowEntry uk-background-default uk-border-rounded uk-box-shadow-medium">
-	<div class="atom-avatar uk-border-rounded uk-text-large uk-box-shadow-medium uk-background-secondary uk-light
-uk-flex-none random ">
-	<img src="//:0" class="uk-border-rounded">	<span uk-icon="icon: user; ratio: 2"></span>
-</div>	<div class="molecule-workflowEntry__name">
-		Mark Jones
-	</div>
-</div>			<div class="molecule-workflowEntry uk-background-default uk-border-rounded uk-box-shadow-medium">
-	<div class="atom-avatar uk-border-rounded uk-text-large uk-box-shadow-medium uk-background-secondary uk-light
-uk-flex-none random ">
-	<img src="//:0" class="uk-border-rounded">	<span uk-icon="icon: user; ratio: 2"></span>
-</div>	<div class="molecule-workflowEntry__name">
-		Mark Jones
-	</div>
-</div>			<div class="molecule-workflowEntry uk-background-default uk-border-rounded uk-box-shadow-medium">
-	<div class="atom-avatar uk-border-rounded uk-text-large uk-box-shadow-medium uk-background-secondary uk-light
-uk-flex-none random ">
-	<img src="//:0" class="uk-border-rounded">	<span uk-icon="icon: user; ratio: 2"></span>
-</div>	<div class="molecule-workflowEntry__name">
-		Mark Jones
-	</div>
-</div>			<div class="molecule-workflowEntry uk-background-default uk-border-rounded uk-box-shadow-medium">
-	<div class="atom-avatar uk-border-rounded uk-text-large uk-box-shadow-medium uk-background-secondary uk-light
-uk-flex-none random ">
-	<img src="//:0" class="uk-border-rounded">	<span uk-icon="icon: user; ratio: 2"></span>
-</div>	<div class="molecule-workflowEntry__name">
-		Mark Jones
-	</div>
-</div>			<div class="molecule-workflowEntry uk-background-default uk-border-rounded uk-box-shadow-medium">
-	<div class="atom-avatar uk-border-rounded uk-text-large uk-box-shadow-medium uk-background-secondary uk-light
-uk-flex-none random ">
-	<img src="//:0" class="uk-border-rounded">	<span uk-icon="icon: user; ratio: 2"></span>
-</div>	<div class="molecule-workflowEntry__name">
-		Mark Jones
-	</div>
-</div>			<div class="molecule-workflowEntry uk-background-default uk-border-rounded uk-box-shadow-medium">
-	<div class="atom-avatar uk-border-rounded uk-text-large uk-box-shadow-medium uk-background-secondary uk-light
-uk-flex-none random ">
-	<img src="//:0" class="uk-border-rounded">	<span uk-icon="icon: user; ratio: 2"></span>
-</div>	<div class="molecule-workflowEntry__name">
-		Mark Jones
-	</div>
-</div>			<div class="molecule-workflowEntry uk-background-default uk-border-rounded uk-box-shadow-medium">
-	<div class="atom-avatar uk-border-rounded uk-text-large uk-box-shadow-medium uk-background-secondary uk-light
-uk-flex-none random ">
-	<img src="//:0" class="uk-border-rounded">	<span uk-icon="icon: user; ratio: 2"></span>
-</div>	<div class="molecule-workflowEntry__name">
-		Mark Jones
-	</div>
-</div>			<div class="molecule-workflowEntry uk-background-default uk-border-rounded uk-box-shadow-medium">
-	<div class="atom-avatar uk-border-rounded uk-text-large uk-box-shadow-medium uk-background-secondary uk-light
-uk-flex-none random ">
-	<img src="//:0" class="uk-border-rounded">	<span uk-icon="icon: user; ratio: 2"></span>
-</div>	<div class="molecule-workflowEntry__name">
-		Mark Jones
-	</div>
-</div>			<div class="molecule-workflowEntry uk-background-default uk-border-rounded uk-box-shadow-medium">
-	<div class="atom-avatar uk-border-rounded uk-text-large uk-box-shadow-medium uk-background-secondary uk-light
-uk-flex-none random ">
-	<img src="//:0" class="uk-border-rounded">	<span uk-icon="icon: user; ratio: 2"></span>
-</div>	<div class="molecule-workflowEntry__name">
-		Mark Jones
-	</div>
-</div>			<div class="molecule-workflowEntry uk-background-default uk-border-rounded uk-box-shadow-medium">
-	<div class="atom-avatar uk-border-rounded uk-text-large uk-box-shadow-medium uk-background-secondary uk-light
-uk-flex-none random ">
-	<img src="//:0" class="uk-border-rounded">	<span uk-icon="icon: user; ratio: 2"></span>
-</div>	<div class="molecule-workflowEntry__name">
-		Mark Jones
-	</div>
-</div>			<div class="molecule-workflowEntry uk-background-default uk-border-rounded uk-box-shadow-medium">
-	<div class="atom-avatar uk-border-rounded uk-text-large uk-box-shadow-medium uk-background-secondary uk-light
-uk-flex-none random ">
-	<img src="//:0" class="uk-border-rounded">	<span uk-icon="icon: user; ratio: 2"></span>
-</div>	<div class="molecule-workflowEntry__name">
-		Mark Jones
-	</div>
-</div>			<div class="molecule-workflowEntry uk-background-default uk-border-rounded uk-box-shadow-medium">
-	<div class="atom-avatar uk-border-rounded uk-text-large uk-box-shadow-medium uk-background-secondary uk-light
-uk-flex-none random ">
-	<img src="//:0" class="uk-border-rounded">	<span uk-icon="icon: user; ratio: 2"></span>
-</div>	<div class="molecule-workflowEntry__name">
-		Mark Jones
-	</div>
-</div>			<div class="molecule-workflowEntry uk-background-default uk-border-rounded uk-box-shadow-medium">
-	<div class="atom-avatar uk-border-rounded uk-text-large uk-box-shadow-medium uk-background-secondary uk-light
-uk-flex-none random ">
-	<img src="//:0" class="uk-border-rounded">	<span uk-icon="icon: user; ratio: 2"></span>
-</div>	<div class="molecule-workflowEntry__name">
-		Mark Jones
-	</div>
-</div>			<div class="molecule-workflowEntry uk-background-default uk-border-rounded uk-box-shadow-medium">
-	<div class="atom-avatar uk-border-rounded uk-text-large uk-box-shadow-medium uk-background-secondary uk-light
-uk-flex-none random ">
-	<img src="//:0" class="uk-border-rounded">	<span uk-icon="icon: user; ratio: 2"></span>
-</div>	<div class="molecule-workflowEntry__name">
-		Mark Jones
-	</div>
-</div>			<div class="molecule-workflowEntry uk-background-default uk-border-rounded uk-box-shadow-medium">
-	<div class="atom-avatar uk-border-rounded uk-text-large uk-box-shadow-medium uk-background-secondary uk-light
-uk-flex-none random ">
-	<img src="//:0" class="uk-border-rounded">	<span uk-icon="icon: user; ratio: 2"></span>
-</div>	<div class="molecule-workflowEntry__name">
-		Mark Jones
-	</div>
-</div>			<div class="molecule-workflowEntry uk-background-default uk-border-rounded uk-box-shadow-medium">
-	<div class="atom-avatar uk-border-rounded uk-text-large uk-box-shadow-medium uk-background-secondary uk-light
-uk-flex-none random ">
-	<img src="//:0" class="uk-border-rounded">	<span uk-icon="icon: user; ratio: 2"></span>
-</div>	<div class="molecule-workflowEntry__name">
-		Mark Jones
-	</div>
-</div>			<div class="molecule-workflowEntry uk-background-default uk-border-rounded uk-box-shadow-medium">
-	<div class="atom-avatar uk-border-rounded uk-text-large uk-box-shadow-medium uk-background-secondary uk-light
-uk-flex-none random ">
-	<img src="//:0" class="uk-border-rounded">	<span uk-icon="icon: user; ratio: 2"></span>
-</div>	<div class="molecule-workflowEntry__name">
-		Mark Jones
-	</div>
-</div>			<div class="molecule-workflowEntry uk-background-default uk-border-rounded uk-box-shadow-medium">
-	<div class="atom-avatar uk-border-rounded uk-text-large uk-box-shadow-medium uk-background-secondary uk-light
-uk-flex-none random ">
-	<img src="//:0" class="uk-border-rounded">	<span uk-icon="icon: user; ratio: 2"></span>
-</div>	<div class="molecule-workflowEntry__name">
-		Mark Jones
-	</div>
-</div>			<div class="molecule-workflowEntry uk-background-default uk-border-rounded uk-box-shadow-medium">
-	<div class="atom-avatar uk-border-rounded uk-text-large uk-box-shadow-medium uk-background-secondary uk-light
-uk-flex-none random ">
-	<img src="//:0" class="uk-border-rounded">	<span uk-icon="icon: user; ratio: 2"></span>
-</div>	<div class="molecule-workflowEntry__name">
-		Mark Jones
-	</div>
-</div>			<div class="molecule-workflowEntry uk-background-default uk-border-rounded uk-box-shadow-medium">
-	<div class="atom-avatar uk-border-rounded uk-text-large uk-box-shadow-medium uk-background-secondary uk-light
-uk-flex-none random ">
-	<img src="//:0" class="uk-border-rounded">	<span uk-icon="icon: user; ratio: 2"></span>
-</div>	<div class="molecule-workflowEntry__name">
-		Mark Jones
-	</div>
-</div>			<div class="molecule-workflowEntry uk-background-default uk-border-rounded uk-box-shadow-medium">
-	<div class="atom-avatar uk-border-rounded uk-text-large uk-box-shadow-medium uk-background-secondary uk-light
-uk-flex-none random ">
-	<img src="//:0" class="uk-border-rounded">	<span uk-icon="icon: user; ratio: 2"></span>
-</div>	<div class="molecule-workflowEntry__name">
-		Mark Jones
-	</div>
-</div>			<div class="molecule-workflowEntry uk-background-default uk-border-rounded uk-box-shadow-medium">
-	<div class="atom-avatar uk-border-rounded uk-text-large uk-box-shadow-medium uk-background-secondary uk-light
-uk-flex-none random ">
-	<img src="//:0" class="uk-border-rounded">	<span uk-icon="icon: user; ratio: 2"></span>
-</div>	<div class="molecule-workflowEntry__name">
-		Mark Jones
-	</div>
-</div>			<div class="molecule-workflowEntry uk-background-default uk-border-rounded uk-box-shadow-medium">
-	<div class="atom-avatar uk-border-rounded uk-text-large uk-box-shadow-medium uk-background-secondary uk-light
-uk-flex-none random ">
-	<img src="//:0" class="uk-border-rounded">	<span uk-icon="icon: user; ratio: 2"></span>
-</div>	<div class="molecule-workflowEntry__name">
-		Mark Jones
-	</div>
-</div>			<div class="molecule-workflowEntry uk-background-default uk-border-rounded uk-box-shadow-medium">
-	<div class="atom-avatar uk-border-rounded uk-text-large uk-box-shadow-medium uk-background-secondary uk-light
-uk-flex-none random ">
-	<img src="//:0" class="uk-border-rounded">	<span uk-icon="icon: user; ratio: 2"></span>
-</div>	<div class="molecule-workflowEntry__name">
-		Mark Jones
-	</div>
-</div>			<div class="molecule-workflowEntry uk-background-default uk-border-rounded uk-box-shadow-medium">
-	<div class="atom-avatar uk-border-rounded uk-text-large uk-box-shadow-medium uk-background-secondary uk-light
-uk-flex-none random ">
-	<img src="//:0" class="uk-border-rounded">	<span uk-icon="icon: user; ratio: 2"></span>
-</div>	<div class="molecule-workflowEntry__name">
-		Mark Jones
-	</div>
-</div>			<div class="molecule-workflowEntry uk-background-default uk-border-rounded uk-box-shadow-medium">
-	<div class="atom-avatar uk-border-rounded uk-text-large uk-box-shadow-medium uk-background-secondary uk-light
-uk-flex-none random ">
-	<img src="//:0" class="uk-border-rounded">	<span uk-icon="icon: user; ratio: 2"></span>
-</div>	<div class="molecule-workflowEntry__name">
-		Mark Jones
-	</div>
-</div>			<div class="molecule-workflowEntry uk-background-default uk-border-rounded uk-box-shadow-medium">
-	<div class="atom-avatar uk-border-rounded uk-text-large uk-box-shadow-medium uk-background-secondary uk-light
-uk-flex-none random ">
-	<img src="//:0" class="uk-border-rounded">	<span uk-icon="icon: user; ratio: 2"></span>
-</div>	<div class="molecule-workflowEntry__name">
-		Mark Jones
-	</div>
-</div>			<div class="molecule-workflowEntry uk-background-default uk-border-rounded uk-box-shadow-medium">
-	<div class="atom-avatar uk-border-rounded uk-text-large uk-box-shadow-medium uk-background-secondary uk-light
-uk-flex-none random ">
-	<img src="//:0" class="uk-border-rounded">	<span uk-icon="icon: user; ratio: 2"></span>
-</div>	<div class="molecule-workflowEntry__name">
-		Mark Jones
-	</div>
-</div>			<div class="molecule-workflowEntry uk-background-default uk-border-rounded uk-box-shadow-medium">
-	<div class="atom-avatar uk-border-rounded uk-text-large uk-box-shadow-medium uk-background-secondary uk-light
-uk-flex-none random ">
-	<img src="//:0" class="uk-border-rounded">	<span uk-icon="icon: user; ratio: 2"></span>
-</div>	<div class="molecule-workflowEntry__name">
-		Mark Jones
-	</div>
-</div>			<div class="molecule-workflowEntry uk-background-default uk-border-rounded uk-box-shadow-medium">
-	<div class="atom-avatar uk-border-rounded uk-text-large uk-box-shadow-medium uk-background-secondary uk-light
-uk-flex-none random ">
-	<img src="//:0" class="uk-border-rounded">	<span uk-icon="icon: user; ratio: 2"></span>
-</div>	<div class="molecule-workflowEntry__name">
-		Mark Jones
-	</div>
-</div>			<div class="molecule-workflowEntry uk-background-default uk-border-rounded uk-box-shadow-medium">
-	<div class="atom-avatar uk-border-rounded uk-text-large uk-box-shadow-medium uk-background-secondary uk-light
-uk-flex-none random ">
-	<img src="//:0" class="uk-border-rounded">	<span uk-icon="icon: user; ratio: 2"></span>
-</div>	<div class="molecule-workflowEntry__name">
-		Mark Jones
-	</div>
-</div>			<div class="molecule-workflowEntry uk-background-default uk-border-rounded uk-box-shadow-medium">
-	<div class="atom-avatar uk-border-rounded uk-text-large uk-box-shadow-medium uk-background-secondary uk-light
-uk-flex-none random ">
-	<img src="//:0" class="uk-border-rounded">	<span uk-icon="icon: user; ratio: 2"></span>
-</div>	<div class="molecule-workflowEntry__name">
-		Mark Jones
+</div>			
+<div class="molecule-workflowEntry">
+	<a href="#659805073" uk-toggle class="molecule-workflowEntry__card uk-background-default uk-border-rounded uk-box-shadow-medium">
+		<div class="atom-avatar uk-border-rounded uk-text-large uk-box-shadow-medium uk-background-secondary uk-light
+uk-flex-none ">
+		<span uk-icon="icon: user; ratio: 2"></span>
+</div>		<div class="molecule-workflowEntry__name">
+			Mark Jones
+		</div>
+	</a>
+	
+	<div id="659805073" uk-modal>
+		<div class="molecule-workflowEntry__modal uk-modal-dialog uk-modal-body">
+			<button class="uk-modal-close-default" type="button" uk-close></button>
+			<div class="uk-flex uk-flex-middle">
+				<div class="atom-avatar uk-border-rounded uk-text-large uk-box-shadow-medium uk-background-secondary uk-light
+uk-flex-none uk-margin-right">
+		<span uk-icon="icon: user; ratio: 2"></span>
+</div>				<h2 class="uk-modal-title uk-margin-remove-top uk-margin-remove-bottom">Headline</h2>
+			</div>
+			<ul class="uk-list uk-list-divider">
+				<li>item 1</li>
+				<li>item 2</li>
+				<li>item 3</li>
+			</ul>
+		</div>
 	</div>
 </div>			</div>
 </div>	
 	<div class="molecule-workflowStep uk-margin">
 	<h3 class="uk-margin-remove uk-text-muted">The Heart of God</h3>
-	<div class="molecule-workflowStep__body uk-drag uk-background-muted uk-flex uk-flex-wrap uk-padding-small uk-box-shadow-medium" data-uk-sortable="group: workflow">
+	<div class="molecule-workflowStep__body uk-background-muted uk-flex uk-flex-wrap uk-padding-small uk-box-shadow-medium" data-uk-sortable="group: workflow">
+					
+<div class="molecule-workflowEntry">
+	<a href="#1361566090" uk-toggle class="molecule-workflowEntry__card uk-background-default uk-border-rounded uk-box-shadow-medium">
+		<div class="atom-avatar uk-border-rounded uk-text-large uk-box-shadow-medium uk-background-secondary uk-light
+uk-flex-none ">
+		<span uk-icon="icon: user; ratio: 2"></span>
+</div>		<div class="molecule-workflowEntry__name">
+			Mark Jones
+		</div>
+	</a>
+	
+	<div id="1361566090" uk-modal>
+		<div class="molecule-workflowEntry__modal uk-modal-dialog uk-modal-body">
+			<button class="uk-modal-close-default" type="button" uk-close></button>
+			<div class="uk-flex uk-flex-middle">
+				<div class="atom-avatar uk-border-rounded uk-text-large uk-box-shadow-medium uk-background-secondary uk-light
+uk-flex-none uk-margin-right">
+		<span uk-icon="icon: user; ratio: 2"></span>
+</div>				<h2 class="uk-modal-title uk-margin-remove-top uk-margin-remove-bottom">Headline</h2>
+			</div>
+			<ul class="uk-list uk-list-divider">
+				<li>item 1</li>
+				<li>item 2</li>
+				<li>item 3</li>
+			</ul>
+		</div>
+	</div>
+</div>			
+<div class="molecule-workflowEntry">
+	<a href="#1250313980" uk-toggle class="molecule-workflowEntry__card uk-background-default uk-border-rounded uk-box-shadow-medium">
+		<div class="atom-avatar uk-border-rounded uk-text-large uk-box-shadow-medium uk-background-secondary uk-light
+uk-flex-none ">
+		<span uk-icon="icon: user; ratio: 2"></span>
+</div>		<div class="molecule-workflowEntry__name">
+			Mark Jones
+		</div>
+	</a>
+	
+	<div id="1250313980" uk-modal>
+		<div class="molecule-workflowEntry__modal uk-modal-dialog uk-modal-body">
+			<button class="uk-modal-close-default" type="button" uk-close></button>
+			<div class="uk-flex uk-flex-middle">
+				<div class="atom-avatar uk-border-rounded uk-text-large uk-box-shadow-medium uk-background-secondary uk-light
+uk-flex-none uk-margin-right">
+		<span uk-icon="icon: user; ratio: 2"></span>
+</div>				<h2 class="uk-modal-title uk-margin-remove-top uk-margin-remove-bottom">Headline</h2>
+			</div>
+			<ul class="uk-list uk-list-divider">
+				<li>item 1</li>
+				<li>item 2</li>
+				<li>item 3</li>
+			</ul>
+		</div>
+	</div>
+</div>			
+<div class="molecule-workflowEntry">
+	<a href="#791105261" uk-toggle class="molecule-workflowEntry__card uk-background-default uk-border-rounded uk-box-shadow-medium">
+		<div class="atom-avatar uk-border-rounded uk-text-large uk-box-shadow-medium uk-background-secondary uk-light
+uk-flex-none ">
+		<span uk-icon="icon: user; ratio: 2"></span>
+</div>		<div class="molecule-workflowEntry__name">
+			Mark Jones
+		</div>
+	</a>
+	
+	<div id="791105261" uk-modal>
+		<div class="molecule-workflowEntry__modal uk-modal-dialog uk-modal-body">
+			<button class="uk-modal-close-default" type="button" uk-close></button>
+			<div class="uk-flex uk-flex-middle">
+				<div class="atom-avatar uk-border-rounded uk-text-large uk-box-shadow-medium uk-background-secondary uk-light
+uk-flex-none uk-margin-right">
+		<span uk-icon="icon: user; ratio: 2"></span>
+</div>				<h2 class="uk-modal-title uk-margin-remove-top uk-margin-remove-bottom">Headline</h2>
+			</div>
+			<ul class="uk-list uk-list-divider">
+				<li>item 1</li>
+				<li>item 2</li>
+				<li>item 3</li>
+			</ul>
+		</div>
+	</div>
+</div>			</div>
+</div>	
+	<div class="molecule-workflowStep uk-margin">
+	<h3 class="uk-margin-remove uk-text-muted">The Heart of God</h3>
+	<div class="molecule-workflowStep__body uk-background-muted uk-flex uk-flex-wrap uk-padding-small uk-box-shadow-medium" data-uk-sortable="group: workflow">
+					
+<div class="molecule-workflowEntry">
+	<a href="#1859380967" uk-toggle class="molecule-workflowEntry__card uk-background-default uk-border-rounded uk-box-shadow-medium">
+		<div class="atom-avatar uk-border-rounded uk-text-large uk-box-shadow-medium uk-background-secondary uk-light
+uk-flex-none ">
+		<span uk-icon="icon: user; ratio: 2"></span>
+</div>		<div class="molecule-workflowEntry__name">
+			Mark Jones
+		</div>
+	</a>
+	
+	<div id="1859380967" uk-modal>
+		<div class="molecule-workflowEntry__modal uk-modal-dialog uk-modal-body">
+			<button class="uk-modal-close-default" type="button" uk-close></button>
+			<div class="uk-flex uk-flex-middle">
+				<div class="atom-avatar uk-border-rounded uk-text-large uk-box-shadow-medium uk-background-secondary uk-light
+uk-flex-none uk-margin-right">
+		<span uk-icon="icon: user; ratio: 2"></span>
+</div>				<h2 class="uk-modal-title uk-margin-remove-top uk-margin-remove-bottom">Headline</h2>
+			</div>
+			<ul class="uk-list uk-list-divider">
+				<li>item 1</li>
+				<li>item 2</li>
+				<li>item 3</li>
+			</ul>
+		</div>
+	</div>
+</div>			
+<div class="molecule-workflowEntry">
+	<a href="#1617689414" uk-toggle class="molecule-workflowEntry__card uk-background-default uk-border-rounded uk-box-shadow-medium">
+		<div class="atom-avatar uk-border-rounded uk-text-large uk-box-shadow-medium uk-background-secondary uk-light
+uk-flex-none ">
+		<span uk-icon="icon: user; ratio: 2"></span>
+</div>		<div class="molecule-workflowEntry__name">
+			Mark Jones
+		</div>
+	</a>
+	
+	<div id="1617689414" uk-modal>
+		<div class="molecule-workflowEntry__modal uk-modal-dialog uk-modal-body">
+			<button class="uk-modal-close-default" type="button" uk-close></button>
+			<div class="uk-flex uk-flex-middle">
+				<div class="atom-avatar uk-border-rounded uk-text-large uk-box-shadow-medium uk-background-secondary uk-light
+uk-flex-none uk-margin-right">
+		<span uk-icon="icon: user; ratio: 2"></span>
+</div>				<h2 class="uk-modal-title uk-margin-remove-top uk-margin-remove-bottom">Headline</h2>
+			</div>
+			<ul class="uk-list uk-list-divider">
+				<li>item 1</li>
+				<li>item 2</li>
+				<li>item 3</li>
+			</ul>
+		</div>
+	</div>
+</div>			
+<div class="molecule-workflowEntry">
+	<a href="#207653737" uk-toggle class="molecule-workflowEntry__card uk-background-default uk-border-rounded uk-box-shadow-medium">
+		<div class="atom-avatar uk-border-rounded uk-text-large uk-box-shadow-medium uk-background-secondary uk-light
+uk-flex-none ">
+		<span uk-icon="icon: user; ratio: 2"></span>
+</div>		<div class="molecule-workflowEntry__name">
+			Mark Jones
+		</div>
+	</a>
+	
+	<div id="207653737" uk-modal>
+		<div class="molecule-workflowEntry__modal uk-modal-dialog uk-modal-body">
+			<button class="uk-modal-close-default" type="button" uk-close></button>
+			<div class="uk-flex uk-flex-middle">
+				<div class="atom-avatar uk-border-rounded uk-text-large uk-box-shadow-medium uk-background-secondary uk-light
+uk-flex-none uk-margin-right">
+		<span uk-icon="icon: user; ratio: 2"></span>
+</div>				<h2 class="uk-modal-title uk-margin-remove-top uk-margin-remove-bottom">Headline</h2>
+			</div>
+			<ul class="uk-list uk-list-divider">
+				<li>item 1</li>
+				<li>item 2</li>
+				<li>item 3</li>
+			</ul>
+		</div>
+	</div>
+</div>			
+<div class="molecule-workflowEntry">
+	<a href="#73849167" uk-toggle class="molecule-workflowEntry__card uk-background-default uk-border-rounded uk-box-shadow-medium">
+		<div class="atom-avatar uk-border-rounded uk-text-large uk-box-shadow-medium uk-background-secondary uk-light
+uk-flex-none ">
+		<span uk-icon="icon: user; ratio: 2"></span>
+</div>		<div class="molecule-workflowEntry__name">
+			Mark Jones
+		</div>
+	</a>
+	
+	<div id="73849167" uk-modal>
+		<div class="molecule-workflowEntry__modal uk-modal-dialog uk-modal-body">
+			<button class="uk-modal-close-default" type="button" uk-close></button>
+			<div class="uk-flex uk-flex-middle">
+				<div class="atom-avatar uk-border-rounded uk-text-large uk-box-shadow-medium uk-background-secondary uk-light
+uk-flex-none uk-margin-right">
+		<span uk-icon="icon: user; ratio: 2"></span>
+</div>				<h2 class="uk-modal-title uk-margin-remove-top uk-margin-remove-bottom">Headline</h2>
+			</div>
+			<ul class="uk-list uk-list-divider">
+				<li>item 1</li>
+				<li>item 2</li>
+				<li>item 3</li>
+			</ul>
+		</div>
+	</div>
+</div>			
+<div class="molecule-workflowEntry">
+	<a href="#1203769747" uk-toggle class="molecule-workflowEntry__card uk-background-default uk-border-rounded uk-box-shadow-medium">
+		<div class="atom-avatar uk-border-rounded uk-text-large uk-box-shadow-medium uk-background-secondary uk-light
+uk-flex-none ">
+		<span uk-icon="icon: user; ratio: 2"></span>
+</div>		<div class="molecule-workflowEntry__name">
+			Mark Jones
+		</div>
+	</a>
+	
+	<div id="1203769747" uk-modal>
+		<div class="molecule-workflowEntry__modal uk-modal-dialog uk-modal-body">
+			<button class="uk-modal-close-default" type="button" uk-close></button>
+			<div class="uk-flex uk-flex-middle">
+				<div class="atom-avatar uk-border-rounded uk-text-large uk-box-shadow-medium uk-background-secondary uk-light
+uk-flex-none uk-margin-right">
+		<span uk-icon="icon: user; ratio: 2"></span>
+</div>				<h2 class="uk-modal-title uk-margin-remove-top uk-margin-remove-bottom">Headline</h2>
+			</div>
+			<ul class="uk-list uk-list-divider">
+				<li>item 1</li>
+				<li>item 2</li>
+				<li>item 3</li>
+			</ul>
+		</div>
+	</div>
+</div>			
+<div class="molecule-workflowEntry">
+	<a href="#2105472196" uk-toggle class="molecule-workflowEntry__card uk-background-default uk-border-rounded uk-box-shadow-medium">
+		<div class="atom-avatar uk-border-rounded uk-text-large uk-box-shadow-medium uk-background-secondary uk-light
+uk-flex-none ">
+		<span uk-icon="icon: user; ratio: 2"></span>
+</div>		<div class="molecule-workflowEntry__name">
+			Mark Jones
+		</div>
+	</a>
+	
+	<div id="2105472196" uk-modal>
+		<div class="molecule-workflowEntry__modal uk-modal-dialog uk-modal-body">
+			<button class="uk-modal-close-default" type="button" uk-close></button>
+			<div class="uk-flex uk-flex-middle">
+				<div class="atom-avatar uk-border-rounded uk-text-large uk-box-shadow-medium uk-background-secondary uk-light
+uk-flex-none uk-margin-right">
+		<span uk-icon="icon: user; ratio: 2"></span>
+</div>				<h2 class="uk-modal-title uk-margin-remove-top uk-margin-remove-bottom">Headline</h2>
+			</div>
+			<ul class="uk-list uk-list-divider">
+				<li>item 1</li>
+				<li>item 2</li>
+				<li>item 3</li>
+			</ul>
+		</div>
+	</div>
+</div>			
+<div class="molecule-workflowEntry">
+	<a href="#1963450266" uk-toggle class="molecule-workflowEntry__card uk-background-default uk-border-rounded uk-box-shadow-medium">
+		<div class="atom-avatar uk-border-rounded uk-text-large uk-box-shadow-medium uk-background-secondary uk-light
+uk-flex-none ">
+		<span uk-icon="icon: user; ratio: 2"></span>
+</div>		<div class="molecule-workflowEntry__name">
+			Mark Jones
+		</div>
+	</a>
+	
+	<div id="1963450266" uk-modal>
+		<div class="molecule-workflowEntry__modal uk-modal-dialog uk-modal-body">
+			<button class="uk-modal-close-default" type="button" uk-close></button>
+			<div class="uk-flex uk-flex-middle">
+				<div class="atom-avatar uk-border-rounded uk-text-large uk-box-shadow-medium uk-background-secondary uk-light
+uk-flex-none uk-margin-right">
+		<span uk-icon="icon: user; ratio: 2"></span>
+</div>				<h2 class="uk-modal-title uk-margin-remove-top uk-margin-remove-bottom">Headline</h2>
+			</div>
+			<ul class="uk-list uk-list-divider">
+				<li>item 1</li>
+				<li>item 2</li>
+				<li>item 3</li>
+			</ul>
+		</div>
+	</div>
+</div>			
+<div class="molecule-workflowEntry">
+	<a href="#1770489390" uk-toggle class="molecule-workflowEntry__card uk-background-default uk-border-rounded uk-box-shadow-medium">
+		<div class="atom-avatar uk-border-rounded uk-text-large uk-box-shadow-medium uk-background-secondary uk-light
+uk-flex-none ">
+		<span uk-icon="icon: user; ratio: 2"></span>
+</div>		<div class="molecule-workflowEntry__name">
+			Mark Jones
+		</div>
+	</a>
+	
+	<div id="1770489390" uk-modal>
+		<div class="molecule-workflowEntry__modal uk-modal-dialog uk-modal-body">
+			<button class="uk-modal-close-default" type="button" uk-close></button>
+			<div class="uk-flex uk-flex-middle">
+				<div class="atom-avatar uk-border-rounded uk-text-large uk-box-shadow-medium uk-background-secondary uk-light
+uk-flex-none uk-margin-right">
+		<span uk-icon="icon: user; ratio: 2"></span>
+</div>				<h2 class="uk-modal-title uk-margin-remove-top uk-margin-remove-bottom">Headline</h2>
+			</div>
+			<ul class="uk-list uk-list-divider">
+				<li>item 1</li>
+				<li>item 2</li>
+				<li>item 3</li>
+			</ul>
+		</div>
+	</div>
+</div>			
+<div class="molecule-workflowEntry">
+	<a href="#1404654692" uk-toggle class="molecule-workflowEntry__card uk-background-default uk-border-rounded uk-box-shadow-medium">
+		<div class="atom-avatar uk-border-rounded uk-text-large uk-box-shadow-medium uk-background-secondary uk-light
+uk-flex-none ">
+		<span uk-icon="icon: user; ratio: 2"></span>
+</div>		<div class="molecule-workflowEntry__name">
+			Mark Jones
+		</div>
+	</a>
+	
+	<div id="1404654692" uk-modal>
+		<div class="molecule-workflowEntry__modal uk-modal-dialog uk-modal-body">
+			<button class="uk-modal-close-default" type="button" uk-close></button>
+			<div class="uk-flex uk-flex-middle">
+				<div class="atom-avatar uk-border-rounded uk-text-large uk-box-shadow-medium uk-background-secondary uk-light
+uk-flex-none uk-margin-right">
+		<span uk-icon="icon: user; ratio: 2"></span>
+</div>				<h2 class="uk-modal-title uk-margin-remove-top uk-margin-remove-bottom">Headline</h2>
+			</div>
+			<ul class="uk-list uk-list-divider">
+				<li>item 1</li>
+				<li>item 2</li>
+				<li>item 3</li>
+			</ul>
+		</div>
+	</div>
+</div>			
+<div class="molecule-workflowEntry">
+	<a href="#1784236614" uk-toggle class="molecule-workflowEntry__card uk-background-default uk-border-rounded uk-box-shadow-medium">
+		<div class="atom-avatar uk-border-rounded uk-text-large uk-box-shadow-medium uk-background-secondary uk-light
+uk-flex-none ">
+		<span uk-icon="icon: user; ratio: 2"></span>
+</div>		<div class="molecule-workflowEntry__name">
+			Mark Jones
+		</div>
+	</a>
+	
+	<div id="1784236614" uk-modal>
+		<div class="molecule-workflowEntry__modal uk-modal-dialog uk-modal-body">
+			<button class="uk-modal-close-default" type="button" uk-close></button>
+			<div class="uk-flex uk-flex-middle">
+				<div class="atom-avatar uk-border-rounded uk-text-large uk-box-shadow-medium uk-background-secondary uk-light
+uk-flex-none uk-margin-right">
+		<span uk-icon="icon: user; ratio: 2"></span>
+</div>				<h2 class="uk-modal-title uk-margin-remove-top uk-margin-remove-bottom">Headline</h2>
+			</div>
+			<ul class="uk-list uk-list-divider">
+				<li>item 1</li>
+				<li>item 2</li>
+				<li>item 3</li>
+			</ul>
+		</div>
+	</div>
+</div>			
+<div class="molecule-workflowEntry">
+	<a href="#1865026177" uk-toggle class="molecule-workflowEntry__card uk-background-default uk-border-rounded uk-box-shadow-medium">
+		<div class="atom-avatar uk-border-rounded uk-text-large uk-box-shadow-medium uk-background-secondary uk-light
+uk-flex-none ">
+		<span uk-icon="icon: user; ratio: 2"></span>
+</div>		<div class="molecule-workflowEntry__name">
+			Mark Jones
+		</div>
+	</a>
+	
+	<div id="1865026177" uk-modal>
+		<div class="molecule-workflowEntry__modal uk-modal-dialog uk-modal-body">
+			<button class="uk-modal-close-default" type="button" uk-close></button>
+			<div class="uk-flex uk-flex-middle">
+				<div class="atom-avatar uk-border-rounded uk-text-large uk-box-shadow-medium uk-background-secondary uk-light
+uk-flex-none uk-margin-right">
+		<span uk-icon="icon: user; ratio: 2"></span>
+</div>				<h2 class="uk-modal-title uk-margin-remove-top uk-margin-remove-bottom">Headline</h2>
+			</div>
+			<ul class="uk-list uk-list-divider">
+				<li>item 1</li>
+				<li>item 2</li>
+				<li>item 3</li>
+			</ul>
+		</div>
+	</div>
+</div>			
+<div class="molecule-workflowEntry">
+	<a href="#151723607" uk-toggle class="molecule-workflowEntry__card uk-background-default uk-border-rounded uk-box-shadow-medium">
+		<div class="atom-avatar uk-border-rounded uk-text-large uk-box-shadow-medium uk-background-secondary uk-light
+uk-flex-none ">
+		<span uk-icon="icon: user; ratio: 2"></span>
+</div>		<div class="molecule-workflowEntry__name">
+			Mark Jones
+		</div>
+	</a>
+	
+	<div id="151723607" uk-modal>
+		<div class="molecule-workflowEntry__modal uk-modal-dialog uk-modal-body">
+			<button class="uk-modal-close-default" type="button" uk-close></button>
+			<div class="uk-flex uk-flex-middle">
+				<div class="atom-avatar uk-border-rounded uk-text-large uk-box-shadow-medium uk-background-secondary uk-light
+uk-flex-none uk-margin-right">
+		<span uk-icon="icon: user; ratio: 2"></span>
+</div>				<h2 class="uk-modal-title uk-margin-remove-top uk-margin-remove-bottom">Headline</h2>
+			</div>
+			<ul class="uk-list uk-list-divider">
+				<li>item 1</li>
+				<li>item 2</li>
+				<li>item 3</li>
+			</ul>
+		</div>
+	</div>
+</div>			
+<div class="molecule-workflowEntry">
+	<a href="#553206553" uk-toggle class="molecule-workflowEntry__card uk-background-default uk-border-rounded uk-box-shadow-medium">
+		<div class="atom-avatar uk-border-rounded uk-text-large uk-box-shadow-medium uk-background-secondary uk-light
+uk-flex-none ">
+		<span uk-icon="icon: user; ratio: 2"></span>
+</div>		<div class="molecule-workflowEntry__name">
+			Mark Jones
+		</div>
+	</a>
+	
+	<div id="553206553" uk-modal>
+		<div class="molecule-workflowEntry__modal uk-modal-dialog uk-modal-body">
+			<button class="uk-modal-close-default" type="button" uk-close></button>
+			<div class="uk-flex uk-flex-middle">
+				<div class="atom-avatar uk-border-rounded uk-text-large uk-box-shadow-medium uk-background-secondary uk-light
+uk-flex-none uk-margin-right">
+		<span uk-icon="icon: user; ratio: 2"></span>
+</div>				<h2 class="uk-modal-title uk-margin-remove-top uk-margin-remove-bottom">Headline</h2>
+			</div>
+			<ul class="uk-list uk-list-divider">
+				<li>item 1</li>
+				<li>item 2</li>
+				<li>item 3</li>
+			</ul>
+		</div>
+	</div>
+</div>			
+<div class="molecule-workflowEntry">
+	<a href="#932002013" uk-toggle class="molecule-workflowEntry__card uk-background-default uk-border-rounded uk-box-shadow-medium">
+		<div class="atom-avatar uk-border-rounded uk-text-large uk-box-shadow-medium uk-background-secondary uk-light
+uk-flex-none ">
+		<span uk-icon="icon: user; ratio: 2"></span>
+</div>		<div class="molecule-workflowEntry__name">
+			Mark Jones
+		</div>
+	</a>
+	
+	<div id="932002013" uk-modal>
+		<div class="molecule-workflowEntry__modal uk-modal-dialog uk-modal-body">
+			<button class="uk-modal-close-default" type="button" uk-close></button>
+			<div class="uk-flex uk-flex-middle">
+				<div class="atom-avatar uk-border-rounded uk-text-large uk-box-shadow-medium uk-background-secondary uk-light
+uk-flex-none uk-margin-right">
+		<span uk-icon="icon: user; ratio: 2"></span>
+</div>				<h2 class="uk-modal-title uk-margin-remove-top uk-margin-remove-bottom">Headline</h2>
+			</div>
+			<ul class="uk-list uk-list-divider">
+				<li>item 1</li>
+				<li>item 2</li>
+				<li>item 3</li>
+			</ul>
+		</div>
+	</div>
+</div>			
+<div class="molecule-workflowEntry">
+	<a href="#1802126840" uk-toggle class="molecule-workflowEntry__card uk-background-default uk-border-rounded uk-box-shadow-medium">
+		<div class="atom-avatar uk-border-rounded uk-text-large uk-box-shadow-medium uk-background-secondary uk-light
+uk-flex-none ">
+		<span uk-icon="icon: user; ratio: 2"></span>
+</div>		<div class="molecule-workflowEntry__name">
+			Mark Jones
+		</div>
+	</a>
+	
+	<div id="1802126840" uk-modal>
+		<div class="molecule-workflowEntry__modal uk-modal-dialog uk-modal-body">
+			<button class="uk-modal-close-default" type="button" uk-close></button>
+			<div class="uk-flex uk-flex-middle">
+				<div class="atom-avatar uk-border-rounded uk-text-large uk-box-shadow-medium uk-background-secondary uk-light
+uk-flex-none uk-margin-right">
+		<span uk-icon="icon: user; ratio: 2"></span>
+</div>				<h2 class="uk-modal-title uk-margin-remove-top uk-margin-remove-bottom">Headline</h2>
+			</div>
+			<ul class="uk-list uk-list-divider">
+				<li>item 1</li>
+				<li>item 2</li>
+				<li>item 3</li>
+			</ul>
+		</div>
+	</div>
+</div>			
+<div class="molecule-workflowEntry">
+	<a href="#2147002285" uk-toggle class="molecule-workflowEntry__card uk-background-default uk-border-rounded uk-box-shadow-medium">
+		<div class="atom-avatar uk-border-rounded uk-text-large uk-box-shadow-medium uk-background-secondary uk-light
+uk-flex-none ">
+		<span uk-icon="icon: user; ratio: 2"></span>
+</div>		<div class="molecule-workflowEntry__name">
+			Mark Jones
+		</div>
+	</a>
+	
+	<div id="2147002285" uk-modal>
+		<div class="molecule-workflowEntry__modal uk-modal-dialog uk-modal-body">
+			<button class="uk-modal-close-default" type="button" uk-close></button>
+			<div class="uk-flex uk-flex-middle">
+				<div class="atom-avatar uk-border-rounded uk-text-large uk-box-shadow-medium uk-background-secondary uk-light
+uk-flex-none uk-margin-right">
+		<span uk-icon="icon: user; ratio: 2"></span>
+</div>				<h2 class="uk-modal-title uk-margin-remove-top uk-margin-remove-bottom">Headline</h2>
+			</div>
+			<ul class="uk-list uk-list-divider">
+				<li>item 1</li>
+				<li>item 2</li>
+				<li>item 3</li>
+			</ul>
+		</div>
+	</div>
+</div>			
+<div class="molecule-workflowEntry">
+	<a href="#464716977" uk-toggle class="molecule-workflowEntry__card uk-background-default uk-border-rounded uk-box-shadow-medium">
+		<div class="atom-avatar uk-border-rounded uk-text-large uk-box-shadow-medium uk-background-secondary uk-light
+uk-flex-none ">
+		<span uk-icon="icon: user; ratio: 2"></span>
+</div>		<div class="molecule-workflowEntry__name">
+			Mark Jones
+		</div>
+	</a>
+	
+	<div id="464716977" uk-modal>
+		<div class="molecule-workflowEntry__modal uk-modal-dialog uk-modal-body">
+			<button class="uk-modal-close-default" type="button" uk-close></button>
+			<div class="uk-flex uk-flex-middle">
+				<div class="atom-avatar uk-border-rounded uk-text-large uk-box-shadow-medium uk-background-secondary uk-light
+uk-flex-none uk-margin-right">
+		<span uk-icon="icon: user; ratio: 2"></span>
+</div>				<h2 class="uk-modal-title uk-margin-remove-top uk-margin-remove-bottom">Headline</h2>
+			</div>
+			<ul class="uk-list uk-list-divider">
+				<li>item 1</li>
+				<li>item 2</li>
+				<li>item 3</li>
+			</ul>
+		</div>
+	</div>
+</div>			
+<div class="molecule-workflowEntry">
+	<a href="#945661231" uk-toggle class="molecule-workflowEntry__card uk-background-default uk-border-rounded uk-box-shadow-medium">
+		<div class="atom-avatar uk-border-rounded uk-text-large uk-box-shadow-medium uk-background-secondary uk-light
+uk-flex-none ">
+		<span uk-icon="icon: user; ratio: 2"></span>
+</div>		<div class="molecule-workflowEntry__name">
+			Mark Jones
+		</div>
+	</a>
+	
+	<div id="945661231" uk-modal>
+		<div class="molecule-workflowEntry__modal uk-modal-dialog uk-modal-body">
+			<button class="uk-modal-close-default" type="button" uk-close></button>
+			<div class="uk-flex uk-flex-middle">
+				<div class="atom-avatar uk-border-rounded uk-text-large uk-box-shadow-medium uk-background-secondary uk-light
+uk-flex-none uk-margin-right">
+		<span uk-icon="icon: user; ratio: 2"></span>
+</div>				<h2 class="uk-modal-title uk-margin-remove-top uk-margin-remove-bottom">Headline</h2>
+			</div>
+			<ul class="uk-list uk-list-divider">
+				<li>item 1</li>
+				<li>item 2</li>
+				<li>item 3</li>
+			</ul>
+		</div>
+	</div>
+</div>			
+<div class="molecule-workflowEntry">
+	<a href="#224299413" uk-toggle class="molecule-workflowEntry__card uk-background-default uk-border-rounded uk-box-shadow-medium">
+		<div class="atom-avatar uk-border-rounded uk-text-large uk-box-shadow-medium uk-background-secondary uk-light
+uk-flex-none ">
+		<span uk-icon="icon: user; ratio: 2"></span>
+</div>		<div class="molecule-workflowEntry__name">
+			Mark Jones
+		</div>
+	</a>
+	
+	<div id="224299413" uk-modal>
+		<div class="molecule-workflowEntry__modal uk-modal-dialog uk-modal-body">
+			<button class="uk-modal-close-default" type="button" uk-close></button>
+			<div class="uk-flex uk-flex-middle">
+				<div class="atom-avatar uk-border-rounded uk-text-large uk-box-shadow-medium uk-background-secondary uk-light
+uk-flex-none uk-margin-right">
+		<span uk-icon="icon: user; ratio: 2"></span>
+</div>				<h2 class="uk-modal-title uk-margin-remove-top uk-margin-remove-bottom">Headline</h2>
+			</div>
+			<ul class="uk-list uk-list-divider">
+				<li>item 1</li>
+				<li>item 2</li>
+				<li>item 3</li>
+			</ul>
+		</div>
+	</div>
+</div>			
+<div class="molecule-workflowEntry">
+	<a href="#4468591" uk-toggle class="molecule-workflowEntry__card uk-background-default uk-border-rounded uk-box-shadow-medium">
+		<div class="atom-avatar uk-border-rounded uk-text-large uk-box-shadow-medium uk-background-secondary uk-light
+uk-flex-none ">
+		<span uk-icon="icon: user; ratio: 2"></span>
+</div>		<div class="molecule-workflowEntry__name">
+			Mark Jones
+		</div>
+	</a>
+	
+	<div id="4468591" uk-modal>
+		<div class="molecule-workflowEntry__modal uk-modal-dialog uk-modal-body">
+			<button class="uk-modal-close-default" type="button" uk-close></button>
+			<div class="uk-flex uk-flex-middle">
+				<div class="atom-avatar uk-border-rounded uk-text-large uk-box-shadow-medium uk-background-secondary uk-light
+uk-flex-none uk-margin-right">
+		<span uk-icon="icon: user; ratio: 2"></span>
+</div>				<h2 class="uk-modal-title uk-margin-remove-top uk-margin-remove-bottom">Headline</h2>
+			</div>
+			<ul class="uk-list uk-list-divider">
+				<li>item 1</li>
+				<li>item 2</li>
+				<li>item 3</li>
+			</ul>
+		</div>
+	</div>
+</div>			
+<div class="molecule-workflowEntry">
+	<a href="#1012395677" uk-toggle class="molecule-workflowEntry__card uk-background-default uk-border-rounded uk-box-shadow-medium">
+		<div class="atom-avatar uk-border-rounded uk-text-large uk-box-shadow-medium uk-background-secondary uk-light
+uk-flex-none ">
+		<span uk-icon="icon: user; ratio: 2"></span>
+</div>		<div class="molecule-workflowEntry__name">
+			Mark Jones
+		</div>
+	</a>
+	
+	<div id="1012395677" uk-modal>
+		<div class="molecule-workflowEntry__modal uk-modal-dialog uk-modal-body">
+			<button class="uk-modal-close-default" type="button" uk-close></button>
+			<div class="uk-flex uk-flex-middle">
+				<div class="atom-avatar uk-border-rounded uk-text-large uk-box-shadow-medium uk-background-secondary uk-light
+uk-flex-none uk-margin-right">
+		<span uk-icon="icon: user; ratio: 2"></span>
+</div>				<h2 class="uk-modal-title uk-margin-remove-top uk-margin-remove-bottom">Headline</h2>
+			</div>
+			<ul class="uk-list uk-list-divider">
+				<li>item 1</li>
+				<li>item 2</li>
+				<li>item 3</li>
+			</ul>
+		</div>
+	</div>
+</div>			
+<div class="molecule-workflowEntry">
+	<a href="#275857642" uk-toggle class="molecule-workflowEntry__card uk-background-default uk-border-rounded uk-box-shadow-medium">
+		<div class="atom-avatar uk-border-rounded uk-text-large uk-box-shadow-medium uk-background-secondary uk-light
+uk-flex-none ">
+		<span uk-icon="icon: user; ratio: 2"></span>
+</div>		<div class="molecule-workflowEntry__name">
+			Mark Jones
+		</div>
+	</a>
+	
+	<div id="275857642" uk-modal>
+		<div class="molecule-workflowEntry__modal uk-modal-dialog uk-modal-body">
+			<button class="uk-modal-close-default" type="button" uk-close></button>
+			<div class="uk-flex uk-flex-middle">
+				<div class="atom-avatar uk-border-rounded uk-text-large uk-box-shadow-medium uk-background-secondary uk-light
+uk-flex-none uk-margin-right">
+		<span uk-icon="icon: user; ratio: 2"></span>
+</div>				<h2 class="uk-modal-title uk-margin-remove-top uk-margin-remove-bottom">Headline</h2>
+			</div>
+			<ul class="uk-list uk-list-divider">
+				<li>item 1</li>
+				<li>item 2</li>
+				<li>item 3</li>
+			</ul>
+		</div>
+	</div>
+</div>			
+<div class="molecule-workflowEntry">
+	<a href="#1767491352" uk-toggle class="molecule-workflowEntry__card uk-background-default uk-border-rounded uk-box-shadow-medium">
+		<div class="atom-avatar uk-border-rounded uk-text-large uk-box-shadow-medium uk-background-secondary uk-light
+uk-flex-none ">
+		<span uk-icon="icon: user; ratio: 2"></span>
+</div>		<div class="molecule-workflowEntry__name">
+			Mark Jones
+		</div>
+	</a>
+	
+	<div id="1767491352" uk-modal>
+		<div class="molecule-workflowEntry__modal uk-modal-dialog uk-modal-body">
+			<button class="uk-modal-close-default" type="button" uk-close></button>
+			<div class="uk-flex uk-flex-middle">
+				<div class="atom-avatar uk-border-rounded uk-text-large uk-box-shadow-medium uk-background-secondary uk-light
+uk-flex-none uk-margin-right">
+		<span uk-icon="icon: user; ratio: 2"></span>
+</div>				<h2 class="uk-modal-title uk-margin-remove-top uk-margin-remove-bottom">Headline</h2>
+			</div>
+			<ul class="uk-list uk-list-divider">
+				<li>item 1</li>
+				<li>item 2</li>
+				<li>item 3</li>
+			</ul>
+		</div>
+	</div>
+</div>			
+<div class="molecule-workflowEntry">
+	<a href="#1454372711" uk-toggle class="molecule-workflowEntry__card uk-background-default uk-border-rounded uk-box-shadow-medium">
+		<div class="atom-avatar uk-border-rounded uk-text-large uk-box-shadow-medium uk-background-secondary uk-light
+uk-flex-none ">
+		<span uk-icon="icon: user; ratio: 2"></span>
+</div>		<div class="molecule-workflowEntry__name">
+			Mark Jones
+		</div>
+	</a>
+	
+	<div id="1454372711" uk-modal>
+		<div class="molecule-workflowEntry__modal uk-modal-dialog uk-modal-body">
+			<button class="uk-modal-close-default" type="button" uk-close></button>
+			<div class="uk-flex uk-flex-middle">
+				<div class="atom-avatar uk-border-rounded uk-text-large uk-box-shadow-medium uk-background-secondary uk-light
+uk-flex-none uk-margin-right">
+		<span uk-icon="icon: user; ratio: 2"></span>
+</div>				<h2 class="uk-modal-title uk-margin-remove-top uk-margin-remove-bottom">Headline</h2>
+			</div>
+			<ul class="uk-list uk-list-divider">
+				<li>item 1</li>
+				<li>item 2</li>
+				<li>item 3</li>
+			</ul>
+		</div>
+	</div>
+</div>			
+<div class="molecule-workflowEntry">
+	<a href="#410310061" uk-toggle class="molecule-workflowEntry__card uk-background-default uk-border-rounded uk-box-shadow-medium">
+		<div class="atom-avatar uk-border-rounded uk-text-large uk-box-shadow-medium uk-background-secondary uk-light
+uk-flex-none ">
+		<span uk-icon="icon: user; ratio: 2"></span>
+</div>		<div class="molecule-workflowEntry__name">
+			Mark Jones
+		</div>
+	</a>
+	
+	<div id="410310061" uk-modal>
+		<div class="molecule-workflowEntry__modal uk-modal-dialog uk-modal-body">
+			<button class="uk-modal-close-default" type="button" uk-close></button>
+			<div class="uk-flex uk-flex-middle">
+				<div class="atom-avatar uk-border-rounded uk-text-large uk-box-shadow-medium uk-background-secondary uk-light
+uk-flex-none uk-margin-right">
+		<span uk-icon="icon: user; ratio: 2"></span>
+</div>				<h2 class="uk-modal-title uk-margin-remove-top uk-margin-remove-bottom">Headline</h2>
+			</div>
+			<ul class="uk-list uk-list-divider">
+				<li>item 1</li>
+				<li>item 2</li>
+				<li>item 3</li>
+			</ul>
+		</div>
+	</div>
+</div>			
+<div class="molecule-workflowEntry">
+	<a href="#2028712850" uk-toggle class="molecule-workflowEntry__card uk-background-default uk-border-rounded uk-box-shadow-medium">
+		<div class="atom-avatar uk-border-rounded uk-text-large uk-box-shadow-medium uk-background-secondary uk-light
+uk-flex-none ">
+		<span uk-icon="icon: user; ratio: 2"></span>
+</div>		<div class="molecule-workflowEntry__name">
+			Mark Jones
+		</div>
+	</a>
+	
+	<div id="2028712850" uk-modal>
+		<div class="molecule-workflowEntry__modal uk-modal-dialog uk-modal-body">
+			<button class="uk-modal-close-default" type="button" uk-close></button>
+			<div class="uk-flex uk-flex-middle">
+				<div class="atom-avatar uk-border-rounded uk-text-large uk-box-shadow-medium uk-background-secondary uk-light
+uk-flex-none uk-margin-right">
+		<span uk-icon="icon: user; ratio: 2"></span>
+</div>				<h2 class="uk-modal-title uk-margin-remove-top uk-margin-remove-bottom">Headline</h2>
+			</div>
+			<ul class="uk-list uk-list-divider">
+				<li>item 1</li>
+				<li>item 2</li>
+				<li>item 3</li>
+			</ul>
+		</div>
+	</div>
+</div>			
+<div class="molecule-workflowEntry">
+	<a href="#1863499958" uk-toggle class="molecule-workflowEntry__card uk-background-default uk-border-rounded uk-box-shadow-medium">
+		<div class="atom-avatar uk-border-rounded uk-text-large uk-box-shadow-medium uk-background-secondary uk-light
+uk-flex-none ">
+		<span uk-icon="icon: user; ratio: 2"></span>
+</div>		<div class="molecule-workflowEntry__name">
+			Mark Jones
+		</div>
+	</a>
+	
+	<div id="1863499958" uk-modal>
+		<div class="molecule-workflowEntry__modal uk-modal-dialog uk-modal-body">
+			<button class="uk-modal-close-default" type="button" uk-close></button>
+			<div class="uk-flex uk-flex-middle">
+				<div class="atom-avatar uk-border-rounded uk-text-large uk-box-shadow-medium uk-background-secondary uk-light
+uk-flex-none uk-margin-right">
+		<span uk-icon="icon: user; ratio: 2"></span>
+</div>				<h2 class="uk-modal-title uk-margin-remove-top uk-margin-remove-bottom">Headline</h2>
+			</div>
+			<ul class="uk-list uk-list-divider">
+				<li>item 1</li>
+				<li>item 2</li>
+				<li>item 3</li>
+			</ul>
+		</div>
+	</div>
+</div>			
+<div class="molecule-workflowEntry">
+	<a href="#44030531" uk-toggle class="molecule-workflowEntry__card uk-background-default uk-border-rounded uk-box-shadow-medium">
+		<div class="atom-avatar uk-border-rounded uk-text-large uk-box-shadow-medium uk-background-secondary uk-light
+uk-flex-none ">
+		<span uk-icon="icon: user; ratio: 2"></span>
+</div>		<div class="molecule-workflowEntry__name">
+			Mark Jones
+		</div>
+	</a>
+	
+	<div id="44030531" uk-modal>
+		<div class="molecule-workflowEntry__modal uk-modal-dialog uk-modal-body">
+			<button class="uk-modal-close-default" type="button" uk-close></button>
+			<div class="uk-flex uk-flex-middle">
+				<div class="atom-avatar uk-border-rounded uk-text-large uk-box-shadow-medium uk-background-secondary uk-light
+uk-flex-none uk-margin-right">
+		<span uk-icon="icon: user; ratio: 2"></span>
+</div>				<h2 class="uk-modal-title uk-margin-remove-top uk-margin-remove-bottom">Headline</h2>
+			</div>
+			<ul class="uk-list uk-list-divider">
+				<li>item 1</li>
+				<li>item 2</li>
+				<li>item 3</li>
+			</ul>
+		</div>
+	</div>
+</div>			
+<div class="molecule-workflowEntry">
+	<a href="#899068454" uk-toggle class="molecule-workflowEntry__card uk-background-default uk-border-rounded uk-box-shadow-medium">
+		<div class="atom-avatar uk-border-rounded uk-text-large uk-box-shadow-medium uk-background-secondary uk-light
+uk-flex-none ">
+		<span uk-icon="icon: user; ratio: 2"></span>
+</div>		<div class="molecule-workflowEntry__name">
+			Mark Jones
+		</div>
+	</a>
+	
+	<div id="899068454" uk-modal>
+		<div class="molecule-workflowEntry__modal uk-modal-dialog uk-modal-body">
+			<button class="uk-modal-close-default" type="button" uk-close></button>
+			<div class="uk-flex uk-flex-middle">
+				<div class="atom-avatar uk-border-rounded uk-text-large uk-box-shadow-medium uk-background-secondary uk-light
+uk-flex-none uk-margin-right">
+		<span uk-icon="icon: user; ratio: 2"></span>
+</div>				<h2 class="uk-modal-title uk-margin-remove-top uk-margin-remove-bottom">Headline</h2>
+			</div>
+			<ul class="uk-list uk-list-divider">
+				<li>item 1</li>
+				<li>item 2</li>
+				<li>item 3</li>
+			</ul>
+		</div>
+	</div>
+</div>			
+<div class="molecule-workflowEntry">
+	<a href="#928313196" uk-toggle class="molecule-workflowEntry__card uk-background-default uk-border-rounded uk-box-shadow-medium">
+		<div class="atom-avatar uk-border-rounded uk-text-large uk-box-shadow-medium uk-background-secondary uk-light
+uk-flex-none ">
+		<span uk-icon="icon: user; ratio: 2"></span>
+</div>		<div class="molecule-workflowEntry__name">
+			Mark Jones
+		</div>
+	</a>
+	
+	<div id="928313196" uk-modal>
+		<div class="molecule-workflowEntry__modal uk-modal-dialog uk-modal-body">
+			<button class="uk-modal-close-default" type="button" uk-close></button>
+			<div class="uk-flex uk-flex-middle">
+				<div class="atom-avatar uk-border-rounded uk-text-large uk-box-shadow-medium uk-background-secondary uk-light
+uk-flex-none uk-margin-right">
+		<span uk-icon="icon: user; ratio: 2"></span>
+</div>				<h2 class="uk-modal-title uk-margin-remove-top uk-margin-remove-bottom">Headline</h2>
+			</div>
+			<ul class="uk-list uk-list-divider">
+				<li>item 1</li>
+				<li>item 2</li>
+				<li>item 3</li>
+			</ul>
+		</div>
+	</div>
+</div>			
+<div class="molecule-workflowEntry">
+	<a href="#282143653" uk-toggle class="molecule-workflowEntry__card uk-background-default uk-border-rounded uk-box-shadow-medium">
+		<div class="atom-avatar uk-border-rounded uk-text-large uk-box-shadow-medium uk-background-secondary uk-light
+uk-flex-none ">
+		<span uk-icon="icon: user; ratio: 2"></span>
+</div>		<div class="molecule-workflowEntry__name">
+			Mark Jones
+		</div>
+	</a>
+	
+	<div id="282143653" uk-modal>
+		<div class="molecule-workflowEntry__modal uk-modal-dialog uk-modal-body">
+			<button class="uk-modal-close-default" type="button" uk-close></button>
+			<div class="uk-flex uk-flex-middle">
+				<div class="atom-avatar uk-border-rounded uk-text-large uk-box-shadow-medium uk-background-secondary uk-light
+uk-flex-none uk-margin-right">
+		<span uk-icon="icon: user; ratio: 2"></span>
+</div>				<h2 class="uk-modal-title uk-margin-remove-top uk-margin-remove-bottom">Headline</h2>
+			</div>
+			<ul class="uk-list uk-list-divider">
+				<li>item 1</li>
+				<li>item 2</li>
+				<li>item 3</li>
+			</ul>
+		</div>
+	</div>
+</div>			
+<div class="molecule-workflowEntry">
+	<a href="#1905039664" uk-toggle class="molecule-workflowEntry__card uk-background-default uk-border-rounded uk-box-shadow-medium">
+		<div class="atom-avatar uk-border-rounded uk-text-large uk-box-shadow-medium uk-background-secondary uk-light
+uk-flex-none ">
+		<span uk-icon="icon: user; ratio: 2"></span>
+</div>		<div class="molecule-workflowEntry__name">
+			Mark Jones
+		</div>
+	</a>
+	
+	<div id="1905039664" uk-modal>
+		<div class="molecule-workflowEntry__modal uk-modal-dialog uk-modal-body">
+			<button class="uk-modal-close-default" type="button" uk-close></button>
+			<div class="uk-flex uk-flex-middle">
+				<div class="atom-avatar uk-border-rounded uk-text-large uk-box-shadow-medium uk-background-secondary uk-light
+uk-flex-none uk-margin-right">
+		<span uk-icon="icon: user; ratio: 2"></span>
+</div>				<h2 class="uk-modal-title uk-margin-remove-top uk-margin-remove-bottom">Headline</h2>
+			</div>
+			<ul class="uk-list uk-list-divider">
+				<li>item 1</li>
+				<li>item 2</li>
+				<li>item 3</li>
+			</ul>
+		</div>
+	</div>
+</div>			
+<div class="molecule-workflowEntry">
+	<a href="#679314050" uk-toggle class="molecule-workflowEntry__card uk-background-default uk-border-rounded uk-box-shadow-medium">
+		<div class="atom-avatar uk-border-rounded uk-text-large uk-box-shadow-medium uk-background-secondary uk-light
+uk-flex-none ">
+		<span uk-icon="icon: user; ratio: 2"></span>
+</div>		<div class="molecule-workflowEntry__name">
+			Mark Jones
+		</div>
+	</a>
+	
+	<div id="679314050" uk-modal>
+		<div class="molecule-workflowEntry__modal uk-modal-dialog uk-modal-body">
+			<button class="uk-modal-close-default" type="button" uk-close></button>
+			<div class="uk-flex uk-flex-middle">
+				<div class="atom-avatar uk-border-rounded uk-text-large uk-box-shadow-medium uk-background-secondary uk-light
+uk-flex-none uk-margin-right">
+		<span uk-icon="icon: user; ratio: 2"></span>
+</div>				<h2 class="uk-modal-title uk-margin-remove-top uk-margin-remove-bottom">Headline</h2>
+			</div>
+			<ul class="uk-list uk-list-divider">
+				<li>item 1</li>
+				<li>item 2</li>
+				<li>item 3</li>
+			</ul>
+		</div>
+	</div>
+</div>			
+<div class="molecule-workflowEntry">
+	<a href="#1698310960" uk-toggle class="molecule-workflowEntry__card uk-background-default uk-border-rounded uk-box-shadow-medium">
+		<div class="atom-avatar uk-border-rounded uk-text-large uk-box-shadow-medium uk-background-secondary uk-light
+uk-flex-none ">
+		<span uk-icon="icon: user; ratio: 2"></span>
+</div>		<div class="molecule-workflowEntry__name">
+			Mark Jones
+		</div>
+	</a>
+	
+	<div id="1698310960" uk-modal>
+		<div class="molecule-workflowEntry__modal uk-modal-dialog uk-modal-body">
+			<button class="uk-modal-close-default" type="button" uk-close></button>
+			<div class="uk-flex uk-flex-middle">
+				<div class="atom-avatar uk-border-rounded uk-text-large uk-box-shadow-medium uk-background-secondary uk-light
+uk-flex-none uk-margin-right">
+		<span uk-icon="icon: user; ratio: 2"></span>
+</div>				<h2 class="uk-modal-title uk-margin-remove-top uk-margin-remove-bottom">Headline</h2>
+			</div>
+			<ul class="uk-list uk-list-divider">
+				<li>item 1</li>
+				<li>item 2</li>
+				<li>item 3</li>
+			</ul>
+		</div>
+	</div>
+</div>			
+<div class="molecule-workflowEntry">
+	<a href="#718517513" uk-toggle class="molecule-workflowEntry__card uk-background-default uk-border-rounded uk-box-shadow-medium">
+		<div class="atom-avatar uk-border-rounded uk-text-large uk-box-shadow-medium uk-background-secondary uk-light
+uk-flex-none ">
+		<span uk-icon="icon: user; ratio: 2"></span>
+</div>		<div class="molecule-workflowEntry__name">
+			Mark Jones
+		</div>
+	</a>
+	
+	<div id="718517513" uk-modal>
+		<div class="molecule-workflowEntry__modal uk-modal-dialog uk-modal-body">
+			<button class="uk-modal-close-default" type="button" uk-close></button>
+			<div class="uk-flex uk-flex-middle">
+				<div class="atom-avatar uk-border-rounded uk-text-large uk-box-shadow-medium uk-background-secondary uk-light
+uk-flex-none uk-margin-right">
+		<span uk-icon="icon: user; ratio: 2"></span>
+</div>				<h2 class="uk-modal-title uk-margin-remove-top uk-margin-remove-bottom">Headline</h2>
+			</div>
+			<ul class="uk-list uk-list-divider">
+				<li>item 1</li>
+				<li>item 2</li>
+				<li>item 3</li>
+			</ul>
+		</div>
+	</div>
+</div>			
+<div class="molecule-workflowEntry">
+	<a href="#821734329" uk-toggle class="molecule-workflowEntry__card uk-background-default uk-border-rounded uk-box-shadow-medium">
+		<div class="atom-avatar uk-border-rounded uk-text-large uk-box-shadow-medium uk-background-secondary uk-light
+uk-flex-none ">
+		<span uk-icon="icon: user; ratio: 2"></span>
+</div>		<div class="molecule-workflowEntry__name">
+			Mark Jones
+		</div>
+	</a>
+	
+	<div id="821734329" uk-modal>
+		<div class="molecule-workflowEntry__modal uk-modal-dialog uk-modal-body">
+			<button class="uk-modal-close-default" type="button" uk-close></button>
+			<div class="uk-flex uk-flex-middle">
+				<div class="atom-avatar uk-border-rounded uk-text-large uk-box-shadow-medium uk-background-secondary uk-light
+uk-flex-none uk-margin-right">
+		<span uk-icon="icon: user; ratio: 2"></span>
+</div>				<h2 class="uk-modal-title uk-margin-remove-top uk-margin-remove-bottom">Headline</h2>
+			</div>
+			<ul class="uk-list uk-list-divider">
+				<li>item 1</li>
+				<li>item 2</li>
+				<li>item 3</li>
+			</ul>
+		</div>
+	</div>
+</div>			
+<div class="molecule-workflowEntry">
+	<a href="#1756961557" uk-toggle class="molecule-workflowEntry__card uk-background-default uk-border-rounded uk-box-shadow-medium">
+		<div class="atom-avatar uk-border-rounded uk-text-large uk-box-shadow-medium uk-background-secondary uk-light
+uk-flex-none ">
+		<span uk-icon="icon: user; ratio: 2"></span>
+</div>		<div class="molecule-workflowEntry__name">
+			Mark Jones
+		</div>
+	</a>
+	
+	<div id="1756961557" uk-modal>
+		<div class="molecule-workflowEntry__modal uk-modal-dialog uk-modal-body">
+			<button class="uk-modal-close-default" type="button" uk-close></button>
+			<div class="uk-flex uk-flex-middle">
+				<div class="atom-avatar uk-border-rounded uk-text-large uk-box-shadow-medium uk-background-secondary uk-light
+uk-flex-none uk-margin-right">
+		<span uk-icon="icon: user; ratio: 2"></span>
+</div>				<h2 class="uk-modal-title uk-margin-remove-top uk-margin-remove-bottom">Headline</h2>
+			</div>
+			<ul class="uk-list uk-list-divider">
+				<li>item 1</li>
+				<li>item 2</li>
+				<li>item 3</li>
+			</ul>
+		</div>
+	</div>
+</div>			
+<div class="molecule-workflowEntry">
+	<a href="#1539563129" uk-toggle class="molecule-workflowEntry__card uk-background-default uk-border-rounded uk-box-shadow-medium">
+		<div class="atom-avatar uk-border-rounded uk-text-large uk-box-shadow-medium uk-background-secondary uk-light
+uk-flex-none ">
+		<span uk-icon="icon: user; ratio: 2"></span>
+</div>		<div class="molecule-workflowEntry__name">
+			Mark Jones
+		</div>
+	</a>
+	
+	<div id="1539563129" uk-modal>
+		<div class="molecule-workflowEntry__modal uk-modal-dialog uk-modal-body">
+			<button class="uk-modal-close-default" type="button" uk-close></button>
+			<div class="uk-flex uk-flex-middle">
+				<div class="atom-avatar uk-border-rounded uk-text-large uk-box-shadow-medium uk-background-secondary uk-light
+uk-flex-none uk-margin-right">
+		<span uk-icon="icon: user; ratio: 2"></span>
+</div>				<h2 class="uk-modal-title uk-margin-remove-top uk-margin-remove-bottom">Headline</h2>
+			</div>
+			<ul class="uk-list uk-list-divider">
+				<li>item 1</li>
+				<li>item 2</li>
+				<li>item 3</li>
+			</ul>
+		</div>
+	</div>
+</div>			
+<div class="molecule-workflowEntry">
+	<a href="#1489332611" uk-toggle class="molecule-workflowEntry__card uk-background-default uk-border-rounded uk-box-shadow-medium">
+		<div class="atom-avatar uk-border-rounded uk-text-large uk-box-shadow-medium uk-background-secondary uk-light
+uk-flex-none ">
+		<span uk-icon="icon: user; ratio: 2"></span>
+</div>		<div class="molecule-workflowEntry__name">
+			Mark Jones
+		</div>
+	</a>
+	
+	<div id="1489332611" uk-modal>
+		<div class="molecule-workflowEntry__modal uk-modal-dialog uk-modal-body">
+			<button class="uk-modal-close-default" type="button" uk-close></button>
+			<div class="uk-flex uk-flex-middle">
+				<div class="atom-avatar uk-border-rounded uk-text-large uk-box-shadow-medium uk-background-secondary uk-light
+uk-flex-none uk-margin-right">
+		<span uk-icon="icon: user; ratio: 2"></span>
+</div>				<h2 class="uk-modal-title uk-margin-remove-top uk-margin-remove-bottom">Headline</h2>
+			</div>
+			<ul class="uk-list uk-list-divider">
+				<li>item 1</li>
+				<li>item 2</li>
+				<li>item 3</li>
+			</ul>
+		</div>
+	</div>
+</div>			
+<div class="molecule-workflowEntry">
+	<a href="#1278136699" uk-toggle class="molecule-workflowEntry__card uk-background-default uk-border-rounded uk-box-shadow-medium">
+		<div class="atom-avatar uk-border-rounded uk-text-large uk-box-shadow-medium uk-background-secondary uk-light
+uk-flex-none ">
+		<span uk-icon="icon: user; ratio: 2"></span>
+</div>		<div class="molecule-workflowEntry__name">
+			Mark Jones
+		</div>
+	</a>
+	
+	<div id="1278136699" uk-modal>
+		<div class="molecule-workflowEntry__modal uk-modal-dialog uk-modal-body">
+			<button class="uk-modal-close-default" type="button" uk-close></button>
+			<div class="uk-flex uk-flex-middle">
+				<div class="atom-avatar uk-border-rounded uk-text-large uk-box-shadow-medium uk-background-secondary uk-light
+uk-flex-none uk-margin-right">
+		<span uk-icon="icon: user; ratio: 2"></span>
+</div>				<h2 class="uk-modal-title uk-margin-remove-top uk-margin-remove-bottom">Headline</h2>
+			</div>
+			<ul class="uk-list uk-list-divider">
+				<li>item 1</li>
+				<li>item 2</li>
+				<li>item 3</li>
+			</ul>
+		</div>
+	</div>
+</div>			</div>
+</div>	
+	<div class="molecule-workflowStep uk-margin">
+	<h3 class="uk-margin-remove uk-text-muted">The Heart of God</h3>
+	<div class="molecule-workflowStep__body uk-background-muted uk-flex uk-flex-wrap uk-padding-small uk-box-shadow-medium" data-uk-sortable="group: workflow">
 					</div>
-</div>	
-	<script>
+</div>	<script>
 		$(document).ready(function () {
+			var entries = $('.molecule-workflowEntry');
+			var quantity = entries.length;
+			$.ajax({
+				url: 'https://randomuser.me/api/?inc=name,picture&results='+quantity,
+				dataType: 'json',
+				success: function(data) {
+					var results = data.results;
+					entries.each(function() {
+						var r = results.pop();
+						var name = r.name.first+' '+r.name.last;
+						$('.molecule-workflowEntry__name, .uk-modal-title', this).html(name);
+						if (Math.random() > .15) $('.atom-avatar', this).prepend('<img src="'+r.picture.large+'" />');
+					});
+				}
+			});
+			
 			$('#workflow-filter').on('keyup', function () {
 				var val = $(this).val();
 

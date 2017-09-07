@@ -81,9 +81,24 @@
 		{% block stepBody %}
 		{% endblock %}
 	{% endembed %}
-	
 	<script>
 		$(document).ready(function () {
+			var entries = $('.molecule-workflowEntry');
+			var quantity = entries.length;
+			$.ajax({
+				url: 'https://randomuser.me/api/?inc=name,picture&results='+quantity,
+				dataType: 'json',
+				success: function(data) {
+					var results = data.results;
+					entries.each(function() {
+						var r = results.pop();
+						var name = r.name.first+' '+r.name.last;
+						$('.molecule-workflowEntry__name, .uk-modal-title', this).html(name);
+						if (Math.random() > .15) $('.atom-avatar', this).prepend('<img src="'+r.picture.large+'" />');
+					});
+				}
+			});
+			
 			$('#workflow-filter').on('keyup', function () {
 				var val = $(this).val();
 

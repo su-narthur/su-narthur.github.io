@@ -1,23 +1,36 @@
 .molecule-workflowEntry {
-	display: flex;
-	margin: 5px !important;
-	.atom-avatar {
-		box-shadow: none !important;
-		position: relative;
-		left: -1px;
+	.molecule-workflowEntry__card {
+		display: flex;
+		margin: 5px !important;
 		color: #666;
-		background-color: white;
-		img {
-			border-radius: 5px 0 0 5px;
+		&:hover {
+			text-decoration: none;
+		}
+		.atom-avatar {
+			box-shadow: none !important;
+			position: relative;
+			left: -1px;
+			color: #666;
+			background-color: white;
+			img {
+				border-radius: 5px 0 0 5px;
+			}
+		}
+		.molecule-workflowEntry__name {
+			padding: .8rem;
+			width: 121px;
+			height: 75px;
+			overflow: hidden;
+			text-transform: capitalize;
+			display: flex;
+			align-items: center;
+			font-size: .8em;
 		}
 	}
-	.molecule-workflowEntry__name {
-		padding: .8rem;
-		width: 121px;
-		height: 75px;
-		overflow: hidden;
-		text-transform: capitalize;
-		display: flex;
-		align-items: center;
+}
+
+.molecule-workflowEntry__modal {
+	.uk-modal-title {
+		text-transform: capitalize !important;
 	}
 }

@@ -13,6 +13,9 @@
 	
 	<script>
 		$(document).ready(function () {
+			var addFormRow = $('.molecule-checkInList__addFormRow');
+			addFormRow.hide();
+			
 			$('#checkin-filter').on('keyup', function () {
 				var val = $(this).val();
 				
@@ -24,6 +27,12 @@
 				});
 				
 				$('.molecule-addAndCheckInForm__name').html(val);
+				
+				if (val) {
+					addFormRow.show();
+				} else {
+					addFormRow.hide();
+				}
 			});
 		});
 	</script>

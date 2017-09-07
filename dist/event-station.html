@@ -218,7 +218,7 @@
 		</div>
 	</div>			
 		</li>
-		<li>
+		<li class="molecule-checkInList__addFormRow">
 			<div class="molecule-addAndCheckInForm uk-flex uk-flex-middle uk-flex-between uk-margin-small-left uk-margin-small-right">
 	<span class="uk-flex uk-flex-middle">
 		<div class="atom-avatar uk-border-rounded uk-text-large uk-box-shadow-medium uk-background-secondary uk-light uk-margin-large-right">
@@ -233,6 +233,9 @@
 </div>	
 	<script>
 		$(document).ready(function () {
+			var addFormRow = $('.molecule-checkInList__addFormRow');
+			addFormRow.hide();
+			
 			$('#checkin-filter').on('keyup', function () {
 				var val = $(this).val();
 				
@@ -244,6 +247,12 @@
 				});
 				
 				$('.molecule-addAndCheckInForm__name').html(val);
+				
+				if (val) {
+					addFormRow.show();
+				} else {
+					addFormRow.hide();
+				}
 			});
 		});
 	</script>

@@ -90,11 +90,12 @@
 				dataType: 'json',
 				success: function(data) {
 					var results = data.results;
+					var threshold = Math.random();
 					entries.each(function() {
 						var r = results.pop();
 						var name = r.name.first+' '+r.name.last;
 						$('.molecule-workflowEntry__name, .uk-modal-title', this).html(name);
-						if (Math.random() > .15) $('.atom-avatar', this).prepend('<img src="'+r.picture.large+'" />');
+						if (Math.random() > threshold) $('.atom-avatar', this).prepend('<img src="'+r.picture.large+'" />');
 					});
 				}
 			});

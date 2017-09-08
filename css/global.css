@@ -79,6 +79,31 @@ body > * {
 .molecule-cohort td {
   padding: 7px;
 }
+ul.molecule-feed {
+  padding-left: 50px;
+}
+ul.molecule-feed li {
+  position: relative;
+  font-size: 0.9em;
+}
+ul.molecule-feed li p {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: initial;
+}
+ul.molecule-feed li img {
+  margin-right: .7rem;
+  margin-left: -50px;
+  display: block;
+  float: left;
+}
+ul.molecule-feed .date {
+  opacity: .6;
+  font-size: .8em;
+  display: inline;
+  white-space: nowrap;
+  margin-left: .1rem;
+}
 .molecule-personTitle .badges {
   line-height: 0;
 }

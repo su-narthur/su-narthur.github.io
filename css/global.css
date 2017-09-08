@@ -79,25 +79,30 @@ body > * {
 .molecule-cohort td {
   padding: 7px;
 }
-ul.molecule-feed {
+.molecule-feed {
+  display: flex;
+  flex-direction: column-reverse;
+  overflow: auto;
+}
+.molecule-feed ul {
   padding-left: 50px;
 }
-ul.molecule-feed li {
+.molecule-feed ul li {
   position: relative;
   font-size: 0.9em;
 }
-ul.molecule-feed li p {
+.molecule-feed ul li p {
   margin-top: 10px;
   margin-bottom: 10px;
   font-size: initial;
 }
-ul.molecule-feed li img {
+.molecule-feed ul li img {
   margin-right: .7rem;
   margin-left: -50px;
   display: block;
   float: left;
 }
-ul.molecule-feed .date {
+.molecule-feed ul .date {
   opacity: .6;
   font-size: .8em;
   display: inline;
@@ -143,6 +148,11 @@ ul.molecule-feed .date {
   display: flex;
   align-items: center;
   font-size: .8em;
+}
+.molecule-workflowEntry__modal {
+  display: flex;
+  flex-direction: column;
+  max-height: 100%;
 }
 .molecule-workflowEntry__modal .uk-modal-title {
   text-transform: capitalize !important;

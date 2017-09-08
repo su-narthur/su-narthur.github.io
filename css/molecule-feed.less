@@ -1,28 +1,33 @@
-ul.molecule-feed {
-	padding-left: 50px;
-	li {
-		position: relative;
-		font-size: .9em
-	}
+.molecule-feed {
+	display: flex;
+	flex-direction: column-reverse;
+	overflow: auto;
+	ul {
+		padding-left: 50px;
+		li {
+			position: relative;
+			font-size: .9em
+		}
 
-	li p {
-		margin-top: 10px;
-		margin-bottom: 10px;
-		font-size: initial;
-	}
+		li p {
+			margin-top: 10px;
+			margin-bottom: 10px;
+			font-size: initial;
+		}
 
-	li img {
-		margin-right: .7rem;
-		margin-left: -50px;
-		display: block;
-		float: left;
-	}
+		li img {
+			margin-right: .7rem;
+			margin-left: -50px;
+			display: block;
+			float: left;
+		}
 
-	.date {
-		opacity: .6;
-		font-size: .8em;
-		display: inline;
-		white-space: nowrap;
-		margin-left: .1rem;
+		.date {
+			opacity: .6;
+			font-size: .8em;
+			display: inline;
+			white-space: nowrap;
+			margin-left: .1rem;
+		}
 	}
 }

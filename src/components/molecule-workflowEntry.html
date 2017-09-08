@@ -11,13 +11,15 @@
 	<div id="{{ entryId }}" uk-modal>
 		<div class="molecule-workflowEntry__modal uk-modal-dialog uk-modal-body">
 			<button class="uk-modal-close-default" type="button" uk-close></button>
-			<div class="uk-flex uk-flex-middle">
+			<div class="molecule-workflowEntry__header uk-margin-small-bottom uk-flex-none uk-flex uk-flex-middle">
 				{% include "components/atom-avatar.html" with {className:"uk-margin-right"} only %}
 				<h2 class="uk-modal-title uk-margin-remove-top uk-margin-remove-bottom">Headline</h2>
 			</div>
 			{% include "components/molecule-feed.html" %}
-			<textarea class="uk-textarea" rows="5" placeholder="Comment"></textarea>
-			<button class="uk-button uk-button-primary uk-margin-small-top">Save</button>
+			<div class="molecule-workflowEntry__commentForm uk-flex-none">
+				<textarea class="uk-textarea" rows="5" placeholder="Comment"></textarea>
+				<button class="uk-button uk-button-primary uk-margin-small-top">Save</button>
+			</div>
 		</div>
 	</div>
 </div>

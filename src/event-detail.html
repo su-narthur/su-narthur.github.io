@@ -6,7 +6,6 @@
 {% endblock %}
 
 {% block backTitle %}< Events{% endblock %}
-{% block pageTitle %}Event 3.5b{% endblock %}
 
 {% block listPanel %}
 	<h2>Events</h2>
@@ -19,7 +18,9 @@
 	</ul>
 {% endblock %}
 
-{% block main %}
+{% block mainPanel %}
+	<h1>Event 3.5b</h1>
+	
 	<ul uk-tab>
 		<li class="uk-active"><a href="#">Statistics</a></li>
 		<li><a href="event-attendees.html">Attendees</a></li>
@@ -32,7 +33,7 @@
 	{% include "components/molecule-cohort.html" %}
 {% endblock %}
 
-{% block secondary %}
+{% block secondaryPanel %}
 	{% include "components/molecule-recordAttendanceWidget.html" %}
 	
 	<div class="uk-overflow-auto">

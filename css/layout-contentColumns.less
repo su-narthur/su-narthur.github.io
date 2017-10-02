@@ -1,11 +1,10 @@
 .layout-contentColumns {
-	@media (min-width:1550px) {
-		display: flex;
-		> .main {
-			flex: 0 0 66%;
-		}
-		> .secondary {
-			flex: 0 0 33%;
-		}
+	display: flex;
+	flex-wrap: wrap;
+	> .main {
+		flex: 1 0 66%;
+	}
+	> .secondary {
+		flex: 1 0 33%;
 	}
 }

@@ -79,11 +79,6 @@ body > * {
 .molecule-cohort td {
   padding: 7px;
 }
-.molecule-feed {
-  display: flex;
-  flex-direction: column-reverse;
-  overflow: auto;
-}
 .molecule-feed ul {
   padding-left: 50px;
 }
@@ -117,6 +112,7 @@ body > * {
 }
 .molecule-personTitle .badges .uk-badge {
   padding: 0 10px;
+  margin-bottom: 5px;
 }
 .molecule-personTitle .badges .interval span {
   margin-left: 2px;
@@ -150,9 +146,7 @@ body > * {
   font-size: .8em;
 }
 .molecule-workflowEntry__modal {
-  display: flex;
-  flex-direction: column;
-  max-height: 100%;
+  width: 900px;
 }
 .molecule-workflowEntry__modal .uk-modal-title {
   text-transform: capitalize !important;
@@ -227,16 +221,15 @@ body > * {
     display: inline;
   }
 }
-@media (min-width: 1550px) {
-  .layout-contentColumns {
-    display: flex;
-  }
-  .layout-contentColumns > .main {
-    flex: 0 0 66%;
-  }
-  .layout-contentColumns > .secondary {
-    flex: 0 0 33%;
-  }
+.layout-contentColumns {
+  display: flex;
+  flex-wrap: wrap;
+}
+.layout-contentColumns > .main {
+  flex: 1 0 66%;
+}
+.layout-contentColumns > .secondary {
+  flex: 1 0 33%;
 }
 .layout-listLayout {
   display: flex;

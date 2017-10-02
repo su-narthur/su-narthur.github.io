@@ -1,88 +1,43 @@
 {% extends "components/layout-listLayout.html" %}
 
+{% import _self as macros %}
+
+{% macro step(title, max) %}
+	{% embed "components/molecule-workflowStep.html" with {title: title} only %}
+		{% block stepBody %}
+			{% include "components/molecule-workflowEntry.html" %}
+		{% endblock %}
+	{% endembed %}
+{% endmacro %}
+
 {% block content %}
 	<h1>My Workflow</h1>
 	
 	<input id="workflow-filter" class="uk-input" type="text" placeholder="Search">
 	
-	{% embed "components/molecule-workflowStep.html" with {title: "The Heart of God"} only %}
-		{% block stepBody %}
-			{% include "components/molecule-workflowEntry.html" %}
-			{% include "components/molecule-workflowEntry.html" %}
-			{% include "components/molecule-workflowEntry.html" %}
-			{% include "components/molecule-workflowEntry.html" %}
-			{% include "components/molecule-workflowEntry.html" %}
-			{% include "components/molecule-workflowEntry.html" %}
-			{% include "components/molecule-workflowEntry.html" %}
-			{% include "components/molecule-workflowEntry.html" %}
-			{% include "components/molecule-workflowEntry.html" %}
-			{% include "components/molecule-workflowEntry.html" %}
-			{% include "components/molecule-workflowEntry.html" %}
-			{% include "components/molecule-workflowEntry.html" %}
-			{% include "components/molecule-workflowEntry.html" %}
-			{% include "components/molecule-workflowEntry.html" %}
-		{% endblock %}
-	{% endembed %}
+	{{ macros.step("The Heart of God") }}
+	{{ macros.step("The Heart of God") }}
+	{{ macros.step("The Heart of God") }}
+	{{ macros.step("The Heart of God") }}
 	
-	{% embed "components/molecule-workflowStep.html" with {title: "The Heart of God"} only %}
-		{% block stepBody %}
-			{% include "components/molecule-workflowEntry.html" %}
-			{% include "components/molecule-workflowEntry.html" %}
-			{% include "components/molecule-workflowEntry.html" %}
-		{% endblock %}
-	{% endembed %}
-	
-	{% embed "components/molecule-workflowStep.html" with {title: "The Heart of God"} only %}
-		{% block stepBody %}
-			{% include "components/molecule-workflowEntry.html" %}
-			{% include "components/molecule-workflowEntry.html" %}
-			{% include "components/molecule-workflowEntry.html" %}
-			{% include "components/molecule-workflowEntry.html" %}
-			{% include "components/molecule-workflowEntry.html" %}
-			{% include "components/molecule-workflowEntry.html" %}
-			{% include "components/molecule-workflowEntry.html" %}
-			{% include "components/molecule-workflowEntry.html" %}
-			{% include "components/molecule-workflowEntry.html" %}
-			{% include "components/molecule-workflowEntry.html" %}
-			{% include "components/molecule-workflowEntry.html" %}
-			{% include "components/molecule-workflowEntry.html" %}
-			{% include "components/molecule-workflowEntry.html" %}
-			{% include "components/molecule-workflowEntry.html" %}
-			{% include "components/molecule-workflowEntry.html" %}
-			{% include "components/molecule-workflowEntry.html" %}
-			{% include "components/molecule-workflowEntry.html" %}
-			{% include "components/molecule-workflowEntry.html" %}
-			{% include "components/molecule-workflowEntry.html" %}
-			{% include "components/molecule-workflowEntry.html" %}
-			{% include "components/molecule-workflowEntry.html" %}
-			{% include "components/molecule-workflowEntry.html" %}
-			{% include "components/molecule-workflowEntry.html" %}
-			{% include "components/molecule-workflowEntry.html" %}
-			{% include "components/molecule-workflowEntry.html" %}
-			{% include "components/molecule-workflowEntry.html" %}
-			{% include "components/molecule-workflowEntry.html" %}
-			{% include "components/molecule-workflowEntry.html" %}
-			{% include "components/molecule-workflowEntry.html" %}
-			{% include "components/molecule-workflowEntry.html" %}
-			{% include "components/molecule-workflowEntry.html" %}
-			{% include "components/molecule-workflowEntry.html" %}
-			{% include "components/molecule-workflowEntry.html" %}
-			{% include "components/molecule-workflowEntry.html" %}
-			{% include "components/molecule-workflowEntry.html" %}
-			{% include "components/molecule-workflowEntry.html" %}
-			{% include "components/molecule-workflowEntry.html" %}
-			{% include "components/molecule-workflowEntry.html" %}
-			{% include "components/molecule-workflowEntry.html" %}
-			{% include "components/molecule-workflowEntry.html" %}
-		{% endblock %}
-	{% endembed %}
-	
-	{% embed "components/molecule-workflowStep.html" with {title: "The Heart of God"} only %}
-		{% block stepBody %}
-		{% endblock %}
-	{% endembed %}
 	<script>
 		$(document).ready(function () {
+			var steps = $('.molecule-workflowStep');
+			var max = Math.floor(Math.random()*50);
+			var entry = $('.molecule-workflowEntry').first();
+			
+			steps.each(function() {
+				if (Math.random() > .8) {
+					$(this).find('.molecule-workflowEntry').remove();
+				} else {
+					var numberOfEntries = Math.floor(Math.random()*max);
+					var stepBody = $('.molecule-workflowStep__body', this)
+					for (var i = 0; i < numberOfEntries; i++) {
+						entry.clone().appendTo(stepBody);
+					}
+				}
+			});
+			
 			var entries = $('.molecule-workflowEntry');
 			var quantity = entries.length;
 			$.ajax({

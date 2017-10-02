@@ -11,14 +11,36 @@
 	<div id="{{ entryId }}" uk-modal>
 		<div class="molecule-workflowEntry__modal uk-modal-dialog uk-modal-body">
 			<button class="uk-modal-close-default" type="button" uk-close></button>
-			<div class="molecule-workflowEntry__header uk-margin-small-bottom uk-flex-none uk-flex uk-flex-middle">
+			
+			<div class="molecule-workflowEntry__header uk-margin-bottom uk-flex-none uk-flex uk-flex-middle">
 				{% include "components/atom-avatar.html" with {className:"uk-margin-right"} only %}
 				<h2 class="uk-modal-title uk-margin-remove-top uk-margin-remove-bottom">Headline</h2>
 			</div>
-			{% include "components/molecule-feed.html" %}
-			<div class="molecule-workflowEntry__commentForm uk-flex-none">
-				<textarea class="uk-textarea" rows="3" placeholder="Comment"></textarea>
-				<button class="uk-button uk-button-primary uk-margin-small-top">Save</button>
+			
+			<div class="uk-flex">
+				<div>
+					<div class="molecule-workflowEntry__commentForm uk-flex-none uk-margin-bottom">
+						<textarea class="uk-textarea" rows="3" placeholder="Comment"></textarea>
+						<button class="uk-button uk-button-primary uk-margin-small-top">Save</button>
+					</div>
+					
+					{% include "components/molecule-feed.html" %}
+				</div>
+				<div class="uk-margin-left">
+					<h4>Assignee</h4>
+					...
+					
+					<h4>Steps</h4>
+					<ul class="uk-list">
+						<li><label><input class="uk-checkbox uk-margin-small-right" type="checkbox" checked> The Image of God</label></li>
+						<li><label><input class="uk-checkbox uk-margin-small-right" type="checkbox"> War in Heaven</label></li>
+						<li><label><input class="uk-checkbox uk-margin-small-right" type="checkbox" checked> The Fall of Humanity</label></li>
+						<li><label><input class="uk-checkbox uk-margin-small-right" type="checkbox" checked> The Promised One</label></li>
+						<li><label><input class="uk-checkbox uk-margin-small-right" type="checkbox"> Journey to the Heart of God <span class="uk-badge">Current</span></label></li>
+						<li><label><input class="uk-checkbox uk-margin-small-right" type="checkbox"> Death Defined</label></li>
+						<li><label><input class="uk-checkbox uk-margin-small-right" type="checkbox"> Death Defeated</label></li>
+					</ul>
+				</div>
 			</div>
 		</div>
 	</div>

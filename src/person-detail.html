@@ -8,8 +8,49 @@
 
 {% block mainPanel %}
 	{% include "components/molecule-addUpdateExpandableForm.html" %}
+	
+	<ul uk-tab>
+		<li class="uk-active"><a href="#">All</a></li>
+		<li><a href="#">Mine</a></li>
+		<li><a href="#">Discipleship Studies</a></li>
+		<li><a href="#">Workflow With A Long Name</a></li>
+	</ul>
+	
+	{% include "components/molecule-feed.html" %}
 {% endblock %}
 
 {% block secondaryPanel %}
+	<table class="uk-table molecule-personInfoTable uk-table-small uk-padding-small sc-cJSrbW fxNLgz sc-kEYyzF gfWKdx">
+		<tbody>
+		<tr>
+			<td>Birthday</td>
+			<td>October 31, 1970</td>
+		</tr>
+		<tr>
+			<td>home</td>
+			<td>jacob@example.com</td>
+		</tr>
+		<tr>
+			<td>home</td>
+			<td>(910) 474-9104</td>
+		</tr>
+		<tr>
+			<td>home</td>
+			<td>
+				<address class="sc-kgAjT cuzzPp"><span>173 Oak Street<br></span><span>Benton Harbor, MI 49103<br></span><span>US<br></span>
+				</address>
+			</td>
+		</tr>
+		<tr>
+			<td>Eye color</td>
+			<td>Blue</td>
+		</tr>
+		<tr>
+			<td>Hair color</td>
+			<td>Brown</td>
+		</tr>
+		</tbody>
+	</table>
+	
 	{% include "components/molecule-personEditButton.html" %}
 {% endblock %}

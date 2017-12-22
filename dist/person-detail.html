@@ -77,7 +77,7 @@
 		<div class="organism-content uk-card uk-card-default uk-padding-small">
 			<a href="#" class="to-list">< People</a>
 			
-				<div class="molecule-personTitle uk-flex uk-flex-middle uk-padding-small">
+				<div class="molecule-personTitle uk-flex uk-flex-middle uk-margin-small-bottom">
 	<img src="https://randomuser.me/api/portraits/med/women/71.jpg" class="uk-margin-right uk-border-circle uk-box-shadow-medium">
 	<div class="text">
 		<h2 class="uk-margin uk-margin-remove-bottom uk-margin-remove-top">Naomi Thompson</h2>
@@ -117,12 +117,20 @@
 </div>			
 				<div class="layout-contentColumns">
 		<div class="main">
-				<button class="uk-button uk-button-primary uk-button-small" uk-toggle="target: #my-id, #down-arrow, #up-arrow; animation: uk-animation-fade">
-	Add Interaction <span id="down-arrow" uk-icon="icon: chevron-down"></span><span id="up-arrow" uk-icon="icon: chevron-up" hidden></span>
-</button>
-
-<form id="my-id" class="uk-margin" hidden>
-	<div class="molecule-addInteractionForm">
+				<ul uk-tab>
+		<li class="uk-active"><a href="#">All</a></li>
+		<li><a href="#">Mine</a></li>
+		<li><a href="#">Discipleship Studies</a></li>
+		<li><a href="#">Workflow With A Long Name</a></li>
+	</ul>
+	
+	<div class="uk-margin-bottom">
+	<button class="uk-button uk-button-primary uk-button-small" uk-toggle="target: #my-id, #down-arrow, #up-arrow; animation: uk-animation-fade">
+		Add Interaction <span id="down-arrow" uk-icon="icon: chevron-down"></span><span id="up-arrow" uk-icon="icon: chevron-up" hidden></span>
+	</button>
+	
+	<form id="my-id" class="uk-margin" hidden>
+		<div class="molecule-addInteractionForm">
 	<div class="uk-margin">
 		<select class="uk-select uk-form-width-medium">
 			<option value="" selected disabled>Select type...</option>
@@ -141,16 +149,11 @@
 	<div class="uk-margin">
 		<textarea class="uk-textarea" rows="5" placeholder="Notes..."></textarea>
 	</div>
-</div>	
-	<button class="uk-button uk-button-primary">Save</button>
-	<button class="uk-button uk-button-default">Cancel</button>
-</form>	
-	<ul uk-tab>
-		<li class="uk-active"><a href="#">All</a></li>
-		<li><a href="#">Mine</a></li>
-		<li><a href="#">Discipleship Studies</a></li>
-		<li><a href="#">Workflow With A Long Name</a></li>
-	</ul>
+</div>		
+		<button class="uk-button uk-button-primary">Save</button>
+		<button class="uk-button uk-button-default">Cancel</button>
+	</form>
+</div>
 	
 	<div class="molecule-feed">
 	<ul class="uk-list uk-list-divider">

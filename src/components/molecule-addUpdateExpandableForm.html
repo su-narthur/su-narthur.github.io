@@ -1,10 +1,12 @@
-<button class="uk-button uk-button-primary uk-button-small" uk-toggle="target: #my-id, #down-arrow, #up-arrow; animation: uk-animation-fade">
-	Add Interaction <span id="down-arrow" uk-icon="icon: chevron-down"></span><span id="up-arrow" uk-icon="icon: chevron-up" hidden></span>
-</button>
-
-<form id="my-id" class="uk-margin" hidden>
-	{% include "components/molecule-addInteractionForm.html" %}
+<div class="{{ classes }}">
+	<button class="uk-button uk-button-primary uk-button-small" uk-toggle="target: #my-id, #down-arrow, #up-arrow; animation: uk-animation-fade">
+		Add Interaction <span id="down-arrow" uk-icon="icon: chevron-down"></span><span id="up-arrow" uk-icon="icon: chevron-up" hidden></span>
+	</button>
 	
-	<button class="uk-button uk-button-primary">Save</button>
-	<button class="uk-button uk-button-default">Cancel</button>
-</form>
+	<form id="my-id" class="uk-margin" hidden>
+		{% include "components/molecule-addInteractionForm.html" %}
+		
+		<button class="uk-button uk-button-primary">Save</button>
+		<button class="uk-button uk-button-default">Cancel</button>
+	</form>
+</div>

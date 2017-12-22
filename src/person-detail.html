@@ -7,14 +7,14 @@
 {% endblock %}
 
 {% block mainPanel %}
-	{% include "components/molecule-addUpdateExpandableForm.html" %}
-	
 	<ul uk-tab>
 		<li class="uk-active"><a href="#">All</a></li>
 		<li><a href="#">Mine</a></li>
 		<li><a href="#">Discipleship Studies</a></li>
 		<li><a href="#">Workflow With A Long Name</a></li>
 	</ul>
+	
+	{% include "components/molecule-addUpdateExpandableForm.html" with { classes: 'uk-margin-bottom' } only %}
 	
 	{% include "components/molecule-feed.html" %}
 {% endblock %}
